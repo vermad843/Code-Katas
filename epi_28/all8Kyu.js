@@ -12,8 +12,26 @@
 // console.log(litres(0), 0, 'should return 0 litres');
 
 
-function solution(str){
-  return [...str].reverse().join('');
-}
+// function solution(str){
+//   return [...str].reverse().join('');
+// }
 
-console.log(solution('world'), 'dlrow');
+// console.log(solution('world'), 'dlrow');
+
+
+
+// 
+function removeChar(str){
+return str.slice(1, str.length -1);  //slice take the index (1, secondLast) => these are the indices you want to keep. 
+}
+   
+   
+
+
+console.log(removeChar('eloquent'), 'loquen');
+console.log(removeChar('country'), 'ountr');
+console.log(removeChar('person'), 'erso');
+console.log(removeChar('place'), 'lac');
+      
+
+    
