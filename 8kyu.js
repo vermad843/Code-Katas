@@ -1,89 +1,17 @@
-// function stringToArray(string){
-//    return  string.split(' ');
-// }
+function squareArea(A){//A is a length of a arc 
+//    circumference  of  a circle = 2 PI r 
+//    A = 2 PI r/4 (because we are talking about 1/4 part of a circle)
+//      2 PI r  = A * 4 //look at this  carefully 
+	const circumference = A * 4 ;
+	const radius = circumference/(2 * Math.PI);
+	const areaOfSquare = radius**2;  
+	return Math.floor(areaOfSquare*100)/100
+}
 
 
 
-// console.log(stringToArray("Robin Singh"), ["Robin", "Singh"]);
-// console.log(stringToArray("I love arrays they are my favorite"), ["I", "love", "arrays", "they", "are", "my", "favorite"]);
 
 
-// // split returns an array 
-
-
-
-// 
-
-// TODO: Refactor and shorten the function
-
-// function describeAge(age) {
-// 	if (age <= 12) {
-// 	  return "You're a(n) kid";
-// 	} else if (age >= 13 && age <= 17) {
-// 	  return "You're a(n) teenager";
-// 	} else if (age >= 18 && age <= 64) {
-// 	  return "You're a(n) adult";
-// 	} else {
-// 	  return "You're a(n) elderly";
-// 	}
-// );  }
-
-//   function describeAge(age) {
-//    const ternary=age<=12?'kid':age>=13&&age<=17?'teenager':age>=18&&age<=64?'adult':'elderly';
-//     return `You're a(n) ${ternary}`
-//   }
-
-   
-
-
-  
-//  console.log(describeAge(9), "You're a(n) kid");
-//  console.log(describeAge(10), "You're a(n) kid");
-//  console.log(describeAge(11), "You're a(n) kid");
-//  console.log(describeAge(12), "You're a(n) kid");
-//  console.log(describeAge(13), "You're a(n) teenager");
-//  console.log(describeAge(14), "You're a(n) teenager");
-//  console.log(describeAge(15), "You're a(n) teenager");
-//  console.log(describeAge(16), "You're a(n) teenager");
-//  console.log(describeAge(17), "You're a(n) teenager");
-//  console.log(describeAge(18), "You're a(n) adult");
-//  console.log(describeAge(19), "You're a(n) adult");
-//  console.log(describeAge(63), "You're a(n) adult");
-//  console.log(describeAge(64), "You're a(n) adult");
-//  console.log(describeAge(65), "You're a(n) elderly");
-//  console.log(describeAge(66), "You're a(n) elderly");
-//  console.log(describeAge(100), "You're a(n) elderly");
-
-
-
-// function noSpace(x,name){
-//  return x.split(' ').join('');
-// }
-
-
-
-// console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'), '8j8mBliB8gimjB8B8jlB');
-// console.log(noSpace('8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd'), '88Bifk8hB8BB8BBBB888chl8BhBfd'); 
-// console.log(noSpace('8aaaaa dddd r     '), '8aaaaaddddr'); 
-
-
-
-// // 
-// var stringToNumber = function(str){
-// 	return parseInt(str)
-//   }
-
-
-  
-// console.log(stringToNumber("1234"),1234)
-// console.log(stringToNumber("605"), 605)
-// console.log(stringToNumber("1405"),1405)
-// console.log(stringToNumber("-7"),  -7)
-
-
-// 
-function makeUpperCase(str) {
-  return  str.toUpperCase();
-  }
-
-  console.log(makeUpperCase("hello"), "HELLO");
+console.log(squareArea(2), 1.62);
+console.log(squareArea(0), 0);
+console.log(squareArea(14.05), 80);

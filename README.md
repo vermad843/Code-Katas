@@ -9,3 +9,5 @@
 [x]https://www.codewars.com/kata/convert-a-string-to-a-number/train/javascript
 
 [x]https://www.codewars.com/kata/makeuppercase/train/javascript
+
+[x]https://www.codewars.com/kata/area-of-a-square/train/javascript
