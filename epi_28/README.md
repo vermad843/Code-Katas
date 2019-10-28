@@ -15,3 +15,9 @@ https://www.codewars.com/kata/int32-to-ipv4/train/javascript
 1.https://www.codewars.com/kata/keep-hydrated-1/train/javascript
 2.https://www.codewars.com/kata/reversed-strings/train/javascript
 3.https://www.codewars.com/kata/remove-first-and-last-character/train/javascript
+
+
+//
+7 kyu: 
+
+//https://www.codewars.com/kata/love-vs-friendship/train/javascript
