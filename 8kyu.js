@@ -16,40 +16,52 @@
 
 // TODO: Refactor and shorten the function
 
-function describeAge(age) {
-	if (age <= 12) {
-	  return "You're a(n) kid";
-	} else if (age >= 13 && age <= 17) {
-	  return "You're a(n) teenager";
-	} else if (age >= 18 && age <= 64) {
-	  return "You're a(n) adult";
-	} else {
-	  return "You're a(n) elderly";
-	}
-  }
+// function describeAge(age) {
+// 	if (age <= 12) {
+// 	  return "You're a(n) kid";
+// 	} else if (age >= 13 && age <= 17) {
+// 	  return "You're a(n) teenager";
+// 	} else if (age >= 18 && age <= 64) {
+// 	  return "You're a(n) adult";
+// 	} else {
+// 	  return "You're a(n) elderly";
+// 	}
+// );  }
 
-  function describeAge(age) {
-   const ternary=age<=12?'kid':age>=13&&age<=17?'teenager':age>=18&&age<=64?'adult':'elderly';
-    return `You're a(n) ${ternary}`
-  }
+//   function describeAge(age) {
+//    const ternary=age<=12?'kid':age>=13&&age<=17?'teenager':age>=18&&age<=64?'adult':'elderly';
+//     return `You're a(n) ${ternary}`
+//   }
 
    
 
 
   
- console.log(describeAge(9), "You're a(n) kid");
- console.log(describeAge(10), "You're a(n) kid");
- console.log(describeAge(11), "You're a(n) kid");
- console.log(describeAge(12), "You're a(n) kid");
- console.log(describeAge(13), "You're a(n) teenager");
- console.log(describeAge(14), "You're a(n) teenager");
- console.log(describeAge(15), "You're a(n) teenager");
- console.log(describeAge(16), "You're a(n) teenager");
- console.log(describeAge(17), "You're a(n) teenager");
- console.log(describeAge(18), "You're a(n) adult");
- console.log(describeAge(19), "You're a(n) adult");
- console.log(describeAge(63), "You're a(n) adult");
- console.log(describeAge(64), "You're a(n) adult");
- console.log(describeAge(65), "You're a(n) elderly");
- console.log(describeAge(66), "You're a(n) elderly");
- console.log(describeAge(100), "You're a(n) elderly");
+//  console.log(describeAge(9), "You're a(n) kid");
+//  console.log(describeAge(10), "You're a(n) kid");
+//  console.log(describeAge(11), "You're a(n) kid");
+//  console.log(describeAge(12), "You're a(n) kid");
+//  console.log(describeAge(13), "You're a(n) teenager");
+//  console.log(describeAge(14), "You're a(n) teenager");
+//  console.log(describeAge(15), "You're a(n) teenager");
+//  console.log(describeAge(16), "You're a(n) teenager");
+//  console.log(describeAge(17), "You're a(n) teenager");
+//  console.log(describeAge(18), "You're a(n) adult");
+//  console.log(describeAge(19), "You're a(n) adult");
+//  console.log(describeAge(63), "You're a(n) adult");
+//  console.log(describeAge(64), "You're a(n) adult");
+//  console.log(describeAge(65), "You're a(n) elderly");
+//  console.log(describeAge(66), "You're a(n) elderly");
+//  console.log(describeAge(100), "You're a(n) elderly");
+
+
+
+function noSpace(x,name){
+ return x.split(' ').join('');
+}
+
+
+
+console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'), '8j8mBliB8gimjB8B8jlB');
+console.log(noSpace('8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd'), '88Bifk8hB8BB8BBBB888chl8BhBfd'); 
+console.log(noSpace('8aaaaa dddd r     '), '8aaaaaddddr'); 
