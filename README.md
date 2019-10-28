@@ -7,3 +7,5 @@
 [x]https://www.codewars.com/kata/remove-string-spaces/train/javascript
 
 [x]https://www.codewars.com/kata/convert-a-string-to-a-number/train/javascript
+
+[x]https://www.codewars.com/kata/makeuppercase/train/javascript
