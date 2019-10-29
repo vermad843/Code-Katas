@@ -11,3 +11,5 @@
 [x]https://www.codewars.com/kata/makeuppercase/train/javascript
 
 [x]https://www.codewars.com/kata/area-of-a-square/train/javascript
+
+[x]https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
