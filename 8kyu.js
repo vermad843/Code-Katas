@@ -39,16 +39,41 @@
 // totalSurfaceArea =  2(h × W) + 2(h × L) + 2(W × L)
 //  length l = depth(d)
 
-function getSize(w, h, d){
- const volume = w*h*d;
- const area =   2*(w*h) + 2*(h*d)  + 2*(w*d);
-return [area,volume];
-}
+// function getSize(w, h, d){
+//  const volume = w*h*d;
+//  const area =   2*(w*h) + 2*(h*d)  + 2*(w*d);
+// return [area,volume];
+// }
 
 
 
 
-console.log(getSize(4, 2, 6), 48);
-console.log(getSize(10, 10, 10), [600, 1000]);
-console.log(getSize(4, 2, 6), 88);
-console.log(getSize(4, 2, 6), 48);
+// console.log(getSize(4, 2, 6), 48);
+// console.log(getSize(10, 10, 10), [600, 1000]);
+// console.log(getSize(4, 2, 6), 88);
+// console.log(getSize(4, 2, 6), 48);
+
+
+
+// String.prototype.toAlternatingCase = function () {
+//     return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+// }
+
+String.prototype.toAlternatingCase = function () {
+    const spliting =  this.split("")
+    console.log(spliting)
+    const value =  spliting.map((spl) => {
+         return  spl === spl.toUpperCase()? spl.toLowerCase(): spl.toUpperCase()
+     })
+      console.log(value)
+         const an =   value.join('')
+           console.log(an);  
+    // .map(a => {
+    //     return a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+    }  
+
+
+
+
+
+ 
