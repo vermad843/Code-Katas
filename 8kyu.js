@@ -129,14 +129,25 @@
 
 
 // 
-function move (position, roll) {
-    let value = roll  * 2;
-    return position + value;
-  }
+// function move (position, roll) {
+//     let value = roll  * 2;
+//     return position + value;
+//   }
 
 
 
-console.log(move(0, 4), 8);
-console.log(move(3, 6), 15);
-console.log(move(2, 5), 12);
+// console.log(move(0, 4), 8);
+// console.log(move(3, 6), 15);
+// console.log(move(2, 5), 12);
+
+
+// 
+function setAlarm(employed, vacation){
+  return (employed && !vacation) ? true : false;
+}
+
+
+console.log(!setAlarm(true, true), "Should be false.");
+console.log(!setAlarm(false, true), "Should be false.");
+console.log(setAlarm(true, false), "Should be true.");
  

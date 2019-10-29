@@ -29,3 +29,5 @@
 [x]https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 
 [x]https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
+
+[x]https://www.codewars.com/kata/l1-set-alarm/train/javascript
