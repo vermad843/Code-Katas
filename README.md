@@ -27,3 +27,5 @@
 [x]https://www.codewars.com/kata/well-of-ideas-easy-version/train/javascript
 
 [x]https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
+
+[x]https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
