@@ -1,3 +1,4 @@
+
 // function basicOp(operation, value1, value2)
 // {
 //   const operations = {
@@ -25,13 +26,42 @@
 // console.log(basicOp('/', 49, 7), 7);
 
 
-function numberToString(num) {
-  return num.toString();
+// function numberToString(num) {
+//   return num.toString();
+// }
+
+
+
+// console.log(numberToString(67), '67');
+
+// // .toString() - convert number to string
+// // .toString(2) - for making value binary 
+
+
+
+
+// 
+
+// Money Money Money 
+
+
+function calculateYears(principal, interest, tax, desired) {
+   if(principal === desired) {
+     return 0 ;
+   }
+
+   let years = 0;
+   while(principal < desired) {
+     let totalInterestGained = principal * interest;
+     let totalTax = totalInterestGained * tax;
+     principal = principal + (totalInterestGained - totalTax);
+     years++;
+   }
+   return years;
 }
 
 
 
-console.log(numberToString(67), '67');
-
-// .toString() - convert number to string
-// .toString(2) - for making value binary 
+console.log(calculateYears(1000, 0.05, 0.18, 1100), 3)
+console.log(calculateYears(1000,0.01625,0.18,1200), 14)
+console.log(calculateYears(1000,0.05,0.18,1000), 0)

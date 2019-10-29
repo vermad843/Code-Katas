@@ -21,3 +21,7 @@
 [x]https://www.codewars.com/kata/alternating-case-%3C-equals-%3E-alternating-case/train/javascript
 
 [x]https://www.codewars.com/kata/my-head-is-at-the-wrong-end/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/well-of-ideas-easy-version/train/javascript
