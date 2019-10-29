@@ -59,21 +59,36 @@
 //     return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
 // }
 
-String.prototype.toAlternatingCase = function () {
-    return  this.split("")
-    .map((eachCharacter) => {
-         return  eachCharacter === eachCharacter.toUpperCase()? eachCharacter.toLowerCase(): eachCharacter.toUpperCase()
-     }).join('')
-    }
+// String.prototype.toAlternatingCase = function () {
+//     return  this.split("")
+//     .map((eachCharacter) => {
+//          return  eachCharacter === eachCharacter.toUpperCase()? eachCharacter.toLowerCase(): eachCharacter.toUpperCase()
+//      }).join('')
+//     }
     
-    console.log("hello world".toAlternatingCase(), "HELLO WORLD");
-    console.log("HELLO WORLD".toAlternatingCase(), "hello world");
-    console.log("hello WORLD".toAlternatingCase(), "HELLO world");
-    console.log("HeLLo WoRLD".toAlternatingCase(), "hEllO wOrld");
-    console.log("12345".toAlternatingCase(), "12345");
-    console.log("1a2b3c4d5e".toAlternatingCase(), "1A2B3C4D5E");
-    console.log("String.prototype.toAlternatingCase".toAlternatingCase(), "sTRING.PROTOTYPE.TOaLTERNATINGcASE");
-    console.log("Hello World".toAlternatingCase().toAlternatingCase(), "Hello World");
+//     console.log("hello world".toAlternatingCase(), "HELLO WORLD");
+//     console.log("HELLO WORLD".toAlternatingCase(), "hello world");
+//     console.log("hello WORLD".toAlternatingCase(), "HELLO world");
+//     console.log("HeLLo WoRLD".toAlternatingCase(), "hEllO wOrld");
+//     console.log("12345".toAlternatingCase(), "12345");
+//     console.log("1a2b3c4d5e".toAlternatingCase(), "1A2B3C4D5E");
+//     console.log("String.prototype.toAlternatingCase".toAlternatingCase(), "sTRING.PROTOTYPE.TOaLTERNATINGcASE");
+//     console.log("Hello World".toAlternatingCase().toAlternatingCase(), "Hello World");
+
+
+
+
+function fixTheMeerkat(arr) {
+  return  arr.reverse();
+}
+
+
+
+console.log(fixTheMeerkat(["tail", "body", "head"]), ["head", "body", "tail"]);
+console.log(fixTheMeerkat(["tails", "body", "heads"]), ["heads", "body", "tails"]);
+console.log(fixTheMeerkat(["bottom", "middle", "top"]), ["top", "middle", "bottom"]);
+console.log(fixTheMeerkat(["lower legs", "torso", "upper legs"]), ["upper legs", "torso", "lower legs"]);
+console.log(fixTheMeerkat(["ground", "rainbow", "sky"]), ["sky", "rainbow", "ground"]);
 
 
 
