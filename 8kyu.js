@@ -92,29 +92,38 @@
 
 
 
-function well(x){
-    const arr = x.filter((arrValue) => {
-        if( arrValue == 'good') {
-            return arrValue;
-        }
-    }) ;
-    if(arr.length == 0){
-        return 'Fail!';
-    }
-    if(arr.length >= 3) {
-        return 'I smell a series!';
-    }else {
-        return 'Publish!'
-    }
+// function well(x){
+//     const arr = x.filter((arrValue) => {
+//         if( arrValue == 'good') {
+//             return arrValue;
+//         }
+//     }) ;
+//     if(arr.length == 0){
+//         return 'Fail!';
+//     }
+//     if(arr.length >= 3) {
+//         return 'I smell a series!';
+//     }else {
+//         return 'Publish!'
+//     }
+//   }
+  
+//   // arr is a array of only 'good' string inside; 
+  
+  
+//   console.log(well(['bad', 'bad', 'bad']), 'Fail!');
+//   console.log(well(['good', 'bad', 'bad', 'bad', 'bad']), 'Publish!');
+//   console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']), 'I smell a series!');
+  
+
+
+// 
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return  (laLigaGoals + copaDelReyGoals + championsLeagueGoals);
   }
-  
-  // arr is a array of only 'good' string inside; 
-  
-  
-  console.log(well(['bad', 'bad', 'bad']), 'Fail!');
-  console.log(well(['good', 'bad', 'bad', 'bad', 'bad']), 'Publish!');
-  console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']), 'I smell a series!');
-  
 
 
+
+console.log(goals(0,0,0), 0)
+console.log(goals(43, 10, 5), 58)
  
