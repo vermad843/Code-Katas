@@ -142,12 +142,34 @@
 
 
 // 
-function setAlarm(employed, vacation){
-  return (employed && !vacation) ? true : false;
-}
+// function setAlarm(employed, vacation){
+//   return (employed && !vacation) ? true : false;
+// }
 
 
-console.log(!setAlarm(true, true), "Should be false.");
-console.log(!setAlarm(false, true), "Should be false.");
-console.log(setAlarm(true, false), "Should be true.");
+// console.log(!setAlarm(true, true), "Should be false.");
+// console.log(!setAlarm(false, true), "Should be false.");
+// console.log(setAlarm(true, false), "Should be true.");
  
+
+
+//  
+
+function century(year) {
+    let oneCentury = 100;
+    let noOfYears = year % oneCentury;
+    if(noOfYears == 0) {
+        return  year/oneCentury;
+    }else {
+        return Math.floor(year/oneCentury + 1)
+    }
+  }
+
+
+
+
+console.log(century(1705), 18, 'Testing for year 1705');
+console.log(century(1900), 19, 'Testing for year 1900');
+console.log(century(1601), 17, 'Testing for year 1601');
+console.log(century(2000), 20, 'Testing for year 2000');
+console.log(century(89), 1, 'Testing for year 89');

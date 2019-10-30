@@ -31,3 +31,12 @@
 [x]https://www.codewars.com/kata/grasshopper-terminal-game-move-function/train/javascript
 
 [x]https://www.codewars.com/kata/l1-set-alarm/train/javascript
+
+
+
+
+
+
+
+
+[x]https://www.codewars.com/kata/century-from-year/train/javascript
