@@ -176,13 +176,32 @@
 
 
 // 
-function even_or_odd(number) {
-    return number % 2 == 0 ? 'Even' : 'Odd';
-  }
+// function even_or_odd(number) {
+//     return number % 2 == 0 ? 'Even' : 'Odd';
+//   }
 
 
 
-console.log(even_or_odd(2), "Even")
-console.log(even_or_odd(0), "Even")
-console.log(even_or_odd(7), "Odd")
-console.log(even_or_odd(1), "Odd")
+// console.log(even_or_odd(2), "Even")
+// console.log(even_or_odd(0), "Even")
+// console.log(even_or_odd(7), "Odd")
+// console.log(even_or_odd(1), "Odd")
+
+
+function sumOfDifferences(arr) {
+     let lengthOfAnArray = arr.length;
+     console.log(lengthOfAnArray);
+     if(lengthOfAnArray <= 0) {
+         return 0;
+     } else {
+         return Math.max(...arr) - Math.min(...arr)
+     }
+}
+
+
+
+console.log(sumOfDifferences([1, 2, 10]), 9);
+console.log(sumOfDifferences([-3, -2, -1]), 2);
+console.log(sumOfDifferences([]), 0);
+
+
