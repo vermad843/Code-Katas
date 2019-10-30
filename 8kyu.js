@@ -284,16 +284,30 @@
 
 
 // 
-function greet (name, owner) {
-return name === owner ? 'Hello boss' : 'Hello guest';
+// function greet (name, owner) {
+// return name === owner ? 'Hello boss' : 'Hello guest';
+// }
+
+// console.log(greet('Daniel', 'Daniel'), 'Hello boss')
+// console.log(greet('Greg', 'Daniel'), 'Hello guest')
+
+
+
+function howManyDalmatians(number){
+
+    let dogs = ["Hardly any", "More than a handful!", "Woah that's a lot of dogs!", "101 DALMATIANS!!!"];
+               
+     let respond = number <= 10 ? dogs[0] :  (number <= 50 ? dogs[1] : (number == 101 ? dogs[3] : dogs[2]));
+    
+  return respond;
 }
-
-console.log(greet('Daniel', 'Daniel'), 'Hello boss')
-console.log(greet('Greg', 'Daniel'), 'Hello guest')
+  
 
 
 
-
-
-
-
+console.log(howManyDalmatians(26), "More than a handful!");
+console.log(howManyDalmatians(8), "Hardly any");
+console.log(howManyDalmatians(14), "More than a handful!");
+console.log(howManyDalmatians(80), "Woah that's a lot of dogs!");
+console.log(howManyDalmatians(100), "Woah that's a lot of dogs!");
+console.log(howManyDalmatians(101), "101 DALMATIANS!!!");

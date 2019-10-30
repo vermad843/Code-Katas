@@ -60,3 +60,6 @@
 
 
 [x]https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript
+
+
+[x]https://www.codewars.com/kata/101-dalmatians-squash-the-bugs-not-the-dogs/train/javascript
