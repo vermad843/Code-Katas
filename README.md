@@ -63,3 +63,6 @@
 
 
 [x]https://www.codewars.com/kata/101-dalmatians-squash-the-bugs-not-the-dogs/train/javascript
+
+
+[x]https://www.codewars.com/kata/grasshopper-summation/train/javascript
