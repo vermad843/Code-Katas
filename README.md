@@ -40,3 +40,5 @@
 
 
 [x]https://www.codewars.com/kata/century-from-year/train/javascript
+
+[x]https://www.codewars.com/kata/even-or-odd/train/javascript
