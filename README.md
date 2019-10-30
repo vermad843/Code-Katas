@@ -46,3 +46,5 @@
 [x]https://www.codewars.com/kata/sum-of-differences-in-array/train/javascript
 
 [x]https://www.codewars.com/kata/grasshopper-terminal-game-combat-function-1/train/javascript
+
+[x]https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript

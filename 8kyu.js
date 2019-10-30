@@ -205,13 +205,41 @@
 // console.log(sumOfDifferences([]), 0);
 
 
-function combat(health, damage) {
-     let finalHealth = health - damage ;
-     return finalHealth > 0 ? finalHealth : 0
-  }
+// function combat(health, damage) {
+//      let finalHealth = health - damage ;
+//      return finalHealth > 0 ? finalHealth : 0
+//   }
 
-console.log(combat(100, 5), 95);
-console.log(combat(92, 8), 84);
-console.log(combat(20, 30), 0, "Health cannot go below 0");
+// console.log(combat(100, 5), 95);
+// console.log(combat(92, 8), 84);
+// console.log(combat(20, 30), 0, "Health cannot go below 0");
+
+
+
+   
+
+//     function firstNonConsecutive(arr) {
+//         for (let i = 0; i < arr.length - 1; ++i) {
+//           if (arr[i] + 1 !== arr[i + 1]) {
+//             return arr[i + 1]
+//           }
+//         }
+//         return null  
+//   }
+
+
+function firstNonConsecutive(arr) {
+    for (let i = 0; i < arr.length - 1; ++i) {
+        if (arr[i] + 1 !== arr[i + 1]) {
+          return arr[i + 1]
+        }
+      }
+      return null  
+}
+
+
+
+const first = firstNonConsecutive([1,2,3,4,6,7,8])
+console.log(first, 6)
 
 
