@@ -228,18 +228,30 @@
 //   }
 
 
-function firstNonConsecutive(arr) {
-    for (let i = 0; i < arr.length - 1; ++i) {
-        if (arr[i] + 1 !== arr[i + 1]) {
-          return arr[i + 1]
-        }
-      }
-      return null  
-}
+// function firstNonConsecutive(arr) {
+//     for (let i = 0; i < arr.length - 1; ++i) {
+//         if (arr[i] + 1 !== arr[i + 1]) {
+//           return arr[i + 1]
+//         }
+//       }
+//       return null  
+// }
 
 
 
-const first = firstNonConsecutive([1,2,3,4,6,7,8])
-console.log(first, 6)
+// const first = firstNonConsecutive([1,2,3,4,6,7,8])
+// console.log(first, 6)
 
 
+
+function otherAngle(a, b) {
+     total = 180;
+     return total - (a + b);
+  }
+
+
+
+console.log(otherAngle(30, 60), 90);
+console.log(otherAngle(60, 60), 60);
+console.log(otherAngle(43, 78), 59);
+console.log(otherAngle(10, 20), 150);
