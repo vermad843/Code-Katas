@@ -67,3 +67,11 @@
 // console.log(calculateYears(1000,0.05,0.18,1000), 0)
 
 
+
+function solution(str, ending){
+  return str.endsWith(ending);
+}
+
+
+console.log(solution('abcde', 'cde'), true)
+console.log(solution('abcde', 'abc'), false)
