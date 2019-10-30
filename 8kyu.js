@@ -244,14 +244,48 @@
 
 
 
-function otherAngle(a, b) {
-     total = 180;
-     return total - (a + b);
+// function otherAngle(a, b) {
+//      total = 180;
+//      return total - (a + b);
+//   }
+
+
+
+// console.log(otherAngle(30, 60), 90);
+// console.log(otherAngle(60, 60), 60);
+// console.log(otherAngle(43, 78), 59);
+// console.log(otherAngle(10, 20), 150);
+
+// function betterThanAverage(classPoints, yourPoints) {
+//     return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+//   }
+
+
+function betterThanAverage(classPoints, yourPoints) {
+  const classPointsSum =  classPoints.reduce((a ,b)  => {
+      return a + b ;
+  }, 0);
+  const  points  = classPointsSum + yourPoints;
+  const Average = points/classPoints.length 
+  if(Average<= yourPoints) {
+      return true;
+  } else {
+      return false;
   }
+}
 
 
 
-console.log(otherAngle(30, 60), 90);
-console.log(otherAngle(60, 60), 60);
-console.log(otherAngle(43, 78), 59);
-console.log(otherAngle(10, 20), 150);
+console.log(betterThanAverage([2, 3], 5), true);
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true);
+console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9), false);
+
+
+
+
+
+
+
+
+
+

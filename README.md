@@ -50,3 +50,5 @@
 [x]https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
 [x]https://www.codewars.com/kata/third-angle-of-a-triangle/train/javascript
+
+[x]https://www.codewars.com/kata/how-good-are-you-really/train/javascript
