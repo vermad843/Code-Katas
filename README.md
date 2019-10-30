@@ -52,3 +52,11 @@
 [x]https://www.codewars.com/kata/third-angle-of-a-triangle/train/javascript
 
 [x]https://www.codewars.com/kata/how-good-are-you-really/train/javascript
+
+
+
+
+
+
+
+[x]https://www.codewars.com/kata/grasshopper-personalized-message/train/javascript

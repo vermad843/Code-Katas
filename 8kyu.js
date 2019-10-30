@@ -261,27 +261,35 @@
 //   }
 
 
-function betterThanAverage(classPoints, yourPoints) {
-  const classPointsSum =  classPoints.reduce((a ,b)  => {
-      return a + b ;
-  }, 0);
-  const  points  = classPointsSum + yourPoints;
-  const Average = points/classPoints.length 
-  if(Average<= yourPoints) {
-      return true;
-  } else {
-      return false;
-  }
+// function betterThanAverage(classPoints, yourPoints) {
+//   const classPointsSum =  classPoints.reduce((a ,b)  => {
+//       return a + b ;
+//   }, 0);
+//   const  points  = classPointsSum + yourPoints;
+//   const Average = points/classPoints.length 
+//   if(Average<= yourPoints) {
+//       return true;
+//   } else {
+//       return false;
+//   }
+// }
+
+
+
+// console.log(betterThanAverage([2, 3], 5), true);
+// console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true);
+// console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9), false);
+
+
+
+
+// 
+function greet (name, owner) {
+return name === owner ? 'Hello boss' : 'Hello guest';
 }
 
-
-
-console.log(betterThanAverage([2, 3], 5), true);
-console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true);
-console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9), false);
-
-
-
+console.log(greet('Daniel', 'Daniel'), 'Hello boss')
+console.log(greet('Greg', 'Daniel'), 'Hello guest')
 
 
 
