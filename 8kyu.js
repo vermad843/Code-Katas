@@ -188,20 +188,30 @@
 // console.log(even_or_odd(1), "Odd")
 
 
-function sumOfDifferences(arr) {
-     let lengthOfAnArray = arr.length;
-     console.log(lengthOfAnArray);
-     if(lengthOfAnArray <= 0) {
-         return 0;
-     } else {
-         return Math.max(...arr) - Math.min(...arr)
-     }
-}
+// function sumOfDifferences(arr) {
+//      let lengthOfAnArray = arr.length;
+//      console.log(lengthOfAnArray);
+//      if(lengthOfAnArray <= 0) {
+//          return 0;
+//      } else {
+//          return Math.max(...arr) - Math.min(...arr)
+//      }
+// }
 
 
 
-console.log(sumOfDifferences([1, 2, 10]), 9);
-console.log(sumOfDifferences([-3, -2, -1]), 2);
-console.log(sumOfDifferences([]), 0);
+// console.log(sumOfDifferences([1, 2, 10]), 9);
+// console.log(sumOfDifferences([-3, -2, -1]), 2);
+// console.log(sumOfDifferences([]), 0);
+
+
+function combat(health, damage) {
+     let finalHealth = health - damage ;
+     return finalHealth > 0 ? finalHealth : 0
+  }
+
+console.log(combat(100, 5), 95);
+console.log(combat(92, 8), 84);
+console.log(combat(20, 30), 0, "Health cannot go below 0");
 
 

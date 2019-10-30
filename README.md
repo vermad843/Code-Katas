@@ -44,3 +44,5 @@
 [x]https://www.codewars.com/kata/even-or-odd/train/javascript
 
 [x]https://www.codewars.com/kata/sum-of-differences-in-array/train/javascript
+
+[x]https://www.codewars.com/kata/grasshopper-terminal-game-combat-function-1/train/javascript
