@@ -76,3 +76,6 @@
 
 
 [x]https://www.codewars.com/kata/students-final-grade/train/javascript
+
+
+[x]https://www.codewars.com/kata/count-the-monkeys/train/javascript

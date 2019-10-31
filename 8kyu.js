@@ -372,27 +372,50 @@
 
 // 
 
-function finalGrade (exam, projects) {
-    if(exam > 90 || projects > 10) {
-      return 100;
-    }else if(exam > 75 && projects >= 5){
-      return 90;
-    }else if(exam > 50 && projects >= 2) {
-     return 75
-    }else {
-      return 0;
-    }  
-}
+// function finalGrade (exam, projects) {
+//     if(exam > 90 || projects > 10) {
+//       return 100;
+//     }else if(exam > 75 && projects >= 5){
+//       return 90;
+//     }else if(exam > 50 && projects >= 2) {
+//      return 75
+//     }else {
+//       return 0;
+//     }  
+// }
 
 
 
 
-console.log(finalGrade(100, 12), 100);
-console.log(finalGrade(85, 5), 90);
-console.log(finalGrade(100, 12),100);  // 100
-console.log(finalGrade(99, 0), 100);    // 100
-console.log(finalGrade(10, 15), 100);   // 100
-console.log(finalGrade(85, 5), 90);    // 90
-console.log(finalGrade(55, 3), 75);    // 75
-console.log(finalGrade(55, 0), 0);    // 0
-console.log(finalGrade(20, 2), 0);    // 0
+// console.log(finalGrade(100, 12), 100);
+// console.log(finalGrade(85, 5), 90);
+// console.log(finalGrade(100, 12),100);  // 100
+// console.log(finalGrade(99, 0), 100);    // 100
+// console.log(finalGrade(10, 15), 100);   // 100
+// console.log(finalGrade(85, 5), 90);    // 90
+// console.log(finalGrade(55, 3), 75);    // 75
+// console.log(finalGrade(55, 0), 0);    // 0
+// console.log(finalGrade(20, 2), 0);    // 
+
+
+
+function monkeyCount(n) {
+     let monkeys = [];
+     for (let i = 1; i < n+1; i++) {
+         const  array  =  i;
+         monkeys.push(array);
+     }
+     return monkeys;
+    }
+
+ 
+
+
+
+
+
+  console.log((monkeyCount(5)), [1, 2, 3, 4, 5]);
+  console.log((monkeyCount(3)), [1, 2, 3]);
+  console.log((monkeyCount(9)), [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+  console.log((monkeyCount(10)), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  console.log((monkeyCount(20)), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
