@@ -99,3 +99,5 @@
 
 
 [x]https://www.codewars.com/kata/enumerable-magic-number-25-take-the-first-n-elements/train/javascript
+
+[x]https://www.codewars.com/kata/expressions-matter/train/javascript
