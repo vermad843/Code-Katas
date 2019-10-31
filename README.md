@@ -79,3 +79,6 @@
 
 
 [x]https://www.codewars.com/kata/count-the-monkeys/train/javascript
+
+
+[x]https://www.codewars.com/kata/8kyu-interpreters-hq9-plus/train/javascript
