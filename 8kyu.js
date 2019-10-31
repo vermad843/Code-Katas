@@ -315,16 +315,38 @@
 
 
 
-const summation = function (num) {
+// const summation = function (num) {
 
-    let output = 0;
-    for (let i = 1; i <= num; i++) {
-      value =   i;
-      output+=value;
-    }
+//     let output = 0;
+//     for (let i = 1; i <= num; i++) {
+//       value =   i;
+//       output+=value;
+//     }
     
-    return output;
+//     return output;
+// }
+
+// console.log(summation(1), 1)
+// console.log(summation(8), 36)
+
+
+
+
+
+// 
+
+function countSheeps(sheep) {
+   let noOfSheeps = sheep.filter(Boolean).length;
+   return noOfSheeps;
 }
 
-console.log(summation(1), 1)
-console.log(summation(8), 36)
+
+
+var array1 = [true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true ];
+  
+console.log(countSheeps(array1) == 17, "There are 17 sheeps in total")

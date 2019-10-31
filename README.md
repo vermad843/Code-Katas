@@ -66,3 +66,7 @@
 
 
 [x]https://www.codewars.com/kata/grasshopper-summation/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/counting-sheep-dot-dot-dot/train/javascript
