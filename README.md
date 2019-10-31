@@ -73,3 +73,6 @@
 
 
 [x]https://www.codewars.com/kata/simple-fun-number-1-seats-in-theater/train/javascript
+
+
+[x]https://www.codewars.com/kata/students-final-grade/train/javascript

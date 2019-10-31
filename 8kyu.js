@@ -354,16 +354,45 @@
 
 // 
 
-function seatsInTheater(nCols, nRows, col, row) {
-   let myNewCol = col - 1
-   noOfRowsAndColsYouHaveToPass =(nCols - myNewCol ) * (nRows - row);
-   return noOfRowsAndColsYouHaveToPass; 
+// function seatsInTheater(nCols, nRows, col, row) {
+//    let myNewCol = col - 1
+//    noOfRowsAndColsYouHaveToPass =(nCols - myNewCol ) * (nRows - row);
+//    return noOfRowsAndColsYouHaveToPass; 
+// }
+
+
+//   //  nCols = 16, nRows = 11, col = 5 and row = 3,
+// console.log(seatsInTheater(16,11,5,3) , 96)
+// console.log(seatsInTheater(1,1,1,1) , 0)
+// console.log(seatsInTheater(13,6,8,3) , 18)
+// console.log(seatsInTheater(60,100,60,1) , 99)
+// console.log(seatsInTheater(1000,1000,1000,1000) , 0)
+
+
+
+// 
+
+function finalGrade (exam, projects) {
+    if(exam > 90 || projects > 10) {
+      return 100;
+    }else if(exam > 75 && projects >= 5){
+      return 90;
+    }else if(exam > 50 && projects >= 2) {
+     return 75
+    }else {
+      return 0;
+    }  
 }
 
 
-  //  nCols = 16, nRows = 11, col = 5 and row = 3,
-console.log(seatsInTheater(16,11,5,3) , 96)
-console.log(seatsInTheater(1,1,1,1) , 0)
-console.log(seatsInTheater(13,6,8,3) , 18)
-console.log(seatsInTheater(60,100,60,1) , 99)
-console.log(seatsInTheater(1000,1000,1000,1000) , 0)
+
+
+console.log(finalGrade(100, 12), 100);
+console.log(finalGrade(85, 5), 90);
+console.log(finalGrade(100, 12),100);  // 100
+console.log(finalGrade(99, 0), 100);    // 100
+console.log(finalGrade(10, 15), 100);   // 100
+console.log(finalGrade(85, 5), 90);    // 90
+console.log(finalGrade(55, 3), 75);    // 75
+console.log(finalGrade(55, 0), 0);    // 0
+console.log(finalGrade(20, 2), 0);    // 0
