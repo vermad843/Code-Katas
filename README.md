@@ -82,3 +82,6 @@
 
 
 [x]https://www.codewars.com/kata/8kyu-interpreters-hq9-plus/train/javascript
+
+
+[x]https://www.codewars.com/kata/a-needle-in-the-haystack/train/javascript
