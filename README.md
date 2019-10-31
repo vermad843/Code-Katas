@@ -70,3 +70,6 @@
 
 
 [x]https://www.codewars.com/kata/counting-sheep-dot-dot-dot/train/javascript
+
+
+[x]https://www.codewars.com/kata/simple-fun-number-1-seats-in-theater/train/javascript

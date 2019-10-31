@@ -335,18 +335,35 @@
 
 // 
 
-function countSheeps(sheep) {
-   let noOfSheeps = sheep.filter(Boolean).length;
-   return noOfSheeps;
+// function countSheeps(sheep) {
+//    let noOfSheeps = sheep.filter(Boolean).length;
+//    return noOfSheeps;
+// }
+
+
+
+// var array1 = [true,  true,  true,  false,
+//   true,  true,  true,  true ,
+//   true,  false, true,  false,
+//   true,  false, false, true ,
+//   true,  true,  true,  true ,
+//   false, false, true,  true ];
+  
+// console.log(countSheeps(array1) == 17, "There are 17 sheeps in total")
+
+
+// 
+
+function seatsInTheater(nCols, nRows, col, row) {
+   let myNewCol = col - 1
+   noOfRowsAndColsYouHaveToPass =(nCols - myNewCol ) * (nRows - row);
+   return noOfRowsAndColsYouHaveToPass; 
 }
 
 
-
-var array1 = [true,  true,  true,  false,
-  true,  true,  true,  true ,
-  true,  false, true,  false,
-  true,  false, false, true ,
-  true,  true,  true,  true ,
-  false, false, true,  true ];
-  
-console.log(countSheeps(array1) == 17, "There are 17 sheeps in total")
+  //  nCols = 16, nRows = 11, col = 5 and row = 3,
+console.log(seatsInTheater(16,11,5,3) , 96)
+console.log(seatsInTheater(1,1,1,1) , 0)
+console.log(seatsInTheater(13,6,8,3) , 18)
+console.log(seatsInTheater(60,100,60,1) , 99)
+console.log(seatsInTheater(1000,1000,1000,1000) , 0)
