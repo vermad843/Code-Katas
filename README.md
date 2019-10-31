@@ -69,6 +69,7 @@
 
 
 
+//
 [x]https://www.codewars.com/kata/counting-sheep-dot-dot-dot/train/javascript
 
 
@@ -85,3 +86,10 @@
 
 
 [x]https://www.codewars.com/kata/a-needle-in-the-haystack/train/javascript
+
+
+
+
+ <!--  -->
+
+[x]https://www.codewars.com/kata/grasshopper-check-for-factor/train/javascript
