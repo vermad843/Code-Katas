@@ -566,23 +566,38 @@
 
 
 // ((P-1)! + 1) / (P * P)
-function amIWilson(p) {
-let factorial = p - 1;
-      for (i = factorial; i > 1; i--) {
-    factorial = factorial * (i - 1)
-   }
-     let wilson = (factorial + 1) / (p * p);
-     if (wilson % 1 === 0) {
-       return true;
-     } else {
-       return false;
-     }
-}
+// function amIWilson(p) {
+// let factorial = p - 1;
+//       for (i = factorial; i > 1; i--) {
+//     factorial = factorial * (i - 1)
+//    }
+//      let wilson = (factorial + 1) / (p * p);
+//      if (wilson % 1 === 0) {
+//        return true;
+//      } else {
+//        return false;
+//      }
+// }
   
 
 
 
 
-console.log(amIWilson(5), true)
-console.log(amIWilson(9), false)
-console.log(amIWilson(6), false)
+// console.log(amIWilson(5), true)
+// console.log(amIWilson(9), false)
+// console.log(amIWilson(6), false)
+
+
+// 
+function integrate(coefficient, exponent) {
+ let newExponent = exponent + 1;
+ return `${coefficient/newExponent}x^${newExponent}`;
+}
+
+
+
+console.log(integrate(3,2), "1x^3");
+console.log(integrate(12,5), "2x^6");
+console.log(integrate(20,1), "10x^2")
+console.log(integrate(40,3), "10x^4")
+console.log(integrate(90,2), "30x^3")
