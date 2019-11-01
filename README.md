@@ -130,3 +130,6 @@
 
 
 [x]https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/javascript
+
+
+[x]https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no/train/javascript

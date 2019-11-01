@@ -687,31 +687,41 @@
 // 
 
 
-function countPositivesSumNegatives(input) {
-   return input && input.length ?
-    [ input.filter((num) => {
-       return num > 0
-   }).length,
-    input.filter((num) => {
-       return num < 0
-   }).reduce((sum , n) => {
-     sum+=n
-    return sum      
-   },0)]
-   : []
-}
+// function countPositivesSumNegatives(input) {
+//    return input && input.length ?
+//     [ input.filter((num) => {
+//        return num > 0
+//    }).length,
+//     input.filter((num) => {
+//        return num < 0
+//    }).reduce((sum , n) => {
+//      sum+=n
+//     return sum      
+//    },0)]
+//    : []
+// }
 
 
 
 
-let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
-let actual = countPositivesSumNegatives(testData);
-let expected = [10, -65];
+// let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+// let actual = countPositivesSumNegatives(testData);
+// let expected = [10, -65];
 
-console.log(actual[0] == expected[0] && actual[1] == expected[1], "Wrong return value.");
+// console.log(actual[0] == expected[0] && actual[1] == expected[1], "Wrong return value.");
 
-testData = [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14];
-actual = countPositivesSumNegatives(testData);
-expected = [8, -50];
+// testData = [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14];
+// actual = countPositivesSumNegatives(testData);
+// expected = [8, -50];
 
-console.log(actual[0] == expected[0] && actual[1] == expected[1], "Wrong return value.");
+// console.log(actual[0] == expected[0] && actual[1] == expected[1], "Wrong return value.");
+
+
+// 
+
+function boolToWord( boolean ){
+   return boolean ? 'Yes' : 'No'
+  }
+
+console.log(boolToWord(true), 'Yes')
+console.log(boolToWord(false), 'No')
