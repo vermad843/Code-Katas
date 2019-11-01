@@ -730,17 +730,28 @@
 
 // 
 
-function enough(cap, on, wait) {
-    let excessPassengers =   Math.abs(wait + on - cap);
-    let totalPassengers = wait + on;
-    if(cap > totalPassengers) {
-        return 0
-    }else {
-        return excessPassengers
-    } 
+// function enough(cap, on, wait) {
+//     let excessPassengers =   Math.abs(wait + on - cap);
+//     let totalPassengers = wait + on;
+//     if(cap > totalPassengers) {
+//         return 0
+//     }else {
+//         return excessPassengers
+//     } 
+// }
+
+
+// console.log(enough(10, 5, 5), 0);
+// console.log(enough(100, 60, 50), 10);
+// console.log(enough(20, 5, 5), 10);
+
+
+
+// 
+
+
+function makeNegative(num) {
+ return - Math.abs(num);
 }
 
-
-console.log(enough(10, 5, 5), 0);
-console.log(enough(100, 60, 50), 10);
-console.log(enough(20, 5, 5), 10);
+console.log(makeNegative(42), -42);

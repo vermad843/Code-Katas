@@ -134,4 +134,7 @@
 
 [x]https://www.codewars.com/kata/convert-boolean-values-to-strings-yes-or-no/train/javascript
 
-[x]https://www.codewars.com/kata/will-there-be-enough-space/train/javascript
+[x]https://www.codewars.com/kata/will-there-be-enough-space/train/javascript]
+
+
+[x]https://www.codewars.com/kata/return-negative/train/javascript
