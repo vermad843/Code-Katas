@@ -632,18 +632,36 @@
 
 
 //
-function correct(string){
-    let regex1 = /5/gi;
-    let regex2 = /0/gi;
-    let regex3 = /1/gi;
-  return string.replace(regex1,'S').replace(regex2, 'O').replace(regex3, 'I');  
-}
-// S is misinterpreted as 5
-// O is misinterpreted as 0
-// I is misinterpreted as 1
+// function correct(string){
+//     let regex1 = /5/gi;
+//     let regex2 = /0/gi;
+//     let regex3 = /1/gi;
+//   return string.replace(regex1,'S').replace(regex2, 'O').replace(regex3, 'I');  
+// }
+// // S is misinterpreted as 5
+// // O is misinterpreted as 0
+// // I is misinterpreted as 1
 
-console.log(correct("L0ND0N"),"LONDON");
-console.log(correct("DUBL1N"),"DUBLIN");
-console.log(correct("51NGAP0RE"),"SINGAPORE");
-console.log(correct("BUDAPE5T"),"BUDAPEST");
-console.log(correct("PAR15"),"PARIS");
+// console.log(correct("L0ND0N"),"LONDON");
+// console.log(correct("DUBL1N"),"DUBLIN");
+// console.log(correct("51NGAP0RE"),"SINGAPORE");
+// console.log(correct("BUDAPE5T"),"BUDAPEST");
+// console.log(correct("PAR15"),"PARIS");
+
+
+
+// 
+
+function abbrevName(name){
+ return name.split(' ').map((letter) => {
+     return letter[0].toUpperCase();
+ }).join('.')
+};
+   
+
+
+console.log(abbrevName("Sam Harris"), "S.H");
+console.log(abbrevName("Patrick Feenan"), "P.F");
+console.log(abbrevName("Evan Cole"), "E.C");
+console.log(abbrevName("P Favuzzi"), "P.F");
+console.log(abbrevName("David Mendieta"), "D.M");
