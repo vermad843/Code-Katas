@@ -669,16 +669,49 @@
 
 //
 
-function divisibleBy(numbers, divisor){
-  return numbers.filter((num) => {
-      return num % divisor == 0;
-  })
+// function divisibleBy(numbers, divisor){
+//   return numbers.filter((num) => {
+//       return num % divisor == 0;
+//   })
+// }
+
+
+
+// console.log(divisibleBy([1,2,3,4,5,6], 2), [2,4,6]);
+// console.log(divisibleBy([1,2,3,4,5,6], 3), [3,6]);
+// console.log(divisibleBy([0,1,2,3,4,5,6], 4), [0,4]);
+// console.log(divisibleBy([0], 4), [0]);
+// console.log(divisibleBy([1,3,5], 2), []);
+
+
+// 
+
+
+function countPositivesSumNegatives(input) {
+   return input && input.length ?
+    [ input.filter((num) => {
+       return num > 0
+   }).length,
+    input.filter((num) => {
+       return num < 0
+   }).reduce((sum , n) => {
+     sum+=n
+    return sum      
+   },0)]
+   : []
 }
 
 
 
-console.log(divisibleBy([1,2,3,4,5,6], 2), [2,4,6]);
-console.log(divisibleBy([1,2,3,4,5,6], 3), [3,6]);
-console.log(divisibleBy([0,1,2,3,4,5,6], 4), [0,4]);
-console.log(divisibleBy([0], 4), [0]);
-console.log(divisibleBy([1,3,5], 2), []);
+
+let testData = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+let actual = countPositivesSumNegatives(testData);
+let expected = [10, -65];
+
+console.log(actual[0] == expected[0] && actual[1] == expected[1], "Wrong return value.");
+
+testData = [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14];
+actual = countPositivesSumNegatives(testData);
+expected = [8, -50];
+
+console.log(actual[0] == expected[0] && actual[1] == expected[1], "Wrong return value.");

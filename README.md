@@ -127,3 +127,6 @@
 
 
 [x]https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript
+
+
+[x]https://www.codewars.com/kata/count-of-positives-slash-sum-of-negatives/train/javascript
