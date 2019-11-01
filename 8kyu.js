@@ -750,8 +750,27 @@
 // 
 
 
-function makeNegative(num) {
- return - Math.abs(num);
+// function makeNegative(num) {
+//  return - Math.abs(num);
+// }
+
+// console.log(makeNegative(42), -42);
+
+
+// 
+
+
+function elevator(left, right, call){
+   let a =  Math.abs(call - left );
+   console.log(a);//0 , 1, 2, 0, 1
+   let b =  Math.abs(call - right );
+   console.log(b);//1, 0, 1, 0, 1
+   return  Math.abs(call - left ) < Math.abs(call - right ) ? 'left' : 'right'; 
 }
 
-console.log(makeNegative(42), -42);
+
+console.log(elevator(0,1,0), 'left');
+console.log(elevator(0,1,1), 'right');
+console.log(elevator(0,1,2), 'right');
+console.log(elevator(0,0,0), 'right');
+console.log(elevator(0,2,1), 'right');
