@@ -618,14 +618,32 @@
 
 
 // 
-function findDifference([i,j,k],[m,n,o]) {
-   return Math.abs(i*j*k - m*n*o); 
+// function findDifference([i,j,k],[m,n,o]) {
+//    return Math.abs(i*j*k - m*n*o); 
+// }
+
+
+
+// console.log(findDifference([3, 2, 5], [1, 4, 4]), 14);
+// console.log(findDifference([9, 7, 2], [5, 2, 2]), 106);
+// console.log(findDifference([11, 2, 5], [1, 10, 8]), 30);
+// console.log(findDifference([4, 4, 7], [3, 9, 3]), 31);
+// console.log(findDifference([15, 20, 25], [10, 30, 25]), 0);
+
+
+//
+function correct(string){
+    let regex1 = /5/gi;
+    let regex2 = /0/gi;
+    let regex3 = /1/gi;
+  return string.replace(regex1,'S').replace(regex2, 'O').replace(regex3, 'I');  
 }
+// S is misinterpreted as 5
+// O is misinterpreted as 0
+// I is misinterpreted as 1
 
-
-
-console.log(findDifference([3, 2, 5], [1, 4, 4]), 14);
-console.log(findDifference([9, 7, 2], [5, 2, 2]), 106);
-console.log(findDifference([11, 2, 5], [1, 10, 8]), 30);
-console.log(findDifference([4, 4, 7], [3, 9, 3]), 31);
-console.log(findDifference([15, 20, 25], [10, 30, 25]), 0);
+console.log(correct("L0ND0N"),"LONDON");
+console.log(correct("DUBL1N"),"DUBLIN");
+console.log(correct("51NGAP0RE"),"SINGAPORE");
+console.log(correct("BUDAPE5T"),"BUDAPEST");
+console.log(correct("PAR15"),"PARIS");
