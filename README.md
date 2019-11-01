@@ -144,3 +144,7 @@
 
 
 [x]https://www.codewars.com/kata/total-amount-of-points/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/how-many-lightsabers-do-you-own/train/javascript
