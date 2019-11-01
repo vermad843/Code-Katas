@@ -719,9 +719,28 @@
 
 // 
 
-function boolToWord( boolean ){
-   return boolean ? 'Yes' : 'No'
-  }
+// function boolToWord( boolean ){
+//    return boolean ? 'Yes' : 'No'
+//   }
 
-console.log(boolToWord(true), 'Yes')
-console.log(boolToWord(false), 'No')
+// console.log(boolToWord(true), 'Yes')
+// console.log(boolToWord(false), 'No')
+
+
+
+// 
+
+function enough(cap, on, wait) {
+    let excessPassengers =   Math.abs(wait + on - cap);
+    let totalPassengers = wait + on;
+    if(cap > totalPassengers) {
+        return 0
+    }else {
+        return excessPassengers
+    } 
+}
+
+
+console.log(enough(10, 5, 5), 0);
+console.log(enough(100, 60, 50), 10);
+console.log(enough(20, 5, 5), 10);
