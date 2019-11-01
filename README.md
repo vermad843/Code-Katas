@@ -112,3 +112,5 @@
 <!--  -->
 
 [x]https://www.codewars.com/kata/sum-mixed-array/train/javascript
+
+[x]https://www.codewars.com/kata/wilson-primes/train/javascript

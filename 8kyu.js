@@ -550,15 +550,39 @@
 
 
 // 
-function sumMix(x){
-  return x.reduce((sum, num) => {
-      sum+= parseInt(num)
-      return sum
-  }, 0);
+// function sumMix(x){
+//   return x.reduce((sum, num) => {
+//       sum+= parseInt(num)
+//       return sum
+//   }, 0);
+// }
+
+
+
+// console.log(sumMix([9, 3, '7', '3']), 22);
+// console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42); 
+// console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41);
+
+
+
+// ((P-1)! + 1) / (P * P)
+function amIWilson(p) {
+let factorial = p - 1;
+      for (i = factorial; i > 1; i--) {
+    factorial = factorial * (i - 1)
+   }
+     let wilson = (factorial + 1) / (p * p);
+     if (wilson % 1 === 0) {
+       return true;
+     } else {
+       return false;
+     }
 }
+  
 
 
 
-console.log(sumMix([9, 3, '7', '3']), 22);
-console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42); 
-console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']), 41);
+
+console.log(amIWilson(5), true)
+console.log(amIWilson(9), false)
+console.log(amIWilson(6), false)
