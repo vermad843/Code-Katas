@@ -124,3 +124,6 @@
 [x]https://www.codewars.com/kata/correct-the-mistakes-of-the-character-recognition-software/train/javascript
 
 [x]https://www.codewars.com/kata/abbreviate-a-two-word-name/train/javascript
+
+
+[x]https://www.codewars.com/kata/find-numbers-which-are-divisible-by-given-number/train/javascript
