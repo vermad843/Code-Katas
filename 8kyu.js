@@ -760,17 +760,47 @@
 // 
 
 
-function elevator(left, right, call){
-   let a =  Math.abs(call - left );
-   console.log(a);//0 , 1, 2, 0, 1
-   let b =  Math.abs(call - right );
-   console.log(b);//1, 0, 1, 0, 1
-   return  Math.abs(call - left ) < Math.abs(call - right ) ? 'left' : 'right'; 
+// function elevator(left, right, call){
+//    let a =  Math.abs(call - left );
+//    console.log(a);//0 , 1, 2, 0, 1
+//    let b =  Math.abs(call - right );
+//    console.log(b);//1, 0, 1, 0, 1
+//    return  Math.abs(call - left ) < Math.abs(call - right ) ? 'left' : 'right'; 
+// }
+
+
+// console.log(elevator(0,1,0), 'left');
+// console.log(elevator(0,1,1), 'right');
+// console.log(elevator(0,1,2), 'right');
+// console.log(elevator(0,0,0), 'right');
+// console.log(elevator(0,2,1), 'right');
+
+
+
+// 
+
+
+function points(games) {
+ return games.map((game) => {
+     console.log(game);
+    let x = game[0];
+    let y = game[2]
+    if(x > y) {
+        return 3;
+    }else if(x < y){
+        return 0;
+    }else {
+        return 1;
+    }
+ }).reduce((sum, x) => {
+   sum+=x
+   return sum   
+ }, 0);
 }
 
 
-console.log(elevator(0,1,0), 'left');
-console.log(elevator(0,1,1), 'right');
-console.log(elevator(0,1,2), 'right');
-console.log(elevator(0,0,0), 'right');
-console.log(elevator(0,2,1), 'right');
+console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]) , 30);
+console.log(points(["1:1","2:2","3:3","4:4","2:2","3:3","4:4","3:3","4:4","4:4"]) , 10);
+console.log(points(["0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"]) , 0);
+console.log(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]) , 15);
+console.log(points(["1:0","2:0","3:0","4:4","2:2","3:3","1:4","2:3","2:4","3:4"]) , 12);

@@ -141,3 +141,6 @@
 
 
 [x]https://www.codewars.com/kata/return-negative/train/javascript
+
+
+[x]https://www.codewars.com/kata/total-amount-of-points/train/javascript
