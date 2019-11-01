@@ -118,3 +118,5 @@
 [x]https://www.codewars.com/kata/find-the-integral/train/javascript
 
 [x]https://www.codewars.com/kata/get-ascii-value-of-character/train/javascript
+
+[x]https://www.codewars.com/kata/difference-of-volumes-of-cuboids/train/javascript
