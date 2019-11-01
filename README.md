@@ -104,3 +104,11 @@
 
 
 [x]https://www.codewars.com/kata/square-n-sum/train/javascript
+
+
+
+
+
+<!--  -->
+
+[x]https://www.codewars.com/kata/sum-mixed-array/train/javascript
