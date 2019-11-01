@@ -148,3 +148,6 @@
 
 
 [x]https://www.codewars.com/kata/how-many-lightsabers-do-you-own/train/javascript
+
+
+[x]https://www.codewars.com/kata/check-the-exam/train/javascript
