@@ -168,3 +168,6 @@
 
 
 [x]https://www.codewars.com/kata/grasshopper-make-change/train/javascript
+
+
+[x]https://www.codewars.com/kata/invert-values/train/javascript

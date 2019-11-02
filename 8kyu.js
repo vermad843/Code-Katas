@@ -885,15 +885,34 @@
 
 // 
 
-const money = 10
-const candy = 1.42
-const chips = 2.4
-const soda = 1
+// const money = 10
+// const candy = 1.42
+// const chips = 2.4
+// const soda = 1
 
-const change = money - (candy+chips+soda);
-console.log(change);//5.18
+// const change = money - (candy+chips+soda);
+// console.log(change);//5.18
 
-console.log(money, 10);
-console.log(candy, 1.42);
-console.log(chips, 2.4);
-console.log(soda, 1);
+// console.log(money, 10);
+// console.log(candy, 1.42);
+// console.log(chips, 2.4);
+// console.log(soda, 1);
+
+
+
+
+// 
+
+function invert(array) {
+    return array.map((arr ) => {
+        return -arr
+    });
+ }
+
+
+
+
+ console.log(invert([1,2,3,4,5]), [-1,-2,-3,-4,-5]);
+ console.log(invert([1,-2,3,-4,5]), [-1,2,-3,4,-5]);
+ console.log(invert([]), []);
+ console.log(invert([0]), [0]);
