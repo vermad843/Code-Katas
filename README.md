@@ -174,3 +174,6 @@
 
 
 [x]https://www.codewars.com/kata/is-it-a-palindrome/train/javascript
+
+
+[x]https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript

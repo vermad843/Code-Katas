@@ -919,25 +919,36 @@
 
 // a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or nurses run.
 
-function isPalindrome(x) {
-    let a =  x.split("").reverse().join('').toLowerCase();
-    let b = x.toLowerCase();
-    console.log(b);
-    if(a == b) {
-        return true;
-    }else {
-        return false
-    }
+// function isPalindrome(x) {
+//     let a =  x.split("").reverse().join('').toLowerCase();
+//     let b = x.toLowerCase();
+//     console.log(b);
+//     if(a == b) {
+//         return true;
+//     }else {
+//         return false
+//     }
+//   }
+
+
+//   console.log((isPalindrome("a"), true));
+//   console.log((isPalindrome("aba"), true));
+//   console.log((isPalindrome("Abba"), true));
+//   console.log((isPalindrome("hello"), false));
+//   console.log((isPalindrome("Bob"), true));
+//   console.log((isPalindrome("Madam"), true));
+//   console.log((isPalindrome("AbBa"), true));
+//   console.log((isPalindrome(""), true));
+
+
+
+// 
+
+function DNAtoRNA(dna) {
+  return dna.replace(/T/g, 'U');
   }
 
 
-
-
-  console.log((isPalindrome("a"), true));
-  console.log((isPalindrome("aba"), true));
-  console.log((isPalindrome("Abba"), true));
-  console.log((isPalindrome("hello"), false));
-  console.log((isPalindrome("Bob"), true));
-  console.log((isPalindrome("Madam"), true));
-  console.log((isPalindrome("AbBa"), true));
-  console.log((isPalindrome(""), true));
+console.log(DNAtoRNA("TTTT"), "UUUU")
+console.log(DNAtoRNA("GCAT"), "GCAU")
+console.log(DNAtoRNA("GACCGCCGCC"), "GACCGCCGCC")
