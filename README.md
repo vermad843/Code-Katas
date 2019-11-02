@@ -179,9 +179,11 @@
 [x]https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 
-
 [x]https://www.codewars.com/kata/find-the-smallest-integer-in-the-array/train/javascript
 
 
-
 [x]https://www.codewars.com/kata/simple-multiplication/train/javascript
+
+
+[x]https://www.codewars.com/kata/get-character-from-ascii-value/train/javascript
+
