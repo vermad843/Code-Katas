@@ -171,3 +171,6 @@
 
 
 [x]https://www.codewars.com/kata/invert-values/train/javascript
+
+
+[x]https://www.codewars.com/kata/is-it-a-palindrome/train/javascript

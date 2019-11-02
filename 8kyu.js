@@ -903,16 +903,41 @@
 
 // 
 
-function invert(array) {
-    return array.map((arr ) => {
-        return -arr
-    });
- }
+// function invert(array) {
+//     return array.map((arr ) => {
+//         return -arr
+//     });
+//  }
+
+//  console.log(invert([1,2,3,4,5]), [-1,-2,-3,-4,-5]);
+//  console.log(invert([1,-2,3,-4,5]), [-1,2,-3,4,-5]);
+//  console.log(invert([]), []);
+//  console.log(invert([0]), [0]);
 
 
 
 
- console.log(invert([1,2,3,4,5]), [-1,-2,-3,-4,-5]);
- console.log(invert([1,-2,3,-4,5]), [-1,2,-3,4,-5]);
- console.log(invert([]), []);
- console.log(invert([0]), [0]);
+// a word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or nurses run.
+
+function isPalindrome(x) {
+    let a =  x.split("").reverse().join('').toLowerCase();
+    let b = x.toLowerCase();
+    console.log(b);
+    if(a == b) {
+        return true;
+    }else {
+        return false
+    }
+  }
+
+
+
+
+  console.log((isPalindrome("a"), true));
+  console.log((isPalindrome("aba"), true));
+  console.log((isPalindrome("Abba"), true));
+  console.log((isPalindrome("hello"), false));
+  console.log((isPalindrome("Bob"), true));
+  console.log((isPalindrome("Madam"), true));
+  console.log((isPalindrome("AbBa"), true));
+  console.log((isPalindrome(""), true));
