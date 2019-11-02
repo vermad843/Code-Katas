@@ -5,10 +5,11 @@ let reversedWord = '';
  
 for (let i = 0; i < str.length; i++) {
     const char = str[i];
+    console.log(char)
+    console.log(reversedWord);
     if(char !== ' '){
-       reversedWord = char + reversedWord;
-       console.log(reversedWord); 
-    }else {
+        reversedWord = char + reversedWord;
+    }else {        
         reversedStr +=reversedWord + ' ';
         reversedWord = ''; 
     }

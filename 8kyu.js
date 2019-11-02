@@ -1013,13 +1013,30 @@
 // 
 
 // Sum Numbers
-function sum (numbers) {
-  console.log(numbers);
-  return numbers.reduce((sum,number) => {
-    return sum + number 
-  }, 0); 
-};
+// function sum (numbers) {
+//   console.log(numbers);
+//   return numbers.reduce((sum,number) => {
+//     return sum + number 
+//   }, 0); 
+// };
 
 
-console.log(sum([]), 0);
-console.log(sum([1, 5.2, 4, 0, -1]), 9.2);
+// console.log(sum([]), 0);
+// console.log(sum([1, 5.2, 4, 0, -1]), 9.2);
+
+
+
+// 
+
+
+function getAverage(marks){
+  return Math.floor(marks.reduce((sum, score ) => {
+    return sum+=score/marks.length;     
+  }, 0)
+  )}
+
+
+
+console.log(getAverage([2,2,2,2]),2);
+console.log(getAverage([1,2,3,4,5,]),3);
+console.log(getAverage([1,1,1,1,1,1,1,2]),1);

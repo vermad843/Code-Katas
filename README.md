@@ -189,3 +189,7 @@
 
 
 [x]https://www.codewars.com/kata/sum-arrays/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/get-the-mean-of-an-array/train/javascript
