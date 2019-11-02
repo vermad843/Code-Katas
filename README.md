@@ -187,3 +187,5 @@
 
 [x]https://www.codewars.com/kata/get-character-from-ascii-value/train/javascript
 
+
+[x]https://www.codewars.com/kata/sum-arrays/train/javascript

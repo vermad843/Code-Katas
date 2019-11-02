@@ -990,20 +990,36 @@
 
 // 
 
-function getChar(c){
-  return String.fromCharCode(c);
-}
+// function getChar(c){
+//   return String.fromCharCode(c);
+// }
 
 
 
-console.log(getChar(55),'7')
-console.log(getChar(56),'8')
-console.log(getChar(57),'9')
-console.log(getChar(58),':')
-console.log(getChar(59),';')
-console.log(getChar(60),'<')
-console.log(getChar(61),'=')
-console.log(getChar(62),'>')
-console.log(getChar(63),'?')
-console.log(getChar(64),'@')
-console.log(getChar(65),'A')
+// console.log(getChar(55),'7')
+// console.log(getChar(56),'8')
+// console.log(getChar(57),'9')
+// console.log(getChar(58),':')
+// console.log(getChar(59),';')
+// console.log(getChar(60),'<')
+// console.log(getChar(61),'=')
+// console.log(getChar(62),'>')
+// console.log(getChar(63),'?')
+// console.log(getChar(64),'@')
+// console.log(getChar(65),'A')
+
+
+
+// 
+
+// Sum Numbers
+function sum (numbers) {
+  console.log(numbers);
+  return numbers.reduce((sum,number) => {
+    return sum + number 
+  }, 0); 
+};
+
+
+console.log(sum([]), 0);
+console.log(sum([1, 5.2, 4, 0, -1]), 9.2);
