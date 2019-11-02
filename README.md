@@ -162,3 +162,6 @@
 
 
 [x]https://www.codewars.com/kata/filter-out-the-geese/train/javascript
+
+
+[x]https://www.codewars.com/kata/function-1-hello-world/train/javascript
