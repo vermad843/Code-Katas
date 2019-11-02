@@ -151,3 +151,14 @@
 
 
 [x]https://www.codewars.com/kata/check-the-exam/train/javascript
+
+
+
+
+
+
+
+<!--  -->
+
+
+[x]https://www.codewars.com/kata/filter-out-the-geese/train/javascript
