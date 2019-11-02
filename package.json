@@ -1,0 +1,23 @@
+{
+  "name": "Katas",
+  "version": "1.0.0",
+  "description": "//8kyu",
+  "main": "8kyu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vermad843/Code-Katas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vermad843/Code-Katas/issues"
+  },
+  "homepage": "https://github.com/vermad843/Code-Katas#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  }
+}
