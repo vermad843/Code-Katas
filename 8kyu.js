@@ -1117,30 +1117,94 @@
 // 60 <= score < 70	'D'
 // 0 <= score < 60	'F'
 
-function getGrade (s1, s2, s3) {
-  let sum = s1+s2+s3
-  let score = Math.floor(Math.abs(sum/3))
-     if( score < 60) {
-      return 'F'
-     }else if ( score < 70	) {
-       return 'D'
-     }else if(score < 80) {
-       return 'C'
-     }else if (score < 90) {
-       return 'B'
-     }else {
-      return 'A';
-  }
+// function getGrade (s1, s2, s3) {
+//   let sum = s1+s2+s3
+//   let score = Math.floor(Math.abs(sum/3))
+//      if( score < 60) {
+//       return 'F'
+//      }else if ( score < 70	) {
+//        return 'D'
+//      }else if(score < 80) {
+//        return 'C'
+//      }else if (score < 90) {
+//        return 'B'
+//      }else {
+//       return 'A';
+//   }
+// }
+
+
+// console.log(getGrade(95,90,93), 'A')
+// console.log(getGrade(100,85,96), 'A')
+// console.log(getGrade(92,93,94), 'A')
+// console.log(getGrade(70,70,100), 'B')
+// console.log(getGrade(82,85,87), 'B')
+// console.log(getGrade(84,79,85), 'B')
+// console.log(getGrade(89,89,90), 'B') 
+// console.log(getGrade(70,70,70), 'C')
+// console.log(getGrade(75,70,79), 'C')
+// console.log(getGrade(60,82,76), 'C')
+
+
+
+
+// 
+
+
+// First Example:
+
+// Input: true, true, false, operator: AND
+
+// Steps: true AND true -> true, true AND false -> false
+
+// Output: false
+
+// Second Example:
+
+// Input: true, true, false, operator: OR
+
+// Steps: true OR true -> true, true OR false -> true
+
+// Output: true
+
+// Third Example:
+
+// Input: true, true, false, operator: XOR
+
+// Steps: true XOR true -> false, false XOR false -> false
+
+// Output: false
+
+let operators = {
+  'AND': (a, b) => a && b,
+  'OR': (a, b) =>  a || b,
+  'XOR': (a, b) => a !== b
 }
 
 
-console.log(getGrade(95,90,93), 'A')
-console.log(getGrade(100,85,96), 'A')
-console.log(getGrade(92,93,94), 'A')
-console.log(getGrade(70,70,100), 'B')
-console.log(getGrade(82,85,87), 'B')
-console.log(getGrade(84,79,85), 'B')
-console.log(getGrade(89,89,90), 'B') 
-console.log(getGrade(70,70,70), 'C')
-console.log(getGrade(75,70,79), 'C')
-console.log(getGrade(60,82,76), 'C')
+function logicalCalc(array, op){
+  return array.reduce((operators[op];
+}
+
+
+console.log(logicalCalc([true, true, true, false], "AND"), false);
+console.log(logicalCalc([true, true, true, false], "OR"), true);
+console.log(logicalCalc([true, true, true, false], "XOR"), true);
+console.log(logicalCalc([true, true, false, false], "AND"), false);
+console.log(logicalCalc([true, true, false, false], "OR"), true);
+console.log(logicalCalc([true, true, false, false], "XOR"), false);
+console.log(logicalCalc([true, false, false, false], "AND"), false);
+console.log(logicalCalc([true, false, false, false], "OR"), true);
+console.log(logicalCalc([true, false, false, false], "XOR"), true);
+console.log(logicalCalc([true, true], "AND"), true);
+console.log(logicalCalc([true, true], "OR"), true);
+console.log(logicalCalc([true, true], "XOR"), false);
+console.log(logicalCalc([false, false], "AND"), false);
+console.log(logicalCalc([false, false], "OR"), false);
+console.log(logicalCalc([false, false], "XOR"), false);
+console.log(logicalCalc([false], "AND"), false);
+console.log(logicalCalc([false], "OR"), false);
+console.log(logicalCalc([false], "XOR"), false);
+console.log(logicalCalc([true], "AND"), true);
+console.log(logicalCalc([true], "OR"), true);
+console.log(logicalCalc([true], "XOR"), true);

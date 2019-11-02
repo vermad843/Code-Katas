@@ -208,3 +208,6 @@
 
 
 [x]https://www.codewars.com/kata/grasshopper-grade-book/train/javascript
+
+
+[x]https://www.codewars.com/kata/logical-calculator/train/javascript
