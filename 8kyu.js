@@ -1089,20 +1089,58 @@
 
 
 
-// 
+// // 
 
-function arrayPlusArray(arr1, arr2) {
-  let a = arr1.reduce((sum, num) => {
-    return sum+= num
-  }, 0);
-  let b = arr2.reduce((sum, num) => {
-    return sum+= num
-  }, 0);
- return a + b;
+// function arrayPlusArray(arr1, arr2) {
+//   let a = arr1.reduce((sum, num) => {
+//     return sum+= num
+//   }, 0);
+//   let b = arr2.reduce((sum, num) => {
+//     return sum+= num
+//   }, 0);
+//  return a + b;
+// }
+
+
+// console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21);
+// console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]), -21);
+// console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]), 15);
+// console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]), 2100);
+
+
+//
+
+// Numerical Score	Letter Grade
+// 90 <= score <= 100	'A'
+// 80 <= score < 90	'B'
+// 70 <= score < 80	'C'
+// 60 <= score < 70	'D'
+// 0 <= score < 60	'F'
+
+function getGrade (s1, s2, s3) {
+  let sum = s1+s2+s3
+  let score = Math.floor(Math.abs(sum/3))
+     if( score < 60) {
+      return 'F'
+     }else if ( score < 70	) {
+       return 'D'
+     }else if(score < 80) {
+       return 'C'
+     }else if (score < 90) {
+       return 'B'
+     }else {
+      return 'A';
+  }
 }
 
 
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21);
-console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]), -21);
-console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]), 15);
-console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]), 2100);
+console.log(getGrade(95,90,93), 'A')
+console.log(getGrade(100,85,96), 'A')
+console.log(getGrade(92,93,94), 'A')
+console.log(getGrade(70,70,100), 'B')
+console.log(getGrade(82,85,87), 'B')
+console.log(getGrade(84,79,85), 'B')
+console.log(getGrade(89,89,90), 'B') 
+console.log(getGrade(70,70,70), 'C')
+console.log(getGrade(75,70,79), 'C')
+console.log(getGrade(60,82,76), 'C')

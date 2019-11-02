@@ -205,3 +205,6 @@
 
 
 [x]https://www.codewars.com/kata/array-plus-array/train/javascript
+
+
+[x]https://www.codewars.com/kata/grasshopper-grade-book/train/javascript
