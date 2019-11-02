@@ -1029,14 +1029,28 @@
 // 
 
 
-function getAverage(marks){
-  return Math.floor(marks.reduce((sum, score ) => {
-    return sum+=score/marks.length;     
-  }, 0)
-  )}
+// function getAverage(marks){
+//   return Math.floor(marks.reduce((sum, score ) => {
+//     return sum+=score/marks.length;     
+//   }, 0)
+//   )}
 
 
 
-console.log(getAverage([2,2,2,2]),2);
-console.log(getAverage([1,2,3,4,5,]),3);
-console.log(getAverage([1,1,1,1,1,1,1,2]),1);
+// console.log(getAverage([2,2,2,2]),2);
+// console.log(getAverage([1,2,3,4,5,]),3);
+// console.log(getAverage([1,1,1,1,1,1,1,2]),1);
+
+
+// 
+
+function grow(x){
+ return x.reduce((product, num) => {
+   return product*num
+ }, 1)
+}
+
+
+console.log(grow([1, 2, 3]), 6);
+console.log(grow([4, 1, 1, 1, 4]), 16); 
+console.log(grow([2, 2, 2, 2, 2, 2]), 64); 

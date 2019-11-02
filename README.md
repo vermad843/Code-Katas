@@ -193,3 +193,6 @@
 
 
 [x]https://www.codewars.com/kata/get-the-mean-of-an-array/train/javascript
+
+
+[x]https://www.codewars.com/kata/beginner-reduce-but-grow/train/javascript
