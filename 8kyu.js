@@ -1074,15 +1074,35 @@
 
 // 
 
-function maps(x){
-return x.map((num) => {
-  return num * 2
- })
+// function maps(x){
+// return x.map((num) => {
+//   return num * 2
+//  })
+// }
+
+
+
+
+// console.log(maps([1, 2, 3]), [2, 4, 6]);
+// console.log(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8]); 
+// console.log(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]); 
+
+
+
+// 
+
+function arrayPlusArray(arr1, arr2) {
+  let a = arr1.reduce((sum, num) => {
+    return sum+= num
+  }, 0);
+  let b = arr2.reduce((sum, num) => {
+    return sum+= num
+  }, 0);
+ return a + b;
 }
 
 
-
-
-console.log(maps([1, 2, 3]), [2, 4, 6]);
-console.log(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8]); 
-console.log(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]); 
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21);
+console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]), -21);
+console.log(arrayPlusArray([0, 0, 0], [4, 5, 6]), 15);
+console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]), 2100);

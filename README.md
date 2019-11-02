@@ -202,3 +202,6 @@
 
 
 [x]https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript
+
+
+[x]https://www.codewars.com/kata/array-plus-array/train/javascript
