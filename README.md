@@ -199,3 +199,6 @@
 
 
 [x]https://www.codewars.com/kata/count-by-x/train/javascript
+
+
+[x]https://www.codewars.com/kata/beginner-lost-without-a-map/train/javascript
