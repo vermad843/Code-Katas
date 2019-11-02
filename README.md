@@ -196,3 +196,6 @@
 
 
 [x]https://www.codewars.com/kata/beginner-reduce-but-grow/train/javascript
+
+
+[x]https://www.codewars.com/kata/count-by-x/train/javascript

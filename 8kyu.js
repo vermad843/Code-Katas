@@ -1044,13 +1044,29 @@
 
 // 
 
-function grow(x){
- return x.reduce((product, num) => {
-   return product*num
- }, 1)
+// function grow(x){
+//  return x.reduce((product, num) => {
+//    return product*num
+//  }, 1)
+// }
+
+
+// console.log(grow([1, 2, 3]), 6);
+// console.log(grow([4, 1, 1, 1, 4]), 16); 
+// console.log(grow([2, 2, 2, 2, 2, 2]), 64); 
+
+
+
+// 
+
+function countBy(x, n) {
+  let Z = [];
+   for (let i = 1; i <= n; i++) {
+     const num = i;
+    Z.push(x * num)
+  }
+  return Z;
 }
 
-
-console.log(grow([1, 2, 3]), 6);
-console.log(grow([4, 1, 1, 1, 4]), 16); 
-console.log(grow([2, 2, 2, 2, 2, 2]), 64); 
+// console.log(countBy(1,5), [1,2,3,4,5], "Array does not match")
+console.log(countBy(2,5), [2,4,6,8,10], "Array does not match")
