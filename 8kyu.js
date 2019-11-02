@@ -871,12 +871,29 @@
 // 
 
 // Write a function "greet" that returns "hello world!"
-function greet() {
-    return 'hello world!'
-}
+// function greet() {
+//     return 'hello world!'
+// }
 
 
 
 
-console.log(typeof greet, "function", "greet should be a function");
-console.log(greet(), "hello world!");
+// console.log(typeof greet, "function", "greet should be a function");
+// console.log(greet(), "hello world!");
+
+
+
+// 
+
+const money = 10
+const candy = 1.42
+const chips = 2.4
+const soda = 1
+
+const change = money - (candy+chips+soda);
+console.log(change);//5.18
+
+console.log(money, 10);
+console.log(candy, 1.42);
+console.log(chips, 2.4);
+console.log(soda, 1);

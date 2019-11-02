@@ -165,3 +165,6 @@
 
 
 [x]https://www.codewars.com/kata/function-1-hello-world/train/javascript
+
+
+[x]https://www.codewars.com/kata/grasshopper-make-change/train/javascript
