@@ -220,3 +220,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/generate-range-of-integers/train/javascript
+
+
+[x]https://www.codewars.com/kata/56dec885c54a926dcd001095

@@ -1193,14 +1193,23 @@
 
 
 //
-function generateRange(min, max, step){
-   let output = [];
-   for (let i = min; i <= max; i+= step) {
-       output.push(i)   
-   }
-   return output;
-} 
+// function generateRange(min, max, step){
+//    let output = [];
+//    for (let i = min; i <= max; i+= step) {
+//        output.push(i)   
+//    }
+//    return output;
+// } 
 
 
-console.log(generateRange(2, 10, 2), [2,4,6,8,10]);
-console.log(generateRange(1, 10, 3),[1,4,7,10])
+// console.log(generateRange(2, 10, 2), [2,4,6,8,10]);
+// console.log(generateRange(1, 10, 3),[1,4,7,10])
+
+
+
+// 
+function opposite(number) {
+    return -number
+  }
+
+console.log(opposite(1), -1,)
