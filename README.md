@@ -216,3 +216,7 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/logical-calculator/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/generate-range-of-integers/train/javascript
