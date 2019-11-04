@@ -1207,9 +1207,28 @@
 
 
 
-// 
-function opposite(number) {
-    return -number
-  }
+// // 
+// function opposite(number) {
+//     return -number
+//   }
 
-console.log(opposite(1), -1,)
+// console.log(opposite(1), -1,)
+
+
+
+// 
+
+function oddCount(n){
+ /* let output = [];
+     for (let i = 1; i < n; i+=2) {
+              const  num  =  i;
+                output.push(num)
+     }
+    return output.length;*/
+    return Math.floor(n/2);
+}
+
+
+// [1, 3, 5, 7, 9, 11, 13]
+console.log(oddCount(15), 7, "Oops! Wrong.");
+console.log(oddCount(15023), 7511, "Oops! Wrong.");
