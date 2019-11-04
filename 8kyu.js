@@ -1,7 +1,9 @@
-// function squareArea(A){//A is a length of a arc 
 // 	//    circumference  of  a circle = 2 PI r 
 // 	//    A = 2 PI r/4 (because we are talking about 1/4 part of a circle)
 // 	//      2 PI r  = A * 4 //look at this  carefully 
+
+
+// function squareArea(A){//A is a length of a arc 
 // 		const circumference = A * 4 ;
 // 		const radius = circumference/(2 * Math.PI);
 // 		const areaOfSquare = radius**2;  
@@ -9,9 +11,7 @@
 // 	}
 	
 	
-	
-	
-	
+
 // 	console.log(squareArea(2), 1.62);
 // 	console.log(squareArea(0), 0);
 // 	console.log(squareArea(14.05), 80);
@@ -19,7 +19,7 @@
 
 // function warnTheSheep(queue) {
 //     const wolfAtIndex0 =  queue.reverse();
-//     const wolfPosition =  wolfAtIndex0.indexOf('wolf')
+//     const wolfPosition =  wolfAtIndex0.indexOf('wolf');
 //   return wolfPosition === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ wolfPosition}! You are about to be eaten by a wolf!`;
 //   }
 
@@ -34,7 +34,6 @@
 
 
 
-// 
 // volume = w * h * d 
 // totalSurfaceArea =  2(h × W) + 2(h × L) + 2(W × L)
 //  length l = depth(d)
@@ -46,8 +45,6 @@
 // }
 
 
-
-
 // console.log(getSize(4, 2, 6), 48);
 // console.log(getSize(10, 10, 10), [600, 1000]);
 // console.log(getSize(4, 2, 6), 88);
@@ -56,11 +53,7 @@
 
 
 // String.prototype.toAlternatingCase = function () {
-//     return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
-// }
-
-// String.prototype.toAlternatingCase = function () {
-//     return  this.split("")
+//     return   this.split("")
 //     .map((eachCharacter) => {
 //          return  eachCharacter === eachCharacter.toUpperCase()? eachCharacter.toLowerCase(): eachCharacter.toUpperCase()
 //      }).join('')
@@ -128,7 +121,7 @@
 // console.log(goals(43, 10, 5), 58)
 
 
-// 
+
 // function move (position, roll) {
 //     let value = roll  * 2;
 //     return position + value;
@@ -141,7 +134,7 @@
 // console.log(move(2, 5), 12);
 
 
-// 
+
 // function setAlarm(employed, vacation){
 //   return (employed && !vacation) ? true : false;
 // }
@@ -153,7 +146,7 @@
  
 
 
-//  
+ 
 
 // function century(year) {
 //     let oneCentury = 100;
@@ -175,7 +168,7 @@
 // console.log(century(89), 1, 'Testing for year 89');
 
 
-// 
+
 // function even_or_odd(number) {
 //     return number % 2 == 0 ? 'Even' : 'Odd';
 //   }
@@ -228,16 +221,6 @@
 //   }
 
 
-// function firstNonConsecutive(arr) {
-//     for (let i = 0; i < arr.length - 1; ++i) {
-//         if (arr[i] + 1 !== arr[i + 1]) {
-//           return arr[i + 1]
-//         }
-//       }
-//       return null  
-// }
-
-
 
 // const first = firstNonConsecutive([1,2,3,4,6,7,8])
 // console.log(first, 6)
@@ -255,10 +238,6 @@
 // console.log(otherAngle(60, 60), 60);
 // console.log(otherAngle(43, 78), 59);
 // console.log(otherAngle(10, 20), 150);
-
-// function betterThanAverage(classPoints, yourPoints) {
-//     return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
-//   }
 
 
 // function betterThanAverage(classPoints, yourPoints) {
@@ -283,7 +262,7 @@
 
 
 
-// 
+
 // function greet (name, owner) {
 // return name === owner ? 'Hello boss' : 'Hello guest';
 // }
@@ -333,7 +312,7 @@
 
 
 
-// 
+
 
 // function countSheeps(sheep) {
 //    let noOfSheeps = sheep.filter(Boolean).length;
@@ -352,7 +331,7 @@
 // console.log(countSheeps(array1) == 17, "There are 17 sheeps in total")
 
 
-// 
+
 
 // function seatsInTheater(nCols, nRows, col, row) {
 //    let myNewCol = col - 1
@@ -370,7 +349,7 @@
 
 
 
-// 
+
 
 // function finalGrade (exam, projects) {
 //     if(exam > 90 || projects > 10) {
@@ -418,7 +397,7 @@
 
 
 
-// 
+
 
 
 
@@ -447,7 +426,7 @@
 
 
 
-//
+
 // function findNeedle(haystack) {
 //   console.log(haystack);
 //   const indexOfNeedle = haystack.indexOf('needle');
@@ -535,7 +514,7 @@
 //   console.log(expressionMatter(1, 10, 1), 12);
 
 
-// 
+
 
 // function squareSum(numbers){
 //   return numbers.reduce((sum, num) => {
@@ -549,7 +528,7 @@
 
 
 
-// 
+
 // function sumMix(x){
 //   return x.reduce((sum, num) => {
 //       sum+= parseInt(num)
@@ -588,7 +567,7 @@
 // console.log(amIWilson(6), false)
 
 
-// 
+
 // function integrate(coefficient, exponent) {
 //  let newExponent = exponent + 1;
 //  return `${coefficient/newExponent}x^${newExponent}`;
@@ -604,7 +583,7 @@
 
 
 
-// 
+
 // function getASCII(c){
 //    let number= c.charCodeAt();
 //    return number;
@@ -617,7 +596,7 @@
 
 
 
-// 
+
 // function findDifference([i,j,k],[m,n,o]) {
 //    return Math.abs(i*j*k - m*n*o); 
 // }
@@ -631,7 +610,7 @@
 // console.log(findDifference([15, 20, 25], [10, 30, 25]), 0);
 
 
-//
+
 // function correct(string){
 //     let regex1 = /5/gi;
 //     let regex2 = /0/gi;
@@ -650,7 +629,7 @@
 
 
 
-// 
+
 
 // function abbrevName(name){
 //  return name.split(' ').map((letter) => {
@@ -667,7 +646,7 @@
 // console.log(abbrevName("David Mendieta"), "D.M");
 
 
-//
+
 
 // function divisibleBy(numbers, divisor){
 //   return numbers.filter((num) => {
@@ -684,7 +663,7 @@
 // console.log(divisibleBy([1,3,5], 2), []);
 
 
-// 
+
 
 
 // function countPositivesSumNegatives(input) {
@@ -717,7 +696,7 @@
 // console.log(actual[0] == expected[0] && actual[1] == expected[1], "Wrong return value.");
 
 
-// 
+
 
 // function boolToWord( boolean ){
 //    return boolean ? 'Yes' : 'No'
@@ -728,7 +707,7 @@
 
 
 
-// 
+
 
 // function enough(cap, on, wait) {
 //     let excessPassengers =   Math.abs(wait + on - cap);
@@ -747,7 +726,7 @@
 
 
 
-// 
+
 
 
 // function makeNegative(num) {
@@ -757,7 +736,7 @@
 // console.log(makeNegative(42), -42);
 
 
-// 
+
 
 
 // function elevator(left, right, call){
@@ -777,7 +756,7 @@
 
 
 
-// 
+
 
 
 // function points(games) {
@@ -807,7 +786,7 @@
 
 
 
-//
+
 
 // function howManyLightsabersDoYouOwn(name) {
 //     return name === 'Zach' ? 18 : 0; 
@@ -820,7 +799,7 @@
 
 
 
-// 
+
 
  
       
@@ -851,7 +830,7 @@
 // console.log(checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]), 0);
 
 
-// 
+
 // function gooseFilter (birds) {
 //     let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
 //     return birds.filter((bird) => {
@@ -868,7 +847,7 @@
 
 
 
-// 
+
 
 // Write a function "greet" that returns "hello world!"
 // function greet() {
@@ -883,7 +862,7 @@
 
 
 
-// 
+
 
 // const money = 10
 // const candy = 1.42
@@ -901,7 +880,7 @@
 
 
 
-// 
+
 
 // function invert(array) {
 //     return array.map((arr ) => {
@@ -942,7 +921,7 @@
 
 
 
-// 
+
 
 // function DNAtoRNA(dna) {
 //   return dna.replace(/T/g, 'U');
@@ -955,7 +934,7 @@
 
 
 
-// 
+
 
 
 // class SmallestIntegerFinder {
@@ -973,7 +952,7 @@
 
 
 
-// 
+
 
 // function simpleMultiplication(number) {
 //    return  number % 2 == 0 ? number*8 : number * 9;
@@ -988,7 +967,7 @@
 
 
 
-// 
+
 
 // function getChar(c){
 //   return String.fromCharCode(c);
@@ -1010,7 +989,7 @@
 
 
 
-// 
+
 
 // Sum Numbers
 // function sum (numbers) {
@@ -1026,7 +1005,7 @@
 
 
 
-// 
+
 
 
 // function getAverage(marks){
@@ -1042,7 +1021,7 @@
 // console.log(getAverage([1,1,1,1,1,1,1,2]),1);
 
 
-// 
+
 
 // function grow(x){
 //  return x.reduce((product, num) => {
@@ -1057,7 +1036,7 @@
 
 
 
-// 
+
 
 // function countBy(x, n) {
 //   let Z = [];
@@ -1072,7 +1051,7 @@
 // console.log(countBy(2,5), [2,4,6,8,10], "Array does not match")
 
 
-// 
+
 
 // function maps(x){
 // return x.map((num) => {
@@ -1108,7 +1087,7 @@
 // console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]), 2100);
 
 
-//
+
 
 // Numerical Score	Letter Grade
 // 90 <= score <= 100	'A'
@@ -1148,7 +1127,7 @@
 
 
 
-// 
+
 
 
 // First Example:
@@ -1183,7 +1162,8 @@ let operators = {
 
 
 function logicalCalc(array, op){
-  return array.reduce((operators[op];
+    console.log(op);
+  return array.reduce((operators[op]));
 }
 
 
