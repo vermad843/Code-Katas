@@ -1,3 +1,5 @@
+import { stringify } from "querystring";
+
 // 	//    circumference  of  a circle = 2 PI r 
 // 	//    A = 2 PI r/4 (because we are talking about 1/4 part of a circle)
 // 	//      2 PI r  = A * 4 //look at this  carefully 
@@ -1238,11 +1240,23 @@
 
 // 
 
-function repeatStr (n, s) {
-    return s.repeat(n);
-  }
+// function repeatStr (n, s) {
+//     return s.repeat(n);
+//   }
 
 
-console.log(repeatStr(3, "*"), "***");
-console.log(repeatStr(5, "#"), "#####");
-console.log(repeatStr(2, "ha "), "ha ha ");
+// console.log(repeatStr(3, "*"), "***");
+// console.log(repeatStr(5, "#"), "#####");
+// console.log(repeatStr(2, "ha "), "ha ha ");
+
+
+
+// 
+
+function spEng(sentence){
+  return sentence.toUpperCase().includes('ENGLISH');
+}
+
+console.log(spEng("english"), true);
+console.log(spEng("egnlish"), false);
+  
