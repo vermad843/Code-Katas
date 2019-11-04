@@ -229,3 +229,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/count-odd-numbers-below-n/train/javascript
+
+
+[x]https://www.codewars.com/kata/string-repeat/train/javascript
