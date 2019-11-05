@@ -1286,19 +1286,44 @@ import { stringify } from "querystring";
 // n < 5 => '0'
 //  n > 5 => '1'
 
-function fakeBin(x){
- let a = x.split('');
- return a .map((n) => {
-     if(n < 5) {
-         return '0' 
+// function fakeBin(x){
+//  let a = x.split('');
+//  return a .map((n) => {
+//      if(n < 5) {
+//          return '0' 
+//      }else {
+//          return '1'
+//      }
+//  }).join('') 
+// }
+
+
+
+// console.log(fakeBin('45385593107843568'), '01011110001100111');
+// console.log(fakeBin('509321967506747'), '101000111101101'); 
+// console.log(fakeBin('366058562030849490134388085'), '011011110000101010000011011'); 
+
+
+
+// 
+function isVow(a){
+ return a.map((n) => {
+     if(n == 97) {
+         return 'a'
+     }else if (n == 101) {
+         return 'e'
+     }else if (n == 105) {
+         return 'i'
+     }else if (n == '111'){
+         return 'o'
+     }else if(n == '117') {
+         return 'u'
      }else {
-         return '1'
+         return n
      }
- }).join('') 
+ })
 }
 
 
-
-console.log(fakeBin('45385593107843568'), '01011110001100111');
-console.log(fakeBin('509321967506747'), '101000111101101'); 
-console.log(fakeBin('366058562030849490134388085'), '011011110000101010000011011'); 
+console.log(isVow([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106]),[118,"u",120,121,"u",98,122,"a",120,106,104,116,113,114,113,120,106]);
+console.log(isVow([101,121,110,113,113,103,121,121,101,107,103]),["e",121,110,113,113,103,121,121,"e",107,103]);

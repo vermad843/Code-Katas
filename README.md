@@ -244,3 +244,7 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/fake-binary/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/is-there-a-vowel-in-there/train/javascript
