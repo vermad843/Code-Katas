@@ -1305,25 +1305,39 @@ import { stringify } from "querystring";
 
 
 
+// // 
+// function isVow(a){
+//  return a.map((n) => {
+//      if(n == 97) {
+//          return 'a'
+//      }else if (n == 101) {
+//          return 'e'
+//      }else if (n == 105) {
+//          return 'i'
+//      }else if (n == '111'){
+//          return 'o'
+//      }else if(n == '117') {
+//          return 'u'
+//      }else {
+//          return n
+//      }
+//  })
+// }
+
+
+// console.log(isVow([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106]),[118,"u",120,121,"u",98,122,"a",120,106,104,116,113,114,113,120,106]);
+// console.log(isVow([101,121,110,113,113,103,121,121,101,107,103]),["e",121,110,113,113,103,121,121,"e",107,103]);
+
+
+
 // 
-function isVow(a){
- return a.map((n) => {
-     if(n == 97) {
-         return 'a'
-     }else if (n == 101) {
-         return 'e'
-     }else if (n == 105) {
-         return 'i'
-     }else if (n == '111'){
-         return 'o'
-     }else if(n == '117') {
-         return 'u'
-     }else {
-         return n
-     }
- })
+function toBinary(n){
+    let num = n.toString(2); 
+    return parseInt(num); 
 }
 
 
-console.log(isVow([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106]),[118,"u",120,121,"u",98,122,"a",120,106,104,116,113,114,113,120,106]);
-console.log(isVow([101,121,110,113,113,103,121,121,101,107,103]),["e",121,110,113,113,103,121,121,"e",107,103]);
+console.log(toBinary(1), 1);
+console.log(toBinary(2), 10);
+console.log(toBinary(3), 11);
+console.log(toBinary(5), 101);

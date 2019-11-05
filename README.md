@@ -248,3 +248,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/is-there-a-vowel-in-there/train/javascript
+
+
+[x]https://www.codewars.com/kata/convert-to-binary/train/javascript
