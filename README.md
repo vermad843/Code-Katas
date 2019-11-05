@@ -236,3 +236,8 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/do-you-speak-english/train/javascript
+
+
+<!--  -->
+
+[x]https://www.codewars.com/kata/sum-of-positive/train/javascript

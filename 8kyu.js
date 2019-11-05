@@ -1253,10 +1253,29 @@ import { stringify } from "querystring";
 
 // 
 
-function spEng(sentence){
-  return sentence.toUpperCase().includes('ENGLISH');
+// function spEng(sentence){
+//   return sentence.toUpperCase().includes('ENGLISH');
+// }
+
+// console.log(spEng("english"), true);
+// console.log(spEng("egnlish"), false);
+  
+
+
+
+// 
+
+function positiveSum(arr) {
+   return arr.filter((num) => {
+       return num > 0
+   }).reduce((sum, n) => {
+       return sum+=n
+}, 0)
 }
 
-console.log(spEng("english"), true);
-console.log(spEng("egnlish"), false);
-  
+
+console.log(positiveSum([1,2,3,4,5]),15);
+console.log(positiveSum([1,-2,3,4,5]),13);
+console.log(positiveSum([]),0);
+console.log(positiveSum([-1,-2,-3,-4,-5]),0);
+console.log(positiveSum([-1,2,3,4,-5]),9);
