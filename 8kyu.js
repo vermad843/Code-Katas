@@ -1265,17 +1265,40 @@ import { stringify } from "querystring";
 
 // 
 
-function positiveSum(arr) {
-   return arr.filter((num) => {
-       return num > 0
-   }).reduce((sum, n) => {
-       return sum+=n
-}, 0)
+// function positiveSum(arr) {
+//    return arr.filter((num) => {
+//        return num > 0
+//    }).reduce((sum, n) => {
+//        return sum+=n
+// }, 0)
+// }
+
+
+// console.log(positiveSum([1,2,3,4,5]),15);
+// console.log(positiveSum([1,-2,3,4,5]),13);
+// console.log(positiveSum([]),0);
+// console.log(positiveSum([-1,-2,-3,-4,-5]),0);
+// console.log(positiveSum([-1,2,3,4,-5]),9);
+
+
+
+// 
+// n < 5 => '0'
+//  n > 5 => '1'
+
+function fakeBin(x){
+ let a = x.split('');
+ return a .map((n) => {
+     if(n < 5) {
+         return '0' 
+     }else {
+         return '1'
+     }
+ }).join('') 
 }
 
 
-console.log(positiveSum([1,2,3,4,5]),15);
-console.log(positiveSum([1,-2,3,4,5]),13);
-console.log(positiveSum([]),0);
-console.log(positiveSum([-1,-2,-3,-4,-5]),0);
-console.log(positiveSum([-1,2,3,4,-5]),9);
+
+console.log(fakeBin('45385593107843568'), '01011110001100111');
+console.log(fakeBin('509321967506747'), '101000111101101'); 
+console.log(fakeBin('366058562030849490134388085'), '011011110000101010000011011'); 

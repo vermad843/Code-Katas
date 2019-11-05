@@ -241,3 +241,6 @@ code Kata profile :
 <!--  -->
 
 [x]https://www.codewars.com/kata/sum-of-positive/train/javascript
+
+
+[x]https://www.codewars.com/kata/fake-binary/train/javascript
