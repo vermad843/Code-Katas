@@ -1493,15 +1493,28 @@ import { stringify } from "querystring";
 
 // 
 
-function check(a, x) {
-    return a.includes(x);
-  }
+// function check(a, x) {
+//     return a.includes(x);
+//   }
+
+// console.log(check([66, 101], 66), true);
+// console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45), true);
+// console.log(check(['t', 'e', 's', 't'], 'e'), true);
+// console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false);
 
 
+
+// 
+function correctTail(body, tail)  {
   
-console.log(check([66, 101], 66), true);
-console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45), true);
-console.log(check(['t', 'e', 's', 't'], 'e'), true);
-console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false);
-
-
+   let  sub = body.substr(body.length-(tail.length))
+    if (sub == tail) {
+      return true
+    }else { 
+      return false
+     }
+}  
+console.log(correctTail("Fox", "x"), true);
+console.log(correctTail("Rhino", "o"), true);
+console.log(correctTail("Meerkat", "t"), true);
+console.log(correctTail("Meerka", "t"), false);

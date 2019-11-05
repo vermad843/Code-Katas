@@ -275,3 +275,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/you-only-need-one-beginner/train/javascript
+
+
+[x]https://www.codewars.com/kata/is-this-my-tail/train/javascript
