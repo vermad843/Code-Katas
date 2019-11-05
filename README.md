@@ -265,3 +265,7 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/reversed-words/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/palindrome-strings/train/javascript

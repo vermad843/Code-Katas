@@ -1426,13 +1426,33 @@ import { stringify } from "querystring";
 
 // 
 
-function reverseWords(str){
-    return str.split(' ').reverse().join(' ');
-  }
+// function reverseWords(str){
+//     return str.split(' ').reverse().join(' ');
+//   }
 
 
-console.log(reverseWords("hello world!"), "world! hello")
-console.log(reverseWords("yoda doesn't speak like this" ),  "this like speak doesn't yoda")
-console.log(reverseWords("foobar"                       ),  "foobar")
-console.log(reverseWords("kata editor"                  ),  "editor kata")
-console.log(reverseWords("row row row your boat"        ),  "boat your row row row")
+// console.log(reverseWords("hello world!"), "world! hello")
+// console.log(reverseWords("yoda doesn't speak like this" ),  "this like speak doesn't yoda")
+// console.log(reverseWords("foobar"                       ),  "foobar")
+// console.log(reverseWords("kata editor"                  ),  "editor kata")
+// console.log(reverseWords("row row row your boat"        ),  "boat your row row row")
+
+
+
+
+// 
+
+function isPalindrome(line) {
+  let reversedStr =  line.toString().split('').reverse().join('');
+  if(reversedStr == line) {
+      return true
+  }else {
+      return false 
+  }  
+}
+
+console.log(isPalindrome("anna"), true);
+console.log(isPalindrome("walter"), false);
+console.log(isPalindrome(12321), true);
+console.log(isPalindrome(123456), false);
+console.log(isPalindrome(".!!."), true);
