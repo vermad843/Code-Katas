@@ -262,3 +262,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/how-many-stairs-will-suzuki-climb-in-20-years/train/javascript
+
+
+[x]https://www.codewars.com/kata/reversed-words/train/javascript
