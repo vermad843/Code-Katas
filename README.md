@@ -272,3 +272,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/56cd44e1aa4ac7879200010b
+
+
+[x]https://www.codewars.com/kata/you-only-need-one-beginner/train/javascript
