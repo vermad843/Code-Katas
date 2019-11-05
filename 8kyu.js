@@ -1330,14 +1330,27 @@ import { stringify } from "querystring";
 
 
 
-// 
-function toBinary(n){
-    let num = n.toString(2); 
-    return parseInt(num); 
+// // 
+// function toBinary(n){
+//     let num = n.toString(2); 
+//     return parseInt(num); 
+// }
+
+
+// console.log(toBinary(1), 1);
+// console.log(toBinary(2), 10);
+// console.log(toBinary(3), 11);
+// console.log(toBinary(5), 101);
+
+
+
+
+//db scale = calculating the loudness of a sound 
+// wave
+
+function dBScale(intensity) {
+  return  10*Math.log10(intensity/10**(-12))
 }
 
 
-console.log(toBinary(1), 1);
-console.log(toBinary(2), 10);
-console.log(toBinary(3), 11);
-console.log(toBinary(5), 101);
+console.log(Math.round(dBScale(Math.pow(10, -11))), 10);
