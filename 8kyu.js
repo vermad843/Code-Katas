@@ -1504,17 +1504,33 @@ import { stringify } from "querystring";
 
 
 
-// 
-function correctTail(body, tail)  {
+// // 
+// function correctTail(body, tail)  {
   
-   let  sub = body.substr(body.length-(tail.length))
-    if (sub == tail) {
-      return true
-    }else { 
-      return false
-     }
-}  
-console.log(correctTail("Fox", "x"), true);
-console.log(correctTail("Rhino", "o"), true);
-console.log(correctTail("Meerkat", "t"), true);
-console.log(correctTail("Meerka", "t"), false);
+//    let  sub = body.substr(body.length-(tail.length))
+//     if (sub == tail) {
+//       return true
+//     }else { 
+//       return false
+//      }
+// }  
+// console.log(correctTail("Fox", "x"), true);
+// console.log(correctTail("Rhino", "o"), true);
+// console.log(correctTail("Meerkat", "t"), true);
+// console.log(correctTail("Meerka", "t"), false);
+
+
+
+var countSheep = function (num){
+   let output = '';
+   for (let i = 1; i <= num; i++) {
+      output+=`${i} sheep...`
+       
+   }
+   return output
+  }
+
+console.log(countSheep(1), "1 sheep...");
+console.log(countSheep(2), "1 sheep...2 sheep...");
+console.log(countSheep(3), "1 sheep...2 sheep...3 sheep...");
+

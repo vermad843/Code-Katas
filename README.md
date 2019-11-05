@@ -278,3 +278,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/is-this-my-tail/train/javascript
+
+
+[x]https://www.codewars.com/kata/if-you-cant-sleep-just-count-sheep/train/javascript
