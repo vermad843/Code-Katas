@@ -1348,9 +1348,21 @@ import { stringify } from "querystring";
 //db scale = calculating the loudness of a sound 
 // wave
 
-function dBScale(intensity) {
-  return  10*Math.log10(intensity/10**(-12))
-}
+// function dBScale(intensity) {
+//   return  10*Math.log10(intensity/10**(-12))
+// }
 
 
-console.log(Math.round(dBScale(Math.pow(10, -11))), 10);
+// console.log(Math.round(dBScale(Math.pow(10, -11))), 10);
+
+
+
+
+// 
+
+function binToDec(bin){
+   return  parseInt(bin, 2);
+  }
+
+
+  [ ["1",1], ["0",0], ["1001001", 73] ].forEach( ([inp, exp]) => console.log( binToDec(inp), exp ) )

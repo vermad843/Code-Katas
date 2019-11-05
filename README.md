@@ -255,3 +255,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/decibel-scale/train/javascript
+
+
+[x]https://www.codewars.com/kata/bin-to-decimal/train/javascript
