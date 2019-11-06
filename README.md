@@ -284,3 +284,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/basic-variable-assignment/train/javascript
+
+
+[x]https://www.codewars.com/kata/opposites-attract/train/javascript
