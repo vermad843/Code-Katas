@@ -1521,16 +1521,28 @@ import { stringify } from "querystring";
 
 
 
-var countSheep = function (num){
-   let output = '';
-   for (let i = 1; i <= num; i++) {
-      output+=`${i} sheep...`
+// var countSheep = function (num){
+//    let output = '';
+//    for (let i = 1; i <= num; i++) {
+//       output+=`${i} sheep...`
        
-   }
-   return output
-  }
+//    }
+//    return output
+//   }
 
-console.log(countSheep(1), "1 sheep...");
-console.log(countSheep(2), "1 sheep...2 sheep...");
-console.log(countSheep(3), "1 sheep...2 sheep...3 sheep...");
+// console.log(countSheep(1), "1 sheep...");
+// console.log(countSheep(2), "1 sheep...2 sheep...");
+// console.log(countSheep(3), "1 sheep...2 sheep...3 sheep...");
 
+
+
+
+// 
+
+var a ="code";
+var b = " wa.rs";
+var name = a + b;
+
+
+
+console.log(name);//code wa.rs

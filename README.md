@@ -281,3 +281,6 @@ code Kata profile :
 
 
 [x]https://www.codewars.com/kata/if-you-cant-sleep-just-count-sheep/train/javascript
+
+
+[x]https://www.codewars.com/kata/basic-variable-assignment/train/javascript
