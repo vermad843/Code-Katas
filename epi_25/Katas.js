@@ -27,24 +27,47 @@
 
 // 
 
-function isPangram(string){
- const allLetters = {};
- for (let i = 97; i <= 122; i++) {
-     allLetters[String.fromCharCode(i)] = true;
- }
- for (let i = 0; i < string.length; i++) {
-     const character = string[i].toLowerCase();
-      delete allLetters[character];   
- }
- return Object.keys(allLetters).length === 0;
+// function isPangram(string){
+//  const allLetters = {};
+//  for (let i = 97; i <= 122; i++) {
+//      allLetters[String.fromCharCode(i)] = true;
+//  }
+//  for (let i = 0; i < string.length; i++) {
+//      const character = string[i].toLowerCase();
+//       delete allLetters[character];   
+//  }
+//  return Object.keys(allLetters).length === 0;
+// }
+
+
+//   var string = "The quick brown fox jumps over the lazy dog."
+//   console.log(isPangram(string), true)
+//   var string = "This is not a pangram."
+//   console.log(isPangram(string), false)
+  
+
+
+//
+
+var helloWorld = function () {
+  const [,H] = [].shift.name.toUpperCase(); 
+  const [e]  = [].every.name;
+  const [,,l] =  [].filter.name;
+  const [o] = Array.of.name;
+
+  const [,a] = false.toString();
+  const space = a.charCodeAt() - a.toUpperCase().charCodeAt();//97-65 = 32=> ' ' 
+
+  const [,,,,W] = [].copyWithin.name;
+  const [r] = [].reverse.name;
+  const [,,,d] = [].find.name;
+
+  const exclaim = space + [true].length  //33 => !
+  return H + e + l + l + o + String.fromCharCode(space) + W + o + r + l + d + String.fromCharCode(exclaim)
 }
 
 
-  var string = "The quick brown fox jumps over the lazy dog."
-  console.log(isPangram(string), true)
-  var string = "This is not a pangram."
-  console.log(isPangram(string), false)
-  
+console.log(helloWorld(), 'Hello World!')
 
 
 
