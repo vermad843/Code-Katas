@@ -25,23 +25,36 @@
 
 
 
-// sentence which contains every letter from a to z ;
+// 
 
-function isPangram(string) {
-    const allLetters = {};
-    for (let i = 97; i <=122; i++) {  //ASCII a = 97 ,z = 122
-        allLetters[String.fromCharCode(i)] === true;
-    }
-    for (let i = 0; i < string.length; i++) {
-        const character = string[i].toLowerCase();
-        delete allLetters[character];
-    }
-    return Object.keys(allLetters).length === 0;
+function isPangram(string){
+ const allLetters = {};
+ for (let i = 97; i <= 122; i++) {
+     allLetters[String.fromCharCode(i)] = true;
+ }
+ for (let i = 0; i < string.length; i++) {
+     const character = string[i].toLowerCase();
+      delete allLetters[character];   
+ }
+ return Object.keys(allLetters).length === 0;
 }
 
-const input1 = 'The quick brown fox jumps over the lazy dog.';
-console.log(isPangram(input1) === true);
+
+  var string = "The quick brown fox jumps over the lazy dog."
+  console.log(isPangram(string), true)
+  var string = "This is not a pangram."
+  console.log(isPangram(string), false)
+  
 
 
-const input2 = 'This is not a pangram.';
-console.log(isPangram(input2) === false);
+
+
+
+
+
+
+
+
+
+
+  
