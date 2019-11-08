@@ -1,20 +1,20 @@
-code Kata profile : 
+codeWars profile : checkout my profile  
+
 
 [x]https://www.codewars.com/users/vermad843
 
 
+
+
+
+
+
+
+
+go to 8 kyu.js file all the solutions for these katas are there: 
+
+
 //8kyu
-
-[x] https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
-
-[x]https://www.codewars.com/kata/be-concise-i-the-ternary-operator/train/javascript
-
-[x]https://www.codewars.com/kata/remove-string-spaces/train/javascript
-
-[x]https://www.codewars.com/kata/convert-a-string-to-a-number/train/javascript
-
-[x]https://www.codewars.com/kata/makeuppercase/train/javascript
-
 
 
 [x]https://www.codewars.com/kata/area-of-a-square/train/javascript

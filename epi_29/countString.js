@@ -1,22 +1,24 @@
-// function count (string) {  
-//     const counts = {};
+function count (string) {  
+    const counts = {};
 
-//     for (let i = 0; i < string.length; i++) {
-//         const letter = string[i];
-//         console.log(letter);
+    for (let i = 0; i < string.length; i++) {
+        const letter = string[i];
+        console.log(letter);
 
-//        //if the current letter is not a property in the object 
-//        //set it 0 
-//        //if current letter is there keep it the same
-//       counts[letter] = counts[letter] || 0;
-//       counts[letter]++;
+       //if the current letter is not a property in the object 
+       //set it 0 
+       //if current letter is there keep it the same
+      counts[letter] = counts[letter] || 0;
+      counts[letter]++;
 
    
-//     }
-//      return counts;
-//   }
+    }
+     return counts;
+  }
 
 
+
+  // 
   function count (string) {  
     const counts = {};
 
