@@ -291,3 +291,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/calculate-bmi/train/javascript
+
+
+[x]https://www.codewars.com/kata/5a34b80155519e1a00000009
