@@ -1,0 +1,1 @@
+[x] https://www.codewars.com/kata/sum-of-cubes/train/javascript
