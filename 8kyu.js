@@ -1639,3 +1639,24 @@ console.log(multipleOfIndex([-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,
 console.log(multipleOfIndex([28,38,-44,-99,-13,-54,77,-51]), [38, -44, -99]);
 console.log(multipleOfIndex([-1,-49,-1,67,8,-60,39,35]), [-49, 8, -60, 35]);
   
+
+
+
+
+// 
+function validateUsr(username) {
+ return    /^[a-z0-9_]{4,16}$/.test(username)  
+}
+
+
+
+console.log(validateUsr('asddsa'), true);
+console.log(validateUsr('a'), false);
+console.log(validateUsr('Hass'), false);
+console.log(validateUsr('Hasd_12assssssasasasasasaasasasasas'), false);
+console.log(validateUsr(''), false);
+console.log(validateUsr('____'), true);
+console.log(validateUsr('012'), false);
+console.log(validateUsr('p1pp1'), true);
+console.log(validateUsr('asd43 34'), false);
+console.log(validateUsr('asd43_34'), true);
