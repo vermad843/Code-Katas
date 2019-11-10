@@ -1666,3 +1666,11 @@ console.log(validateUsr('asd43_34'), true);
 
 
 // 
+function digitize(n) {
+   return n.toString().split('').reverse().map((num) => {
+     return parseInt(num)
+   });
+}
+
+
+console.log(digitize(35231),[1,3,2,5,3]);

@@ -297,3 +297,13 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/simple-validation-of-a-username-with-regex/train/javascript
+
+
+
+
+
+
+<!--  -->
+
+
+[x] https://www.codewars.com/kata/convert-number-to-reversed-array-of-digits/train/javascript
