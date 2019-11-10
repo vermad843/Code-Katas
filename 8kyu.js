@@ -1694,3 +1694,18 @@ console.log(nearestSq(2),1)
 console.log(nearestSq(10),9)
 console.log(nearestSq(111),121)
 console.log(nearestSq(9999),10000)
+
+
+
+
+
+
+// 
+
+function booleanToString(b){
+    return b.toString();
+}
+
+
+console.log(booleanToString(true), "true", 'When we pass in true, we want the string "true" as output');
+console.log(booleanToString(false), "false", 'When we pass in false, we want the string "false" as output');

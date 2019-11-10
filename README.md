@@ -310,3 +310,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/find-nearest-square-number/train/javascript
+
+
+[x]https://www.codewars.com/kata/convert-a-boolean-to-a-string/train/javascript
