@@ -319,3 +319,7 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/sentence-smash/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/57a4d500e298a7952100035d
