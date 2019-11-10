@@ -1722,7 +1722,6 @@ function strCount(str, letter){
    let count = 0;
    for (let i = 0; i < str.length; i++) {
      const element = str[i];
-     console.log(element)
      if(element == letter) {
        count++;
      }
@@ -1736,3 +1735,19 @@ function strCount(str, letter){
 console.log(strCount('Hello', 'o'), 1);
 console.log(strCount('Hello', 'l'), 2);
 console.log(strCount('', 'z'), 0);
+
+
+
+
+// 
+
+
+// Smash Words
+function smash (words) {
+  return words.join(' ');
+  
+};
+
+
+console.log(smash(["hello"]), "hello");
+console.log(smash(["hello", "world"]), "hello world");
