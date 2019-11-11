@@ -323,3 +323,12 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/57a4d500e298a7952100035d
+
+
+
+
+
+<!--  -->
+
+
+[x]https://www.codewars.com/kata/i-love-you-a-little-a-lot-passionately-dot-dot-dot-not-at-all/train/javascript
