@@ -336,3 +336,12 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/who-is-going-to-pay-for-the-wall/train/javascript
+
+
+
+
+
+<!--  -->
+
+
+[x]https://www.codewars.com/kata/sort-and-star/train/javascript
