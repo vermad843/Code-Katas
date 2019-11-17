@@ -1827,3 +1827,20 @@ function twoSort(s) {
 
 console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]), 'b***i***t***c***o***i***n' );
 console.log(twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]), 'a***r***e');
+
+
+
+
+// 
+
+function drawStairs(n) {
+let step = "I"
+for (let i =1; i < n; i++) {
+   step+='\n' + " ".repeat(i) + 'I'; 
+ }  
+ return step 
+}
+
+console.log(drawStairs(1), "I", );
+console.log(drawStairs(3), "I\n I\n  I", );
+console.log(drawStairs(5), "I\n I\n  I\n   I\n    I", );
