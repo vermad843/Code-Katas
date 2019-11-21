@@ -1844,3 +1844,15 @@ for (let i =1; i < n; i++) {
 console.log(drawStairs(1), "I", );
 console.log(drawStairs(3), "I\n I\n  I", );
 console.log(drawStairs(5), "I\n I\n  I\n   I\n    I", );
+
+
+
+
+// 
+
+function unusualFive() {
+  return 'Logan'.length 
+}
+
+
+console.log(unusualFive(), 5);
