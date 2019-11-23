@@ -1869,3 +1869,26 @@ console.log(quote('george saint pierre'), "I am not impressed by your performanc
 console.log(quote('conor mcgregor'), "I'd like to take this chance to apologize.. To absolutely NOBODY!")
 console.log(quote('George Saint Pierre'), "I am not impressed by your performance.")
 console.log(quote('Conor McGregor'), "I'd like to take this chance to apologize.. To absolutely NOBODY!")
+
+
+
+
+// 
+
+function bonusTime(salary, bonus) {
+  if(bonus == true) {
+    return `£${salary}0`
+  }else {
+    return `£${salary}`
+  }
+  }
+
+
+console.log(bonusTime(10000, true), '£100000');
+console.log(bonusTime(25000, true), '£250000');
+console.log(bonusTime(10000, false), '£10000');
+console.log(bonusTime(60000, false), '£60000');
+console.log(bonusTime(2, true), '£20');
+console.log(bonusTime(78, false), '£78');
+console.log(bonusTime(67890, true), '£678900');
+

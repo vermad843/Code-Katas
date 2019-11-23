@@ -353,3 +353,12 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x] https://www.codewars.com/kata/5-without-numbers/train/javascript
+
+
+[x]https://www.codewars.com/kata/for-ufc-fans-total-beginners-conor-mcgregor-vs-george-saint-pierre/train/javascript
+
+
+
+<!--  -->
+
+[x]https://www.codewars.com/kata/do-i-get-a-bonus/train/javascript
