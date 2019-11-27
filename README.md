@@ -362,3 +362,8 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x]https://www.codewars.com/kata/do-i-get-a-bonus/train/javascript
+
+
+
+<!--  -->
+[x]https://www.codewars.com/kata/alan-partridge-ii-apple-turnover/train/javascript

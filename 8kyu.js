@@ -1892,3 +1892,20 @@ console.log(bonusTime(2, true), '£20');
 console.log(bonusTime(78, false), '£78');
 console.log(bonusTime(67890, true), '£678900');
 
+
+
+// 
+
+function apple(x){
+ let xSquare = x*x;
+ console.log(xSquare)
+ if(xSquare >1000) {
+   return `It's hotter than the sun!!`
+ }else {
+  return `Help yourself to a honeycomb Yorkie for the glovebox.`
+ }
+}
+
+
+console.log(apple('50'), 'It\'s hotter than the sun!!'); 
+console.log(apple(4), 'Help yourself to a honeycomb Yorkie for the glovebox.'); 
