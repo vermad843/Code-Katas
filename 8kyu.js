@@ -1909,3 +1909,20 @@ function apple(x){
 
 console.log(apple('50'), 'It\'s hotter than the sun!!'); 
 console.log(apple(4), 'Help yourself to a honeycomb Yorkie for the glovebox.'); 
+
+
+
+
+// 
+
+String.prototype.digit = function() {
+  return this.match(/^[0-9]$/) ? true : false;
+};
+
+
+console.log(''.digit(), false);
+console.log('7'.digit(), true);
+console.log(' '.digit(), false);
+console.log('a'.digit(), false);
+console.log('a5'.digit(), false);
+console.log('14'.digit(), false);
