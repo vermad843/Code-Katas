@@ -372,3 +372,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x]https://www.codewars.com/kata/regexp-basics-is-it-a-digit/train/javascript
+
+
+[x]https://www.codewars.com/kata/keep-up-the-hoop/train/javascript

@@ -1926,3 +1926,16 @@ console.log(' '.digit(), false);
 console.log('a'.digit(), false);
 console.log('a5'.digit(), false);
 console.log('14'.digit(), false);
+
+
+
+
+// 
+
+function hoopCount (n) {
+  return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
+}
+
+
+console.log(hoopCount(3),"Keep at it until you get it" ) 
+console.log(hoopCount(11),"Great, now move on to tricks" )
