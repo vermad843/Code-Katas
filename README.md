@@ -375,3 +375,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/keep-up-the-hoop/train/javascript
+
+
+[x]https://www.codewars.com/kata/is-n-divisible-by-x-and-y/train/javascript
