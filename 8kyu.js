@@ -23,6 +23,7 @@ function squareArea(A){//A is a length of a arc
 function warnTheSheep(queue) {
     const wolfAtIndex0 =  queue.reverse();
     const wolfPosition =  wolfAtIndex0.indexOf('wolf');
+    console.log(wolfPosition)
   return wolfPosition === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ wolfPosition}! You are about to be eaten by a wolf!`;
   }
 
@@ -98,7 +99,7 @@ function well(x){
         if( arrValue == 'good') {
             return arrValue;
         }
-    }) ;
+    });
     if(arr.length == 0){
         return 'Fail!';
     }
@@ -263,7 +264,7 @@ function betterThanAverage(classPoints, yourPoints) {
       return a + b ;
   }, 0);
   const  points  = classPointsSum + yourPoints;
-  const Average = points/classPoints.length 
+  const Average = points/classPoints.length ;
   if(Average<= yourPoints) {
       return true;
   } else {
@@ -538,7 +539,7 @@ function expressionMatter(a, b, c) {
 // 
 function squareSum(numbers){
   return numbers.reduce((sum, num) => {
-      return (num*num) + sum 
+      return sum += (num*num)
   }, 0)
 }
 
@@ -1953,3 +1954,30 @@ console.log(isDivisible(3,3,4),false);
 console.log(isDivisible(12,3,4),true);
 console.log(isDivisible(8,3,4),false);
 console.log(isDivisible(48,3,4),true);
+
+
+
+// 
+function solution(A) {
+ console.log(A);
+//  find a first  positive  number which is   greater than 0 
+// which is not present in the array 
+}
+
+console.log(solution([1,2,4,6,3,7]), 5);
+console.log(solution([1,2,3]), 4);
+console.log(solution([-1,-2]), 1);
+
+
+
+
+// 
+
+function sumStr(a,b) {
+  return String(Number(a) + Number(b));
+}
+
+
+console.log(sumStr("4","5"), "9");
+console.log(sumStr("34","5"), "39");
+
