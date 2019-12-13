@@ -385,3 +385,13 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/sum-the-strings/train/javascript
+
+
+
+<!--  -->
+
+[x]https://www.codewars.com/kata/the-wide-mouthed-frog/train/javascript
+
+
+
+[x]https://www.codewars.com/kata/return-the-day/train/javascript
