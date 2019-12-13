@@ -321,7 +321,6 @@ const summation = function (num) {
       value =   i;
       output+=value;
     }
-    
     return output;
 }
 
@@ -863,7 +862,7 @@ function gooseFilter (birds) {
     let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     return birds.filter((bird) => {
      return !geese.includes(bird);
-    })
+    });
   };
 
 
@@ -881,8 +880,6 @@ function gooseFilter (birds) {
 function greet() {
     return 'hello world!'
 }
-
-
 
 
 console.log(typeof greet, "function", "greet should be a function");
@@ -933,7 +930,7 @@ function isPalindrome(x) {
     if(a == b) {
         return true;
     }else {
-        return false
+        return false;
     }
   }
 
@@ -1053,7 +1050,7 @@ console.log(getAverage([1,1,1,1,1,1,1,2]),1);
 // 
 function grow(x){
  return x.reduce((product, num) => {
-   return product*num
+   return product*num  
  }, 1)
 }
 
@@ -1191,7 +1188,6 @@ let operators = {
 
 
 function logicalCalc(array, op){
-    console.log(op);
   return array.reduce((operators[op]));
 }
 
@@ -1376,7 +1372,7 @@ console.log(toBinary(5), 101);
 // wave
 
 function dBScale(intensity) {
-  return  10*Math.log10(intensity/10**(-12))
+  return  10*Math.log10(intensity/10**(-12));
 }
 
 
@@ -1398,9 +1394,7 @@ function binToDec(bin){
 
 
 // 
-function stairsIn20(a) {
-    return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
-  }
+
 
 
 //   
@@ -1537,14 +1531,10 @@ console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false);
 
 //  
 function correctTail(body, tail)  {
-  
-   let  sub = body.substr(body.length-(tail.length))
-    if (sub == tail) {
-      return true
-    }else { 
-      return false
-     }
+  return body.endsWith(tail); 
 }  
+
+
 console.log(correctTail("Fox", "x"), true);
 console.log(correctTail("Rhino", "o"), true);
 console.log(correctTail("Meerkat", "t"), true);
@@ -1556,8 +1546,7 @@ console.log(correctTail("Meerka", "t"), false);
 var countSheep = function (num){
    let output = '';
    for (let i = 1; i <= num; i++) {
-      output+=`${i} sheep...`
-       
+      output+=`${i} sheep...` 
    }
    return output
   }
@@ -1646,7 +1635,7 @@ console.log(multipleOfIndex([-1,-49,-1,67,8,-60,39,35]), [-49, 8, -60, 35]);
 
 // 
 function validateUsr(username) {
- return    /^[a-z0-9_]{4,16}$/.test(username)  
+ return    /^[a-z0-9_]{4,16}$/.test(username) 
 }
 
 
@@ -1728,7 +1717,6 @@ function strCount(str, letter){
      }
    }
    return count ;
-
   }
 
 
@@ -1837,7 +1825,7 @@ console.log(twoSort(["turns", "out", "random", "test", "cases", "are", "easier",
 function drawStairs(n) {
 let step = "I"
 for (let i =1; i < n; i++) {
-   step+='\n' + " ".repeat(i) + 'I'; 
+   step+= ' '.repeat(i) + 'I'; 
  }  
  return step 
 }
@@ -1958,21 +1946,6 @@ console.log(isDivisible(48,3,4),true);
 
 
 // 
-function solution(A) {
- console.log(A);
-//  find a first  positive  number which is   greater than 0 
-// which is not present in the array 
-}
-
-console.log(solution([1,2,4,6,3,7]), 5);
-console.log(solution([1,2,3]), 4);
-console.log(solution([-1,-2]), 1);
-
-
-
-
-// 
-
 function sumStr(a,b) {
   return String(Number(a) + Number(b));
 }
@@ -1980,4 +1953,23 @@ function sumStr(a,b) {
 
 console.log(sumStr("4","5"), "9");
 console.log(sumStr("34","5"), "39");
+
+
+
+//  
+
+
+function mouthSize(animal) {
+  return  animal.toLowerCase() == 'alligator' ? 'small' : 'wide';
+}
+
+
+console.log(mouthSize("toucan"),"wide")
+console.log(mouthSize("ant bear"),"wide")
+console.log(mouthSize("alligator"),"small")
+
+
+
+
+
 
