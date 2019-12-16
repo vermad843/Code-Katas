@@ -2002,3 +2002,30 @@ console.log(whatday(20),  'Wrong, please enter a number between 1 and 7')
 
 
 
+// 
+
+
+function isToday(date) {
+   let today = new Date();
+   let a =  date.toDateString();
+   let b = today.toDateString();
+   return a == b
+ }
+
+
+
+ var tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+
+var yesterday = new Date();
+yesterday.setDate(yesterday.getDate() - 1);
+
+
+console.log(isToday(new Date()), true);
+console.log(isToday(tomorrow), false);
+console.log(isToday(yesterday), false);
+
+
+
+
+// 

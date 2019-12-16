@@ -395,3 +395,11 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/return-the-day/train/javascript
+
+
+
+
+<!--  -->
+
+
+[x] https://www.codewars.com/kata/is-the-date-today/train/javascript
