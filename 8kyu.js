@@ -2029,3 +2029,18 @@ console.log(isToday(yesterday), false);
 
 
 // 
+
+function areYouPlayingBanjo(name) {
+ console.log(name);
+ if (name[0] == "R") {
+   return `${name} plays banjo`
+ }else if(name[0] == 'r'){
+   return  `${name} plays banjo`
+ }else {
+   return `${name} does not play banjo`
+ }
+}
+
+
+console.log(areYouPlayingBanjo("Martin"), "Martin does not play banjo");
+console.log(areYouPlayingBanjo("Rikke"), "Rikke plays banjo");

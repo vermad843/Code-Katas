@@ -403,3 +403,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x] https://www.codewars.com/kata/is-the-date-today/train/javascript
+
+
+[x]https://www.codewars.com/kata/are-you-playing-banjo/train/javascript
