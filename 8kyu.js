@@ -2078,7 +2078,6 @@ console.log(cubeChecker(125,-5), false);
 
 function remove(s,n){
  for (let i = 0; i < n; i++) 
- 
  s = s.replace('!', "");
  return s; 
 }
@@ -2095,3 +2094,18 @@ console.log(remove("!!!Hi !!hi!!! !hi",1) , "!!Hi !!hi!!! !hi")
 console.log(remove("!!!Hi !!hi!!! !hi",3) , "Hi !!hi!!! !hi")
 console.log(remove("!!!Hi !!hi!!! !hi",5) , "Hi hi!!! !hi")
 console.log(remove("!!!Hi !!hi!!! !hi",100) , "Hi hi hi")
+
+
+
+
+// 
+
+function iceBrickVolume(radius, bottleLength, rimLength) {
+  let height = bottleLength - rimLength ;
+  return radius * radius * (height + height)
+}
+
+
+
+console.log(iceBrickVolume(1, 10, 2), 16);
+console.log(iceBrickVolume(5, 30, 7), 1150);

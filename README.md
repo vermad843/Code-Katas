@@ -412,3 +412,12 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/exclamation-marks-series-number-6-remove-n-exclamation-marks-in-the-sentence-from-left-to-right/train/javascript
+
+
+
+
+
+<!--  -->
+
+
+[x]https://www.codewars.com/kata/for-twins-2-math-operations/train/javascript
