@@ -2109,3 +2109,17 @@ function iceBrickVolume(radius, bottleLength, rimLength) {
 
 console.log(iceBrickVolume(1, 10, 2), 16);
 console.log(iceBrickVolume(5, 30, 7), 1150);
+
+
+
+
+// 
+
+var countSquares = function(cuts){
+  return cuts === 0 ? 1 : (6 * cuts * cuts) + 2;
+}
+
+
+console.log(countSquares(5),152)
+console.log(countSquares(16),1538)
+console.log(countSquares(23),3176)
