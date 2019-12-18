@@ -2114,7 +2114,6 @@ console.log(iceBrickVolume(5, 30, 7), 1150);
 
 
 // 
-
 var countSquares = function(cuts){
   return cuts === 0 ? 1 : (6 * cuts * cuts) + 2;
 }
@@ -2123,3 +2122,22 @@ var countSquares = function(cuts){
 console.log(countSquares(5),152)
 console.log(countSquares(16),1538)
 console.log(countSquares(23),3176)
+
+
+
+
+// 
+function feast(beast, dish) {
+  let a = beast[0];
+  let b = dish[0];
+  let c = beast[beast.length - 1];
+  let d = dish[dish.length -1];
+  return  a === b && c == d 
+  }
+
+
+console.log(feast("great blue heron", "garlic naan"), true)
+console.log(feast("chickadee", "chocolate cake"), true)
+console.log(feast("brown bear", "bear claw"), false)
+console.log(feast("imjaqjuk" , "xnmvrrcydapjoumuozkfbafw"),false)
+

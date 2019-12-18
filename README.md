@@ -421,3 +421,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/for-twins-2-math-operations/train/javascript
+
+
+[x]https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
