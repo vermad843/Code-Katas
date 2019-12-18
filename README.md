@@ -424,3 +424,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/the-feast-of-many-beasts/train/javascript
+
+
+[x]https://www.codewars.com/kata/training-js-number-5-basic-data-types-object/train/javascript
