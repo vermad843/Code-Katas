@@ -2170,3 +2170,17 @@ console.log(hero(100, 40), true);
 console.log(hero(1500, 751), false);
 console.log(hero(0, 1), false);
   
+
+
+// 
+function removeEveryOther(arr){
+ return arr.filter((value, index) => {
+   return index % 2 == 0;
+ })
+}
+
+
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']),['Hello', 'Hello Again']);
+console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),[1, 3, 5, 7, 9]);
+console.log(removeEveryOther([[1, 2]]), [[1, 2]]);
+console.log(removeEveryOther([['Goodbye'], {'Great': 'Job'}]),[['Goodbye']]);

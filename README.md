@@ -433,3 +433,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x]https://www.codewars.com/kata/is-he-gonna-survive/train/javascript
+
+
+[x]https://www.codewars.com/kata/removing-elements/train/javascript
