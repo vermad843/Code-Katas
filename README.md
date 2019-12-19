@@ -427,3 +427,9 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/training-js-number-5-basic-data-types-object/train/javascript
+
+
+
+<!--  -->
+
+[x]https://www.codewars.com/kata/is-he-gonna-survive/train/javascript

@@ -2154,3 +2154,19 @@ function animal(obj){
 console.log(animal({name:"dog",legs:4,color:"white"}),"This white dog has 4 legs.");
 console.log(animal({name:"cock",legs:2,color:"red"}),"This red cock has 2 legs.");
 console.log(animal({name:"rabbit",legs:4,color:"gray"}),"This gray rabbit has 4 legs.");
+
+
+
+// 
+
+function hero(bullets, dragons){
+   return bullets >= dragons*2 ? true :false;
+} 
+
+console.log(hero(10, 5), true);
+console.log(hero(7, 4), false);
+console.log(hero(4, 5), false);
+console.log(hero(100, 40), true);
+console.log(hero(1500, 751), false);
+console.log(hero(0, 1), false);
+  
