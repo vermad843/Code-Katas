@@ -2184,3 +2184,19 @@ console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']),['Hello', 'Hel
 console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),[1, 3, 5, 7, 9]);
 console.log(removeEveryOther([[1, 2]]), [[1, 2]]);
 console.log(removeEveryOther([['Goodbye'], {'Great': 'Job'}]),[['Goodbye']]);
+
+
+
+//
+
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+ let leftOutBlueMarble  = blueStart - bluePulled;
+ let leftOutRedMarble = redStart - redPulled;
+ let totalLeftOutBalls = leftOutBlueMarble + leftOutRedMarble;
+ return (leftOutBlueMarble  / totalLeftOutBalls)
+}
+
+
+console.log(guessBlue(5, 5, 2, 3), 0.6);
+console.log(guessBlue(5, 7, 4, 3), 0.2);
+console.log(guessBlue(12, 18, 4, 6), 0.4);
