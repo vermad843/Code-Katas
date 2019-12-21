@@ -2217,3 +2217,20 @@ console.log(isOpposite("aBcd","AbCD") , true);
 console.log(isOpposite("aBcde","AbCD") , false);
 console.log(isOpposite("AB","Ab") , false);
 console.log(isOpposite("","") , false);
+
+
+
+// 
+
+
+function between(a, b) {
+  let arr = [];
+   for (let i = a; i <= b; i++) {
+    arr.push(i);    
+   }
+   return arr;
+}
+
+
+console.log((between(1, 4), [1, 2, 3, 4]));
+console.log((between(-2, 2), [-2, -1, 0, 1, 2]));
