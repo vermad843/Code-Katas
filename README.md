@@ -451,3 +451,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/training-js-number-8-conditional-statement-switch/train/javascript
+
+
+[x]https://www.codewars.com/kata/remove-exclamation-marks/train/javascript
