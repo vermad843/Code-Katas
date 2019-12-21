@@ -2208,6 +2208,7 @@ console.log(guessBlue(12, 18, 4, 6), 0.4);
 function isOpposite(s1,s2){
   if(s1 === '' || s2 === '') return false;
   return s1.split('').map(i => i === i.toUpperCase() ? i.toLowerCase() : i.toUpperCase()).join('') === s2
+
 }
 
 
@@ -2302,3 +2303,21 @@ function removeExclamationMarks(s) {
 
 
 console.log(removeExclamationMarks("Hello World!"), "Hello World");
+
+
+
+
+
+// 
+
+
+function capitalizeWord(word) {
+ let a =  word[0].toUpperCase();
+  let b = word[0];
+  return word.replace(b , a)
+}
+
+
+console.log(capitalizeWord('word'), 'Word');
+console.log(capitalizeWord('i'), 'I');
+console.log(capitalizeWord('glasswear'), 'Glasswear');
