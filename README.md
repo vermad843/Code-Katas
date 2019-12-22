@@ -466,3 +466,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x]https://www.codewars.com/kata/parse-nice-int-from-char-problem/train/javascript
+
+
+[x]https://www.codewars.com/kata/reversed-sequence/train/javascript

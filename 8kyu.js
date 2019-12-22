@@ -2346,3 +2346,20 @@ function getAge(inputString){
 
 
 console.log(getAge("4 years old"), 4);
+
+
+
+
+// 
+
+const reverseSeq = n => {
+    let arr = [];
+    for (let i = 1; i <=n; i++) {
+     arr.push(i);
+      
+    }
+  return arr.reverse();
+};
+
+
+console.log(reverseSeq(5), [5, 4, 3, 2, 1]);
