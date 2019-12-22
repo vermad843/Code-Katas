@@ -2363,3 +2363,18 @@ const reverseSeq = n => {
 
 
 console.log(reverseSeq(5), [5, 4, 3, 2, 1]);
+
+
+
+
+// 
+
+function hello(name) {
+  return (name === '' || name === undefined) ? 'Hello, World!' : `Hello, ${name[0].toUpperCase() + name.toLowerCase().substring(1)}!`;
+}
+
+
+console.log(hello('johN'), 'Hello, John!', "returns 'Hello, John!' when given 'johN'")
+console.log(hello('alice'), 'Hello, Alice!', "returns 'Hello, Alice!' when given 'alice'")
+console.log(hello(), 'Hello, World!', "returns 'Hello, World!' when name is not given")
+console.log(hello(''), 'Hello, World!', "returns 'Hello, World!' when name is an empty String" )
