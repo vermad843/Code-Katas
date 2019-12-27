@@ -479,3 +479,12 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/twice-as-old/train/javascript
+
+
+[x]https://www.codewars.com/kata/enumerable-magic-number-3-does-my-list-include-this/train/javascript
+
+
+
+<!--  -->
+
+[x]https://www.codewars.com/kata/super-duper-easy/train/javascript

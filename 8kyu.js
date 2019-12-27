@@ -2396,3 +2396,37 @@ console.log(twiceAsOld(55,30) , 5);
 console.log(twiceAsOld(42,21) , 0);
 console.log(twiceAsOld(22,1) , 20);
 console.log(twiceAsOld(29,0) , 29);
+
+
+
+// 
+
+
+function include(arr, item){
+  return arr.indexOf(item) !== -1;
+}
+
+
+console.log(include([1,2,3,4], 3), true )
+console.log(include([1,2,4,5], 3), false)
+
+
+
+
+// 
+
+function problem(x){
+ return typeof x === 'string' ? 'Error' : x*50+6
+}
+
+
+console.log(problem("hello"), "Error");
+console.log(problem(1), 56);
+console.log(problem(5), 256);
+console.log(problem(0), 6);
+console.log(problem(1.2), 66);
+console.log(problem(3), 156);
+console.log(problem("RyanIsCool"), "Error");
+console.log(problem(-3), -144);
+console.log(problem(""), "Error");
+console.log(problem(0.03), 7.5);
