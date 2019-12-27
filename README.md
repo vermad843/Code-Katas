@@ -488,3 +488,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x]https://www.codewars.com/kata/super-duper-easy/train/javascript
+
+
+[x]https://www.codewars.com/kata/returning-strings/train/javascript

@@ -2430,3 +2430,15 @@ console.log(problem("RyanIsCool"), "Error");
 console.log(problem(-3), -144);
 console.log(problem(""), "Error");
 console.log(problem(0.03), 7.5);
+
+
+
+// 
+
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
+
+
+console.log(greet("Ryan"), "Hello, Ryan how are you doing today?");
+console.log(greet("Shingles"), "Hello, Shingles how are you doing today?");
