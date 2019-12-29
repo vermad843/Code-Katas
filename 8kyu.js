@@ -2599,3 +2599,18 @@ console.log(isDivisible(4066, 27), false);
 console.log(isDivisible(10000, 20), true);
 console.log(isDivisible(10005, 20), false);
 console.log(isDivisible(10005, 1), true);
+
+
+
+// 
+
+
+function dutyFree(normPrice, discount, hol){
+  const saving = normPrice * discount/100;
+  return Math.floor(hol/saving);
+ }
+
+
+console.log(dutyFree(12, 50, 1000), 166);
+console.log(dutyFree(17, 10, 500), 294);
+console.log(dutyFree(24, 35, 3000), 357);

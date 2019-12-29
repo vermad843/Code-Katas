@@ -507,6 +507,8 @@ go to 8 kyu.js file all the solutions for these katas are there:
 [x]https://www.codewars.com/kata/thinkful-number-drills-pixelart-planning/train/javascript
 
 
+[x]https://www.codewars.com/kata/holiday-viii-duty-free/train/javascript
+
 
 
 
