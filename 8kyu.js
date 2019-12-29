@@ -2568,3 +2568,15 @@ let fruits = {
   }
 
 console.log(SubtractSum(10), "apple");
+
+
+
+
+// 
+
+function multiply(a, b) {
+  return a * b ;
+ }
+
+
+console.log(multiply(2, 5), 10);

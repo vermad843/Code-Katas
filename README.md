@@ -494,3 +494,18 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x]https://www.codewars.com/kata/subtract-the-sum/train/javascript
+
+
+
+
+<!--  -->
+
+
+[x]https://www.codewars.com/kata/function-3-multiplying-two-numbers/train/javascript
+
+
+
+
+
+
+
