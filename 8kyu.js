@@ -2580,3 +2580,22 @@ function multiply(a, b) {
 
 
 console.log(multiply(2, 5), 10);
+
+
+
+// 
+
+function isDivisible(wallLength, pixelSize){
+  let  a = wallLength/pixelSize ;
+  let b = Math.floor(wallLength/pixelSize);
+  return a == b 
+}
+
+
+
+
+console.log(isDivisible(4050, 27), true);
+console.log(isDivisible(4066, 27), false);
+console.log(isDivisible(10000, 20), true);
+console.log(isDivisible(10005, 20), false);
+console.log(isDivisible(10005, 1), true);
