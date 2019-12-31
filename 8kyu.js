@@ -2614,3 +2614,22 @@ function dutyFree(normPrice, discount, hol){
 console.log(dutyFree(12, 50, 1000), 166);
 console.log(dutyFree(17, 10, 500), 294);
 console.log(dutyFree(24, 35, 3000), 357);
+
+
+
+// 
+
+function find_average(array) {
+  let sum = array.reduce((sum , num) => {
+    return sum+=num
+  }, 0)
+  return sum/array.length
+}
+
+
+console.log(find_average([1,1,1]), 1);
+console.log(find_average([1,2,3]), 2);
+
+
+
+
