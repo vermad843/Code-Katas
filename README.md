@@ -517,6 +517,9 @@ go to 8 kyu.js file all the solutions for these katas are there:
 [x]https://www.codewars.com/kata/calculate-average/train/javascript
 
 
+[X]https://www.codewars.com/kata/is-it-a-number/train/javascript
+
+
 
 
 
