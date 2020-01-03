@@ -1407,11 +1407,6 @@ function binToDec(bin){
 }
 
 
-
-
-
-
-
   var sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274,
     7148, 6152, 5940, 8040, 9174, 7555, 7682, 5252, 8793, 8837, 7320, 8478, 6063, 
     5751, 9716, 5085, 7315, 7859, 6628, 5425, 6331, 7097, 6249, 8381, 5936, 8496, 
@@ -1674,7 +1669,7 @@ console.log(digitize(35231),[1,3,2,5,3]);
 
 function nearestSq(n){
 
-  return Math.round(n**0.5)**2  
+  return Math.round(n**0.5)**2 
 }
 
 
@@ -1825,7 +1820,7 @@ console.log(twoSort(["turns", "out", "random", "test", "cases", "are", "easier",
 function drawStairs(n) {
 let step = "I"
 for (let i =1; i < n; i++) {
-   step+= ' '.repeat(i) + 'I'; 
+   step+= ' '.repeat(i); 
  }  
  return step 
 }
@@ -2307,14 +2302,12 @@ console.log(removeExclamationMarks("Hello World!"), "Hello World");
 
 
 
-
-// 
-
-
 function capitalizeWord(word) {
- let a =  word[0].toUpperCase();
-  let b = word[0];
-  return word.replace(b , a)
+//  let a =  word[0].toUpperCase();
+//   let b = word[0];
+//   return word.replace(b , a)
+//  return word[0].toUpperCase() + word.toLowerCase().substring(1)
+ return `${word[0].toUpperCase() + word.toLowerCase().substring(1)}`
 }
 
 
@@ -2641,7 +2634,6 @@ function isDigit(s) {
 
 
 
-
 console.log(isDigit("3"),true)
 console.log(isDigit("  3  "),true)
 console.log(isDigit("-3.23"), true)
@@ -2649,3 +2641,24 @@ console.log(isDigit("3-4"),false)
 console.log(isDigit("  3   5"),false)
 console.log(isDigit("3 5"),false)
 console.log(isDigit("zero"),false)
+
+
+
+// 
+
+
+function findLongest(str) {
+    let s = str.split(' ');
+    return  Math.max(...s.map((num) => {
+      return num.length
+    }));
+  
+}
+
+
+
+console.log(findLongest("The quick white fox jumped around the massive dog"), 7);
+console.log(findLongest("Take me to tinseltown with you"), 10); 
+console.log(findLongest("Sausage chops"), 7); 
+console.log(findLongest("Wind your body and wiggle your belly"), 6); 
+console.log(findLongest("Lets all go on holiday"), 7); 
