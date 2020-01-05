@@ -531,5 +531,11 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 
+<!--  -->
+
+[x]https://www.codewars.com/kata/training-js-number-32-methods-of-math-round-ceil-and-floor/train/javascript
+
+
+
 
 
