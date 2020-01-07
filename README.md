@@ -539,3 +539,11 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 
+<!--  -->
+
+[x]https://www.codewars.com/kata/will-you-make-it/train/javascript
+
+
+
+
+

@@ -2704,3 +2704,20 @@ console.log(roundIt(34.5) , 34);
 console.log(roundIt(34.56) , 35);
 
 
+
+// 
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  let a  = mpg * fuelLeft;
+  if(a >= distanceToPump) {
+    return true
+  }else {
+    return false 
+  } 
+};
+
+
+
+console.log(zeroFuel(50, 25, 2), true);
+console.log(zeroFuel(100, 50, 1), false);
+
