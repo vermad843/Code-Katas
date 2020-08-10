@@ -2781,3 +2781,13 @@ console.log(sayHello('Dr. McCoy'), 'Hello, Dr. McCoy')
 
 
 
+
+
+// 
+
+function main (verb, noun){
+  return verb + noun
+}
+
+console.log(main('take ', 'item'), 'take item')
+console.log(main('use ', 'sword'), 'use sword')
