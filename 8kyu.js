@@ -2743,3 +2743,41 @@ console.log(quarterOf(3), 1)
 console.log(quarterOf(8), 3)
 console.log(quarterOf(11), 4)
 
+
+
+// 
+
+function tripleTrouble(one, two, three){
+    let value = "";
+    one.split('');
+    two.split('');
+    three.split('');
+    for (let i = 0; 0 < one.length; i++) {
+      value+=one[i]+two[i]+three[i]      
+    }
+    return value
+ }
+
+
+console.log((tripleTrouble("this","test","lock")), "ttlheoiscstk");
+console.log((tripleTrouble("aa","bb","cc"), "abcabc"));
+console.log((tripleTrouble("Bm", "aa", "tn"), "Batman"));
+console.log((tripleTrouble("LLh","euo","xtr"), "LexLuthor"));
+
+
+
+// 
+
+function sayHello(name) {
+  return `Hello, ${name}`
+}
+
+
+
+console.log(sayHello('Mr. Spock'), 'Hello, Mr. Spock')
+console.log(sayHello('Captain Kirk'), 'Hello, Captain Kirk')
+console.log(sayHello('Liutenant Uhura'), 'Hello, Liutenant Uhura')
+console.log(sayHello('Dr. McCoy'), 'Hello, Dr. McCoy')
+
+
+
