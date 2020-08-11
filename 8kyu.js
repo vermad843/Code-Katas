@@ -2791,3 +2791,14 @@ function main (verb, noun){
 
 console.log(main('take ', 'item'), 'take item')
 console.log(main('use ', 'sword'), 'use sword')
+
+
+
+// 
+
+function multiply (a,b){
+  return a*b
+}
+
+
+console.log(multiply("2", "3"), 6);
