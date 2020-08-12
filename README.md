@@ -563,5 +563,10 @@ go to 8 kyu.js file all the solutions for these katas are there:
 [x] https://www.codewars.com/kata/5f32cbe1c856050001f89c14/train/javascript
 
 
+<!--  -->
+
+[x]https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118/train/javascript
+
+
 
 
