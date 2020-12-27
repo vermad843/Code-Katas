@@ -2827,14 +2827,25 @@
 // 
 
 
-function isDivideBy(number, a, b) {
-  return number % a === 0 && number % b === 0;
+// function isDivideBy(number, a, b) {
+//   return number % a === 0 && number % b === 0;
+// }
+
+// console.log(isDivideBy(-12, 2, -6), true);
+// console.log(isDivideBy(-12, 2, -5), false);
+// console.log(isDivideBy(45, 1, 6), false);
+// console.log(isDivideBy(45, 5, 15), true);
+// console.log(isDivideBy(4, 1, 4), true);
+// console.log(isDivideBy(15, -5, 3), true);
+
+
+// .toFixed 
+
+function formatMoney(amount){
+   return '$' + amount.toFixed(2);
 }
 
-console.log(isDivideBy(-12, 2, -6), true);
-console.log(isDivideBy(-12, 2, -5), false);
-console.log(isDivideBy(45, 1, 6), false);
-console.log(isDivideBy(45, 5, 15), true);
-console.log(isDivideBy(4, 1, 4), true);
-console.log(isDivideBy(15, -5, 3), true);
+console.log(formatMoney(39.99), '$39.99',);
+console.log(formatMoney(3), '$3.00',);
+
 
