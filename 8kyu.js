@@ -2849,3 +2849,12 @@ console.log(formatMoney(39.99), '$39.99',);
 console.log(formatMoney(3), '$3.00',);
 
 
+// cm/s = km/h ÷ 0.036
+
+function cockroachSpeed(s) {
+   return Math.floor(s/0.036)
+}
+
+console.log(cockroachSpeed(1.08), 30);
+console.log(cockroachSpeed(1.09), 30);
+console.log(cockroachSpeed(0), 0);
