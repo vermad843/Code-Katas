@@ -2885,3 +2885,21 @@ console.log(getDrinkByProfession("rapper"), "Cristal", "'Rapper' should map to '
 console.log(getDrinkByProfession("pundit"), "Beer", "'Pundit' should map to 'Beer'");
 console.log(getDrinkByProfession("Pug"), "Beer", "'Pug' should map to 'Beer'");
 
+
+
+// 
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+   const sharkTime = sharkDistance/(dolphin ? sharkSpeed/2 : sharkSpeed)
+   const yourTime = pontoonDistance/youSpeed;
+   if(sharkTime > yourTime  ) {
+      return 'Alive!';
+   }else  {
+      return 'Shark Bait!';
+   }
+}
+
+
+console.log(shark(12, 50, 4, 8, true), "Alive!");
+console.log(shark(7, 55, 4, 16, true), "Alive!");
+console.log(shark(24, 0, 4, 8, true), "Shark Bait!");
