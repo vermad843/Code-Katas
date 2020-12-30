@@ -2862,44 +2862,57 @@
 
 // 
 
-function getDrinkByProfession(param){
-  let  param1 = param.toLowerCase();
+// function getDrinkByProfession(param){
+//   let  param1 = param.toLowerCase();
   
-  switch(param1) {
-   case "jabroni": return "Patron Tequila";
-   case "school counselor": return "Anything with Alcohol";
-   case "programmer": return "Hipster Craft Beer";
-   case "bike gang member": return "Moonshine";
-   case "politician": return "Your tax dollars";
-   case "rapper": return "Cristal";
-   default: return "Beer"; 
-  }
-}
+//   switch(param1) {
+//    case "jabroni": return "Patron Tequila";
+//    case "school counselor": return "Anything with Alcohol";
+//    case "programmer": return "Hipster Craft Beer";
+//    case "bike gang member": return "Moonshine";
+//    case "politician": return "Your tax dollars";
+//    case "rapper": return "Cristal";
+//    default: return "Beer"; 
+//   }
+// }
 
-console.log(getDrinkByProfession("jabrOni"), "Patron Tequila", "'Jabroni' should map to 'Patron Tequila'");
-console.log(getDrinkByProfession("scHOOl counselor"), "Anything with Alcohol", "'School Counselor' should map to 'Anything with alcohol'");
-console.log(getDrinkByProfession("prOgramMer"), "Hipster Craft Beer", "'Programmer' should map to 'Hipster Craft Beer'");
-console.log(getDrinkByProfession("bike ganG member"), "Moonshine", "'Bike Gang Member' should map to 'Moonshine'");
-console.log(getDrinkByProfession("poLiTiCian"), "Your tax dollars", "'Politician' should map to 'Your tax dollars'");
-console.log(getDrinkByProfession("rapper"), "Cristal", "'Rapper' should map to 'Cristal'");
-console.log(getDrinkByProfession("pundit"), "Beer", "'Pundit' should map to 'Beer'");
-console.log(getDrinkByProfession("Pug"), "Beer", "'Pug' should map to 'Beer'");
+// console.log(getDrinkByProfession("jabrOni"), "Patron Tequila", "'Jabroni' should map to 'Patron Tequila'");
+// console.log(getDrinkByProfession("scHOOl counselor"), "Anything with Alcohol", "'School Counselor' should map to 'Anything with alcohol'");
+// console.log(getDrinkByProfession("prOgramMer"), "Hipster Craft Beer", "'Programmer' should map to 'Hipster Craft Beer'");
+// console.log(getDrinkByProfession("bike ganG member"), "Moonshine", "'Bike Gang Member' should map to 'Moonshine'");
+// console.log(getDrinkByProfession("poLiTiCian"), "Your tax dollars", "'Politician' should map to 'Your tax dollars'");
+// console.log(getDrinkByProfession("rapper"), "Cristal", "'Rapper' should map to 'Cristal'");
+// console.log(getDrinkByProfession("pundit"), "Beer", "'Pundit' should map to 'Beer'");
+// console.log(getDrinkByProfession("Pug"), "Beer", "'Pug' should map to 'Beer'");
 
+
+
+// // 
+
+// function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+//    const sharkTime = sharkDistance/(dolphin ? sharkSpeed/2 : sharkSpeed)
+//    const yourTime = pontoonDistance/youSpeed;
+//    if(sharkTime > yourTime) {
+//       return 'Alive!';
+//    }else  {
+//       return 'Shark Bait!';
+//    }
+// }
+
+
+// console.log(shark(12, 50, 4, 8, true), "Alive!");
+// console.log(shark(7, 55, 4, 16, true), "Alive!");
+// console.log(shark(24, 0, 4, 8, true), "Shark Bait!");
 
 
 // 
 
-function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
-   const sharkTime = sharkDistance/(dolphin ? sharkSpeed/2 : sharkSpeed)
-   const yourTime = pontoonDistance/youSpeed;
-   if(sharkTime > yourTime  ) {
-      return 'Alive!';
-   }else  {
-      return 'Shark Bait!';
-   }
+function usdcny(usd) {
+   let oneUsd = 6.75;
+   let conversion = usd * oneUsd; 
+   return conversion.toFixed(2) + ' Chinese Yuan';
 }
 
 
-console.log(shark(12, 50, 4, 8, true), "Alive!");
-console.log(shark(7, 55, 4, 16, true), "Alive!");
-console.log(shark(24, 0, 4, 8, true), "Shark Bait!");
+console.log(usdcny(15), '101.25 Chinese Yuan');
+console.log(usdcny(465), '3138.75 Chinese Yuan');
