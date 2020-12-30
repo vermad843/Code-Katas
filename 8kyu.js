@@ -2916,3 +2916,22 @@ function usdcny(usd) {
 
 console.log(usdcny(15), '101.25 Chinese Yuan');
 console.log(usdcny(465), '3138.75 Chinese Yuan');
+
+
+// 
+
+const flip = (d, a)=>{
+   if(d == 'R') {
+      return a.sort((a, b) => {
+         return a - b
+      })
+   }else {
+      return a.sort((a, b) => {
+         return b -a
+      })
+   }
+ }
+
+ console.log(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
+ console.log(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
+
