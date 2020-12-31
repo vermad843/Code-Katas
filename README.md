@@ -598,3 +598,10 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 
+<!--  -->
+
+[x] https://www.codewars.com/kata/57d814e4950d8489720008db/train/javascript
+
+
+
+

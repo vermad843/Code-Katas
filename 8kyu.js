@@ -2907,31 +2907,56 @@
 
 // 
 
-function usdcny(usd) {
-   let oneUsd = 6.75;
-   let conversion = usd * oneUsd; 
-   return conversion.toFixed(2) + ' Chinese Yuan';
-}
+// function usdcny(usd) {
+//    let oneUsd = 6.75;
+//    let conversion = usd * oneUsd; 
+//    return conversion.toFixed(2) + ' Chinese Yuan';
+// }
 
 
-console.log(usdcny(15), '101.25 Chinese Yuan');
-console.log(usdcny(465), '3138.75 Chinese Yuan');
+// console.log(usdcny(15), '101.25 Chinese Yuan');
+// console.log(usdcny(465), '3138.75 Chinese Yuan');
+
+
+// // 
+
+// const flip = (d, a)=>{
+//    if(d == 'R') {
+//       return a.sort((a, b) => {
+//          return a - b
+//       })
+//    }else {
+//       return a.sort((a, b) => {
+//          return b -a
+//       })
+//    }
+//  }
+
+//  console.log(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
+//  console.log(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
+
+
 
 
 // 
 
-const flip = (d, a)=>{
-   if(d == 'R') {
-      return a.sort((a, b) => {
-         return a - b
-      })
-   }else {
-      return a.sort((a, b) => {
-         return b -a
-      })
-   }
- }
+function index(array, n){
+  for (let i = 0; i < array.length; i++) {
+     const newIndex = array[n];
+     const sum = newIndex**n;
+     if(newIndex == undefined) {
+        return -1
+     }
+     return sum;
+  }
+}
 
- console.log(flip('R', [3, 2, 1, 2]), [1, 2, 2, 3]);
- console.log(flip('L', [1, 4, 5, 3, 5]), [5, 5, 4, 3, 1]);
 
+ console.log(index([1, 2, 3, 4],2),9);
+ console.log(index([1, 3, 10, 100],3),1000000);
+ console.log(index([1, 2],3),-1);
+ console.log(index([1,1,1,1,1,1,1,1,1,1], 9),1);
+ console.log(index([1,1,1,1,1,1,1,1,1,2], 9),512);
+ console.log(index([29,82,45,10], 3),1000);
+ console.log(index([6,31], 3),-1);
+ console.log(index([75,68,35,61,9,36,89,0,30], 10),-1);
