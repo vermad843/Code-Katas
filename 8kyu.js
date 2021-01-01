@@ -2940,40 +2940,58 @@
 
 // 
 
-function index(array, n){
-  for (let i = 0; i < array.length; i++) {
-     const newIndex = array[n];
-     const sum = newIndex**n;
-     if(newIndex == undefined) {
-        return -1
-     }
-     return sum;
-  }
+// function index(array, n){
+//   for (let i = 0; i < array.length; i++) {
+//      const newIndex = array[n];
+//      const sum = newIndex**n;
+//      if(newIndex == undefined) {
+//         return -1
+//      }
+//      return sum;
+//   }
+// }
+
+
+//  console.log(index([1, 2, 3, 4],2),9);
+//  console.log(index([1, 3, 10, 100],3),1000000);
+//  console.log(index([1, 2],3),-1);
+//  console.log(index([1,1,1,1,1,1,1,1,1,1], 9),1);
+//  console.log(index([1,1,1,1,1,1,1,1,1,2], 9),512);
+//  console.log(index([29,82,45,10], 3),1000);
+//  console.log(index([6,31], 3),-1);
+//  console.log(index([75,68,35,61,9,36,89,0,30], 10),-1);
+
+
+
+// //  
+// const multiTable = (number) => {
+//    let table = '';
+   
+//    for(let i = 1; i <= 10; i++) {
+//      table += `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`; 
+//    }
+ 
+//    return table;
+//  }
+
+
+//  console.log(multiTable(5), '1 * 5 = 5\n2 * 5 = 10\n3 * 5 = 15\n4 * 5 = 20\n5 * 5 = 25\n6 * 5 = 30\n7 * 5 = 35\n8 * 5 = 40\n9 * 5 = 45\n10 * 5 = 50');
+//  console.log(multiTable(1), '1 * 1 = 1\n2 * 1 = 2\n3 * 1 = 3\n4 * 1 = 4\n5 * 1 = 5\n6 * 1 = 6\n7 * 1 = 7\n8 * 1 = 8\n9 * 1 = 9\n10 * 1 = 10');
+
+
+
+// 
+
+
+function checkAlive (health) {
+  if (health <= 0) {
+  return false
+} else {
+  return true
+}
 }
 
 
- console.log(index([1, 2, 3, 4],2),9);
- console.log(index([1, 3, 10, 100],3),1000000);
- console.log(index([1, 2],3),-1);
- console.log(index([1,1,1,1,1,1,1,1,1,1], 9),1);
- console.log(index([1,1,1,1,1,1,1,1,1,2], 9),512);
- console.log(index([29,82,45,10], 3),1000);
- console.log(index([6,31], 3),-1);
- console.log(index([75,68,35,61,9,36,89,0,30], 10),-1);
+console.log(checkAlive(5), true)
+console.log(checkAlive(0), false)
 
-
-
-//  
-const multiTable = (number) => {
-   let table = '';
-   
-   for(let i = 1; i <= 10; i++) {
-     table += `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`; 
-   }
- 
-   return table;
- }
-
-
- console.log(multiTable(5), '1 * 5 = 5\n2 * 5 = 10\n3 * 5 = 15\n4 * 5 = 20\n5 * 5 = 25\n6 * 5 = 30\n7 * 5 = 35\n8 * 5 = 40\n9 * 5 = 45\n10 * 5 = 50');
- console.log(multiTable(1), '1 * 1 = 1\n2 * 1 = 2\n3 * 1 = 3\n4 * 1 = 4\n5 * 1 = 5\n6 * 1 = 6\n7 * 1 = 7\n8 * 1 = 8\n9 * 1 = 9\n10 * 1 = 10');

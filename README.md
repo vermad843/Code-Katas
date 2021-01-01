@@ -607,4 +607,9 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 
+<!--  -->
+
+[x] https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript
+
+
 

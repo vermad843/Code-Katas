@@ -32,19 +32,24 @@
 
 // 
 
-const burner = function(carbon, hydrogen, oxygen) {
+// const burner = function(carbon, hydrogen, oxygen) {
   
-  const H2O = Math.min(oxygen, parseInt(hydrogen / 2))
-  const CO2 = Math.min(carbon, parseInt((oxygen - H2O) / 2))
-  const CH4 = Math.min(carbon - CO2, parseInt((hydrogen - H2O * 2) / 4))
+//   const H2O = Math.min(oxygen, parseInt(hydrogen / 2))
+//   const CO2 = Math.min(carbon, parseInt((oxygen - H2O) / 2))
+//   const CH4 = Math.min(carbon - CO2, parseInt((hydrogen - H2O * 2) / 4))
 
-  return [ H2O, CO2, CH4 ]
-}
+//   return [ H2O, CO2, CH4 ]
+// }
 
 
 
-console.log(burner(45, 11, 100), [5, 45, 0]);
-console.log(burner(354, 1023230, 0), [0, 0, 354]);
-console.log(burner(939, 3, 694), [1, 346, 0]);
-console.log(burner(215, 41, 82100), [20, 215, 0]);
-console.log(burner(113, 0, 52), [0, 26, 0]);
+// console.log(burner(45, 11, 100), [5, 45, 0]);
+// console.log(burner(354, 1023230, 0), [0, 0, 354]);
+// console.log(burner(939, 3, 694), [1, 346, 0]);
+// console.log(burner(215, 41, 82100), [20, 215, 0]);
+// console.log(burner(113, 0, 52), [0, 26, 0]);
+
+
+
+
+
