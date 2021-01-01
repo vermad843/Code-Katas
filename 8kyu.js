@@ -2995,3 +2995,14 @@ function checkAlive (health) {
 console.log(checkAlive(5), true)
 console.log(checkAlive(0), false)
 
+
+
+// isNaN returns a boolean 
+
+function parseF(s) {
+  const f = parseFloat(s)
+  return isNaN(f) ? null : f ;
+}
+
+
+console.log(parseF("1"), 1.0);

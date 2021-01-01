@@ -613,3 +613,9 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 
+<!--  -->
+
+[x] https://www.codewars.com/kata/57a386117cb1f31890000039/train/javascript
+
+
+
