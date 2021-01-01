@@ -2983,26 +2983,40 @@
 // 
 
 
-function checkAlive (health) {
-  if (health <= 0) {
-  return false
-} else {
-  return true
+// function checkAlive (health) {
+//   if (health <= 0) {
+//   return false
+// } else {
+//   return true
+// }
+// }
+
+
+// console.log(checkAlive(5), true)
+// console.log(checkAlive(0), false)
+
+
+
+// // isNaN returns a boolean 
+
+// function parseF(s) {
+//   const f = parseFloat(s)
+//   return isNaN(f) ? null : f ;
+// }
+
+
+// console.log(parseF("1"), 1.0);
+
+
+
+// 
+
+function solution(a, b){
+  return a.length < b.length ? a + b + a : b + a + b
 }
-}
 
 
-console.log(checkAlive(5), true)
-console.log(checkAlive(0), false)
-
-
-
-// isNaN returns a boolean 
-
-function parseF(s) {
-  const f = parseFloat(s)
-  return isNaN(f) ? null : f ;
-}
-
-
-console.log(parseF("1"), 1.0);
+console.log(solution('45', '1'), '1451');
+console.log(solution('13', '200'), '1320013');
+console.log(solution('Soon', 'Me'), 'MeSoonMe');
+console.log(solution('U', 'False'), 'UFalseU');
