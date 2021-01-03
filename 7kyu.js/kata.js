@@ -53,18 +53,18 @@
 
 // 
 
-function amaroPlan(pirateNum){
-    const result = Array(pirateNum).fill(0);
-    result[0]  = pirateNum * 20 ;
-    for (let i = 2; i < pirateNum; i+=2) {
-       result[0]--;
-       result[i]++;    
-    }
-     return result;
-  }
+// function amaroPlan(pirateNum){
+//     const result = Array(pirateNum).fill(0);
+//     result[0]  = pirateNum * 20 ;
+//     for (let i = 2; i < pirateNum; i+=2) {
+//        result[0]--;
+//        result[i]++;    
+//     }
+//      return result;
+//   }
   
-  console.log(amaroPlan(2), [40, 0]);
-  console.log(amaroPlan(3), [59, 0, 1]);
-  console.log(amaroPlan(4), [79, 0, 1, 0]);
-  console.log(amaroPlan(5), [98, 0, 1, 0, 1]);
+//   console.log(amaroPlan(2), [40, 0]);
+//   console.log(amaroPlan(3), [59, 0, 1]);
+//   console.log(amaroPlan(4), [79, 0, 1, 0]);
+//   console.log(amaroPlan(5), [98, 0, 1, 0, 1]);
 
