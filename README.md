@@ -633,3 +633,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 [x] https://www.codewars.com/kata/57cc40b2f8392dbf2a0003ce/train/javascript
 
 
+[x] https://www.codewars.com/kata/58ca658cc0d6401f2700045f/train/javascript
+
+

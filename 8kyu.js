@@ -3050,3 +3050,22 @@ console.log(check([66, 101], 66), true);
 console.log(check([80, 117, 115, 104, 45, 85, 112, 115], 45), true);
 console.log(check(['t', 'e', 's', 't'], 'e'), true);
 console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false);
+
+
+
+// 
+
+function findMultiples(integer, limit) {
+  let arr = [];
+  for (let i = integer; i <= limit; i+=integer) 
+      arr.push(i);
+
+      return arr;
+}
+
+
+console.log(findMultiples(5, 25), [5, 10, 15, 20, 25])
+console.log(findMultiples(1, 2), [1, 2])
+console.log(findMultiples(5, 7), [5])
+console.log(findMultiples(4, 27), [4, 8, 12, 16, 20, 24])
+console.log(findMultiples(11, 54), [11, 22, 33, 44])
