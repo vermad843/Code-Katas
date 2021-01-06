@@ -3095,7 +3095,7 @@ function pointsPer48(ppg, mpg) {
   if(ppg == 0 && mpg == 0) {
     return 0
   }else {
-    return Number((ppg/percent * 100).toFixed(1))
+    return Number((ppg/percent * 100).toFixed(1));
   } 
 }
 
@@ -3107,3 +3107,18 @@ console.log(pointsPer48(5, 17), 14.1)
 console.log(pointsPer48(0, 0), 0)
 console.log(pointsPer48(30.8, 34.7), 42.6)  // Russell Westbrook 1/15/17
 console.log(pointsPer48(22.9, 33.8), 32.5) 
+
+
+
+
+// 
+
+function position(letter){
+   const a =  letter.charCodeAt() - 96;
+   return `Position of alphabet: ${a}`;
+}
+
+
+console.log(position("a"),"Position of alphabet: 1");
+console.log(position("z"),"Position of alphabet: 26");
+console.log(position("e"),"Position of alphabet: 5");
