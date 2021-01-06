@@ -3074,14 +3074,36 @@
 
 // 
 
-function howMuchWater(water, load, clothes){
-   if(clothes > load * 2) return 'Too much clothes';
-   if(clothes < load) return 'Not enough clothes';
-   return Number((water * 1.1 **(clothes - load)).toFixed(2));
- }
+// function howMuchWater(water, load, clothes){
+//    if(clothes > load * 2) return 'Too much clothes';
+//    if(clothes < load) return 'Not enough clothes';
+//    return Number((water * 1.1 **(clothes - load)).toFixed(2));
+//  }
 
 
- console.log(howMuchWater(10,10,21), 'Too much clothes','');
- console.log(howMuchWater(10,10,2), 'Not enough clothes','');
- console.log(howMuchWater(10,11,20), 23.58,'');
- console.log(howMuchWater(50,15,29), 189.87,'');
+//  console.log(howMuchWater(10,10,21), 'Too much clothes','');
+//  console.log(howMuchWater(10,10,2), 'Not enough clothes','');
+//  console.log(howMuchWater(10,11,20), 23.58,'');
+//  console.log(howMuchWater(50,15,29), 189.87,'');
+
+
+
+// 
+
+function pointsPer48(ppg, mpg) {
+  const percent = mpg/48*100;
+  if(ppg == 0 && mpg == 0) {
+    return 0
+  }else {
+    return Number((ppg/percent * 100).toFixed(1))
+  } 
+}
+
+
+
+console.log(pointsPer48(12, 20), 28.8)
+console.log(pointsPer48(10, 10), 48.0)
+console.log(pointsPer48(5, 17), 14.1)
+console.log(pointsPer48(0, 0), 0)
+console.log(pointsPer48(30.8, 34.7), 42.6)  // Russell Westbrook 1/15/17
+console.log(pointsPer48(22.9, 33.8), 32.5) 
