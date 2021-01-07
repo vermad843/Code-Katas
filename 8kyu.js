@@ -3090,35 +3090,50 @@
 
 // 
 
-function pointsPer48(ppg, mpg) {
-  const percent = mpg/48*100;
-  if(ppg == 0 && mpg == 0) {
-    return 0
-  }else {
-    return Number((ppg/percent * 100).toFixed(1));
-  } 
-}
+// function pointsPer48(ppg, mpg) {
+//   const percent = mpg/48*100;
+//   if(ppg == 0 && mpg == 0) {
+//     return 0
+//   }else {
+//     return Number((ppg/percent * 100).toFixed(1));
+//   } 
+// }
 
 
 
-console.log(pointsPer48(12, 20), 28.8)
-console.log(pointsPer48(10, 10), 48.0)
-console.log(pointsPer48(5, 17), 14.1)
-console.log(pointsPer48(0, 0), 0)
-console.log(pointsPer48(30.8, 34.7), 42.6)  // Russell Westbrook 1/15/17
-console.log(pointsPer48(22.9, 33.8), 32.5) 
+// console.log(pointsPer48(12, 20), 28.8)
+// console.log(pointsPer48(10, 10), 48.0)
+// console.log(pointsPer48(5, 17), 14.1)
+// console.log(pointsPer48(0, 0), 0)
+// console.log(pointsPer48(30.8, 34.7), 42.6)  // Russell Westbrook 1/15/17
+// console.log(pointsPer48(22.9, 33.8), 32.5) 
+
+
+
+
+// // 
+
+// function position(letter){
+//    const a =  letter.charCodeAt() - 96;
+//    return `Position of alphabet: ${a}`;
+// }
+
+
+// console.log(position("a"),"Position of alphabet: 1");
+// console.log(position("z"),"Position of alphabet: 26");
+// console.log(position("e"),"Position of alphabet: 5");
 
 
 
 
 // 
 
-function position(letter){
-   const a =  letter.charCodeAt() - 96;
-   return `Position of alphabet: ${a}`;
+function aspectRatio(x,y){
+    return [Math.ceil(y*16/9), y];
 }
 
 
-console.log(position("a"),"Position of alphabet: 1");
-console.log(position("z"),"Position of alphabet: 26");
-console.log(position("e"),"Position of alphabet: 5");
+console.log(aspectRatio(640, 480), [854,480]);
+console.log(aspectRatio(960, 720), [1280,720]);
+console.log(aspectRatio(1440, 1080), [1920,1080]);
+console.log(aspectRatio(1920, 1440), [2560,1440]);

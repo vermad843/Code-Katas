@@ -650,3 +650,9 @@ go to 8 kyu.js file all the solutions for these katas are there:
 [x] https://www.codewars.com/kata/5808e2006b65bff35500008f/train/javascript
 
 
+
+<!--  -->
+
+[x] https://www.codewars.com/kata/596e4ef7b61e25981200009f/train/javascript
+
+
