@@ -3128,12 +3128,53 @@
 
 // 
 
-function aspectRatio(x,y){
-    return [Math.ceil(y*16/9), y];
+// function aspectRatio(x,y){
+//     return [Math.ceil(y*16/9), y];
+// }
+
+
+// console.log(aspectRatio(640, 480), [854,480]);
+// console.log(aspectRatio(960, 720), [1280,720]);
+// console.log(aspectRatio(1440, 1080), [1920,1080]);
+// console.log(aspectRatio(1920, 1440), [2560,1440]);
+
+
+
+// // 
+
+// function addFive(num) {
+//   var total = num + 5
+//   return total
+// }
+
+
+// console.log(addFive(5), 10)
+// console.log(addFive(0), 5)
+// console.log(addFive(-5), 0)
+
+
+
+// 
+
+function toCsvText(array) {
+   return array.join('\n');
 }
 
 
-console.log(aspectRatio(640, 480), [854,480]);
-console.log(aspectRatio(960, 720), [1280,720]);
-console.log(aspectRatio(1440, 1080), [1920,1080]);
-console.log(aspectRatio(1920, 1440), [2560,1440]);
+console.log(toCsvText([
+  [ 0, 1, 2, 3, 45 ],
+  [ 10,11,12,13,14 ],
+  [ 20,21,22,23,24 ],
+  [ 30,31,32,33,34 ]
+ ] ), '0,1,2,3,45\n10,11,12,13,14\n20,21,22,23,24\n30,31,32,33,34');
+ 
+console.log(toCsvText([
+  [ -25, 21, 2, -33, 48 ],
+  [ 30,31,-32,33,-34 ]
+ ] ), '-25,21,2,-33,48\n30,31,-32,33,-34');
+ 
+console.log(toCsvText([
+  [ 5,55,5,5,55 ],
+  [ 6,6,66,23,24 ],
+  [ 666,31,66,33,7 ]
+ ] ), '5,55,5,5,55\n6,6,66,23,24\n666,31,66,33,7');
