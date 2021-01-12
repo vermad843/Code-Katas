@@ -664,3 +664,6 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 [x] https://www.codewars.com/kata/5a34af40e1ce0eb1f5000036/train/javascript
 
+
+
+[x] https://www.codewars.com/kata/56b29582461215098d00000f/train/javascript
