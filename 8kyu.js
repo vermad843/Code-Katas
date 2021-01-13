@@ -3198,10 +3198,28 @@ function pipeFix(numbers){
 
 
 console.log(pipeFix([1,2,3,5,6,8,9]),[1,2,3,4,5,6,7,8,9]);
-// console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12]);
-// console.log(pipeFix([6,9]),[6,7,8,9]);
-// console.log(pipeFix([-1,4]),[-1,0,1,2,3,4]);
-// console.log(pipeFix([1,2,3]),[1,2,3]);
+console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12]);
+console.log(pipeFix([6,9]),[6,7,8,9]);
+console.log(pipeFix([-1,4]),[-1,0,1,2,3,4]);
+console.log(pipeFix([1,2,3]),[1,2,3]);
+
+
+
+// 
+
+function peopleWithAgeDrink(old) {
+   if(old < 14) {
+      return "drink toddy";
+   }else if(old < 18) {
+      return "drink coke"
+   }else if(old < 21) {
+      return "drink beer"
+   }else {
+      return "drink whisky"
+   }
+ };
+
+ console.log(peopleWithAgeDrink(22), 'drink whisky');
   
 
 
