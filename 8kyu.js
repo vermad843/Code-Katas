@@ -3184,43 +3184,67 @@
 
 // 
 
-function pipeFix(numbers){
-   const first = numbers[0];
-   const last = numbers[numbers.length - 1];
+// function pipeFix(numbers){
+//    const first = numbers[0];
+//    const last = numbers[numbers.length - 1];
    
-   const arr = [];
-   for (let i = first; i <= last; i++) {
-      arr.push(i);       
-   }
-   return arr;
+//    const arr = [];
+//    for (let i = first; i <= last; i++) {
+//       arr.push(i);       
+//    }
+//    return arr;
    
-}
+// }
 
 
-console.log(pipeFix([1,2,3,5,6,8,9]),[1,2,3,4,5,6,7,8,9]);
-console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12]);
-console.log(pipeFix([6,9]),[6,7,8,9]);
-console.log(pipeFix([-1,4]),[-1,0,1,2,3,4]);
-console.log(pipeFix([1,2,3]),[1,2,3]);
+// console.log(pipeFix([1,2,3,5,6,8,9]),[1,2,3,4,5,6,7,8,9]);
+// console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12]);
+// console.log(pipeFix([6,9]),[6,7,8,9]);
+// console.log(pipeFix([-1,4]),[-1,0,1,2,3,4]);
+// console.log(pipeFix([1,2,3]),[1,2,3]);
 
 
 
-// 
+// // 
 
-function peopleWithAgeDrink(old) {
-   if(old < 14) {
-      return "drink toddy";
-   }else if(old < 18) {
-      return "drink coke"
-   }else if(old < 21) {
-      return "drink beer"
-   }else {
-      return "drink whisky"
-   }
- };
+// function peopleWithAgeDrink(old) {
+//    if(old < 14) {
+//       return "drink toddy";
+//    }else if(old < 18) {
+//       return "drink coke"
+//    }else if(old < 21) {
+//       return "drink beer"
+//    }else {
+//       return "drink whisky"
+//    }
+//  };
 
- console.log(peopleWithAgeDrink(22), 'drink whisky');
+//  console.log(peopleWithAgeDrink(22), 'drink whisky');
+
+
+
+// //  
+
+// function getRealFloor(n) {
+//    return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
+// }
+
+
+// console.log(getRealFloor(1), 0);
+// console.log(getRealFloor(5), 4);
+// console.log(getRealFloor(15), 13);
   
+
+
+// (M1/m1 + M2/m2)*0.082*(t + 273.15)/v
+
+const solution= (m1,m2, M1, M2, v, t) => {
+   return (M1/m1+M2/m2)*0.082*(t + 273.15)/v
+ }
+
+
+ console.log(solution(44, 30, 3, 2, 5, 50), 0.7146511212121212);
+ console.log(solution(60, 20, 10, 30, 10, 100), 5.099716666666667);
 
 
 
