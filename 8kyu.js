@@ -3312,33 +3312,47 @@
 
 // 
 
-class Kata {
-  static getVolumeOfCuboid(length, width, height) {
-     return length*width*height
-  }
-}
+// class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//      return length*width*height
+//   }
+// }
 
 
-console.log(Kata.getVolumeOfCuboid(1,2,2), 4);
-console.log(Kata.getVolumeOfCuboid(6.3,2,5), 63);
+// console.log(Kata.getVolumeOfCuboid(1,2,2), 4);
+// console.log(Kata.getVolumeOfCuboid(6.3,2,5), 63);
+
+
+// // 
+
+// function superSize(num){
+//   const a = num.toString().split('').sort((a, b) => {
+//     return b - a 
+//   }).join('')
+//   return parseInt(a)
+// }
+
+
+// console.log(superSize(69),96)
+// console.log(superSize(513),531)
+// console.log(superSize(2017),7210)
+// console.log(superSize(414),441)
+// console.log(superSize(608719),987610)
+// console.log(superSize(123456789),987654321)
+// console.log(superSize(700000000001),710000000000)
+// console.log(superSize(666666),666666)
+// console.log(superSize(2),2)
+
 
 
 // 
 
-function superSize(num){
-  const a = num.toString().split('').sort((a, b) => {
-    return b - a 
-  }).join('')
-  return parseInt(a)
+function updateLight(current) {
+   return current == "green" ? "yellow" : current == "yellow" ? "red" : "green" 
+
 }
 
+console.log(updateLight("green"), "yellow");
+console.log(updateLight("yellow"), "red");
+console.log(updateLight("red"), "green");
 
-console.log(superSize(69),96)
-console.log(superSize(513),531)
-console.log(superSize(2017),7210)
-console.log(superSize(414),441)
-console.log(superSize(608719),987610)
-console.log(superSize(123456789),987654321)
-console.log(superSize(700000000001),710000000000)
-console.log(superSize(666666),666666)
-console.log(superSize(2),2)
