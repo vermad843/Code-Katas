@@ -3383,3 +3383,17 @@ console.log(replace("!Hi! Hi!") , "!H!! H!!")
 console.log(replace("aeiou") , "!!!!!")
 console.log(replace("ABCDE") , "!BCD!")
 
+
+
+// 
+
+function chromosomeCheck(sperm) {
+   if(sperm == 'XY') {
+       return "Congratulations! You're going to have a son."
+   }else {
+       return "Congratulations! You're going to have a daughter." 
+   }
+}
+
+console.log(chromosomeCheck('XY'), "Congratulations! You're going to have a son.")
+console.log(chromosomeCheck('XX'), "Congratulations! You're going to have a daughter.")
