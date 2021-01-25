@@ -3416,63 +3416,77 @@
 // 
 
 
-function splitAndMerge(string, separator) {
-   return string.split(' ').map(word => word.split('').join(separator)).join(' ')
- }
+// function splitAndMerge(string, separator) {
+//    return string.split(' ').map(word => word.split('').join(separator)).join(' ')
+//  }
 
 
 
- console.log(splitAndMerge("My name is John"," ") , "M y n a m e i s J o h n");
- console.log(splitAndMerge("My name is John","-") , "M-y n-a-m-e i-s J-o-h-n");
- console.log(splitAndMerge("Hello World!",".") , "H.e.l.l.o W.o.r.l.d.!");
- console.log(splitAndMerge("Hello World!",",") , "H,e,l,l,o W,o,r,l,d,!");
+//  console.log(splitAndMerge("My name is John"," ") , "M y n a m e i s J o h n");
+//  console.log(splitAndMerge("My name is John","-") , "M-y n-a-m-e i-s J-o-h-n");
+//  console.log(splitAndMerge("Hello World!",".") , "H.e.l.l.o W.o.r.l.d.!");
+//  console.log(splitAndMerge("Hello World!",",") , "H,e,l,l,o W,o,r,l,d,!");
 
 
 
-// 
+// // 
 
 
-function sc(floor){
-  if(floor <= 1) return '';
+// function sc(floor){
+//   if(floor <= 1) return '';
 
-  return 'Aa~ '.repeat(floor-1) + 'Pa!' + (floor<=6 ? ' Aa!' : '');
-}
-
-
-console.log(sc(2), "Aa~ Pa! Aa!", "good luck!");  
-console.log(sc(6), "Aa~ Aa~ Aa~ Aa~ Aa~ Pa! Aa!", "good luck!"); 
-console.log(sc(7), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!", "good luck!"); 
-console.log(sc(10), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!", "good luck!"); 
-console.log(sc(1), "", "good luck!"); 
-console.log(sc(-1), "", "good luck!"); 
+//   return 'Aa~ '.repeat(floor-1) + 'Pa!' + (floor<=6 ? ' Aa!' : '');
+// }
 
 
-// 
-
-function mergeArrays(arr1, arr2) {
-  return Array.from(new Set(arr1.concat(arr2).sort((a, b) => (a - b))));
-}
-
-console.log(mergeArrays([1,2,3,4], [5,6,7,8]), [1,2,3,4,5,6,7,8], "Basic tests");
-console.log(mergeArrays([1,3,5,7,9], [10,8,6,4,2]), [1,2,3,4,5,6,7,8,9,10], "Basic tests");
-console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]), [1,2,3,4,5,7,9,10,11,12], "Basic tests");
+// console.log(sc(2), "Aa~ Pa! Aa!", "good luck!");  
+// console.log(sc(6), "Aa~ Aa~ Aa~ Aa~ Aa~ Pa! Aa!", "good luck!"); 
+// console.log(sc(7), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!", "good luck!"); 
+// console.log(sc(10), "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!", "good luck!"); 
+// console.log(sc(1), "", "good luck!"); 
+// console.log(sc(-1), "", "good luck!"); 
 
 
+// // 
 
-// 
+// function mergeArrays(arr1, arr2) {
+//   return Array.from(new Set(arr1.concat(arr2).sort((a, b) => (a - b))));
+// }
+
+// console.log(mergeArrays([1,2,3,4], [5,6,7,8]), [1,2,3,4,5,6,7,8], "Basic tests");
+// console.log(mergeArrays([1,3,5,7,9], [10,8,6,4,2]), [1,2,3,4,5,6,7,8,9,10], "Basic tests");
+// console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]), [1,2,3,4,5,7,9,10,11,12], "Basic tests");
 
 
-function sumMul(n,m){
-  if(n >= m) return 'INVALID';
+
+// // 
+
+
+// function sumMul(n,m){
+//   if(n >= m) return 'INVALID';
   
-  let sum = 0;
-  for (let i = n; i < m; i+=n) {
-     sum += i;    
-  }
-  return sum;
+//   let sum = 0;
+//   for (let i = n; i < m; i+=n) {
+//      sum += i;    
+//   }
+//   return sum;
+// }
+
+
+// console.log(sumMul(0,0),"INVALID");
+// console.log(sumMul(2,9),20);
+// console.log(sumMul(4,-7),"INVALID");
+
+
+
+// 
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+   if(humanYears == 1) return [1, 15, 15]
+   if(humanYears == 2) return [2, 24, 24]
+   return [humanYears,(humanYears - 2)* 4 + 24, (humanYears - 2)* 5 + 24];
 }
 
-
-console.log(sumMul(0,0),"INVALID");
-console.log(sumMul(2,9),20);
-console.log(sumMul(4,-7),"INVALID");
+console.log(humanYearsCatYearsDogYears(1), [1,15,15]);
+console.log(humanYearsCatYearsDogYears(2), [2,24,24]);
+console.log(humanYearsCatYearsDogYears(10), [10,56,64]);

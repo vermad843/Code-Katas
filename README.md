@@ -738,3 +738,8 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x] https://www.codewars.com/kata/57241e0f440cd279b5000829/train/javascript
+
+
+<!--  -->
+
+[x] https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/javascript
