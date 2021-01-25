@@ -3490,3 +3490,17 @@ var humanYearsCatYearsDogYears = function(humanYears) {
 console.log(humanYearsCatYearsDogYears(1), [1,15,15]);
 console.log(humanYearsCatYearsDogYears(2), [2,24,24]);
 console.log(humanYearsCatYearsDogYears(10), [10,56,64]);
+
+
+// 
+
+
+var websites = [];
+for (let i = 0; i < 1000; i++) {
+  websites.push('codewars');
+}
+
+
+
+console.log(websites.length > 0, 'The array is still empty')
+console.log(websites.length == 1000, 'The array does not equal 1,000')
