@@ -3458,3 +3458,21 @@ console.log(mergeArrays([1,3,5,7,9], [10,8,6,4,2]), [1,2,3,4,5,6,7,8,9,10], "Bas
 console.log(mergeArrays([1,3,5,7,9,11,12], [1,2,3,4,5,10,12]), [1,2,3,4,5,7,9,10,11,12], "Basic tests");
 
 
+
+// 
+
+
+function sumMul(n,m){
+  if(n >= m) return 'INVALID';
+  
+  let sum = 0;
+  for (let i = n; i < m; i+=n) {
+     sum += i;    
+  }
+  return sum;
+}
+
+
+console.log(sumMul(0,0),"INVALID");
+console.log(sumMul(2,9),20);
+console.log(sumMul(4,-7),"INVALID");
