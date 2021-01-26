@@ -3481,26 +3481,41 @@
 
 // 
 
-var humanYearsCatYearsDogYears = function(humanYears) {
-   if(humanYears == 1) return [1, 15, 15]
-   if(humanYears == 2) return [2, 24, 24]
-   return [humanYears,(humanYears - 2)* 4 + 24, (humanYears - 2)* 5 + 24];
-}
+// var humanYearsCatYearsDogYears = function(humanYears) {
+//    if(humanYears == 1) return [1, 15, 15]
+//    if(humanYears == 2) return [2, 24, 24]
+//    return [humanYears,(humanYears - 2)* 4 + 24, (humanYears - 2)* 5 + 24];
+// }
 
-console.log(humanYearsCatYearsDogYears(1), [1,15,15]);
-console.log(humanYearsCatYearsDogYears(2), [2,24,24]);
-console.log(humanYearsCatYearsDogYears(10), [10,56,64]);
+// console.log(humanYearsCatYearsDogYears(1), [1,15,15]);
+// console.log(humanYearsCatYearsDogYears(2), [2,24,24]);
+// console.log(humanYearsCatYearsDogYears(10), [10,56,64]);
+
+
+// // 
+
+
+// var websites = [];
+// for (let i = 0; i < 1000; i++) {
+//   websites.push('codewars');
+// }
+
+
+
+// console.log(websites.length > 0, 'The array is still empty')
+// console.log(websites.length == 1000, 'The array does not equal 1,000')
+
 
 
 // 
 
-
-var websites = [];
-for (let i = 0; i < 1000; i++) {
-  websites.push('codewars');
+function checkTheBucket(bucket){
+  return bucket.includes('gold');
 }
 
 
-
-console.log(websites.length > 0, 'The array is still empty')
-console.log(websites.length == 1000, 'The array does not equal 1,000')
+console.log(checkTheBucket(["stone", "stone", "stone", "stone", "stone"]), false);
+console.log(checkTheBucket(["stone", "stone", "stone", "stone", "gold"]), true);
+console.log(checkTheBucket(["gold", "stone", "stone", "stone", "stone"]), true);
+console.log(checkTheBucket([]), false);
+console.log(checkTheBucket(["stone", "stone", "stone", "gold", "gold"]), true);
