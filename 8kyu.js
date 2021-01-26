@@ -3519,3 +3519,23 @@ console.log(checkTheBucket(["stone", "stone", "stone", "stone", "gold"]), true);
 console.log(checkTheBucket(["gold", "stone", "stone", "stone", "stone"]), true);
 console.log(checkTheBucket([]), false);
 console.log(checkTheBucket(["stone", "stone", "stone", "gold", "gold"]), true);
+
+
+
+// 
+
+function defineSuit(card) {
+  const s = {
+    "♣" : "clubs",
+    "♠" : "spades",
+    "♦" : "diamonds",
+    "♥" : "hearts"
+  }
+  return s[card.charAt(card.length - 1)]
+}
+
+
+console.log(defineSuit('3♣'), 'clubs');
+console.log(defineSuit('Q♠'), 'spades');
+console.log(defineSuit('9♦'), 'diamonds');
+console.log(defineSuit('J♥'), 'hearts');
