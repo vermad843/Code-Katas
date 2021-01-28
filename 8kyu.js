@@ -3509,33 +3509,49 @@
 
 // 
 
-function checkTheBucket(bucket){
-  return bucket.includes('gold');
-}
+// function checkTheBucket(bucket){
+//   return bucket.includes('gold');
+// }
 
 
-console.log(checkTheBucket(["stone", "stone", "stone", "stone", "stone"]), false);
-console.log(checkTheBucket(["stone", "stone", "stone", "stone", "gold"]), true);
-console.log(checkTheBucket(["gold", "stone", "stone", "stone", "stone"]), true);
-console.log(checkTheBucket([]), false);
-console.log(checkTheBucket(["stone", "stone", "stone", "gold", "gold"]), true);
+// console.log(checkTheBucket(["stone", "stone", "stone", "stone", "stone"]), false);
+// console.log(checkTheBucket(["stone", "stone", "stone", "stone", "gold"]), true);
+// console.log(checkTheBucket(["gold", "stone", "stone", "stone", "stone"]), true);
+// console.log(checkTheBucket([]), false);
+// console.log(checkTheBucket(["stone", "stone", "stone", "gold", "gold"]), true);
+
+
+
+// // 
+
+// function defineSuit(card) {
+//   const s = {
+//     "♣" : "clubs",
+//     "♠" : "spades",
+//     "♦" : "diamonds",
+//     "♥" : "hearts"
+//   }
+//   return s[card.charAt(card.length - 1)]
+// }
+
+
+// console.log(defineSuit('3♣'), 'clubs');
+// console.log(defineSuit('Q♠'), 'spades');
+// console.log(defineSuit('9♦'), 'diamonds');
+// console.log(defineSuit('J♥'), 'hearts');
 
 
 
 // 
 
-function defineSuit(card) {
-  const s = {
-    "♣" : "clubs",
-    "♠" : "spades",
-    "♦" : "diamonds",
-    "♥" : "hearts"
-  }
-  return s[card.charAt(card.length - 1)]
-}
+
+const solve = (x, y) => x / y
 
 
-console.log(defineSuit('3♣'), 'clubs');
-console.log(defineSuit('Q♠'), 'spades');
-console.log(defineSuit('9♦'), 'diamonds');
-console.log(defineSuit('J♥'), 'hearts');
+console.log(solve(2, 1), 2);
+console.log(solve(2, 4), 0.5);
+console.log(solve(42, 0), Infinity);
+console.log(solve(0, 8), 0);
+console.log(solve(7, 2), 3.5);
+console.log(solve(4.2, 1), 4.2);
+console.log(solve(9999, 11), 909);

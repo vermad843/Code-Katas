@@ -751,3 +751,8 @@ go to 8 kyu.js file all the solutions for these katas are there:
 
 
 [x] https://www.codewars.com/kata/5a360620f28b82a711000047/train/javascript
+
+
+<!--  -->
+
+[x] https://www.codewars.com/kata/54d1c59aba326343c80000e7/train/javascript
