@@ -3545,24 +3545,44 @@
 // 
 
 
-const solve = (x, y) => x / y
+// const solve = (x, y) => x / y
 
 
-console.log(solve(2, 1), 2);
-console.log(solve(2, 4), 0.5);
-console.log(solve(42, 0), Infinity);
-console.log(solve(0, 8), 0);
-console.log(solve(7, 2), 3.5);
-console.log(solve(4.2, 1), 4.2);
-console.log(solve(9999, 11), 909);
+// console.log(solve(2, 1), 2);
+// console.log(solve(2, 4), 0.5);
+// console.log(solve(42, 0), Infinity);
+// console.log(solve(0, 8), 0);
+// console.log(solve(7, 2), 3.5);
+// console.log(solve(4.2, 1), 4.2);
+// console.log(solve(9999, 11), 909);
+
+
+
+// // 
+
+// var replaceDots = function(str) {
+//   return str.replace(/\./g, '-');
+// }
+
+
+// console.log(replaceDots("one.two.three"), "one-two-three", "Sorry, try again :-(");
 
 
 
 // 
 
-var replaceDots = function(str) {
-  return str.replace(/\./g, '-');
+function cookie(x){
+  if(typeof x === 'string') {
+    return "Who ate the last cookie? It was Zach!"
+  }else if(typeof x === 'number') {
+    return "Who ate the last cookie? It was Monica!"
+  }else {
+    return "Who ate the last cookie? It was the dog!"
+  }
 }
 
 
-console.log(replaceDots("one.two.three"), "one-two-three", "Sorry, try again :-(");
+console.log(cookie("Ryan"), "Who ate the last cookie? It was Zach!")
+console.log(cookie(26), "Who ate the last cookie? It was Monica!")
+console.log(cookie(2.3), "Who ate the last cookie? It was Monica!")
+console.log(cookie(true), "Who ate the last cookie? It was the dog!")
