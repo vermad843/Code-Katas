@@ -3614,30 +3614,42 @@
 
 // 
 
-function power(x,y){
-  return x**y  
-}
+// function power(x,y){
+//   return x**y  
+// }
 
 
-console.log(power(1,701270), 1);
-console.log(power(2,2), 4);
-console.log(power(3,2), 9);
-console.log(power(-1,40), 1);
+// console.log(power(1,701270), 1);
+// console.log(power(2,2), 4);
+// console.log(power(3,2), 9);
+// console.log(power(-1,40), 1);
+
+
+// // 
+
+
+// function greet(name){
+//     if(name == "Johnny") {
+//         return "Hello, my love!"
+//     }else {
+//         return `Hello, ${name}!`;      
+//     }
+//   }
+
+
+// console.log(greet("Jim"), "Hello, Jim!");
+// console.log(greet("Jane"), "Hello, Jane!");
+// console.log(greet("Simon"), "Hello, Simon!");
+// console.log(greet("Johnny"), "Hello, my love!");
+
 
 
 // 
 
-
-function greet(name){
-    if(name == "Johnny") {
-        return "Hello, my love!"
-    }else {
-        return `Hello, ${name}!`;      
-    }
-  }
+function SafeInteger(n) {
+   return Number.isSafeInteger(n);
+}
 
 
-console.log(greet("Jim"), "Hello, Jim!");
-console.log(greet("Jane"), "Hello, Jane!");
-console.log(greet("Simon"), "Hello, Simon!");
-console.log(greet("Johnny"), "Hello, my love!");
+console.log(SafeInteger(9007199254740992), false, 'Value returned should be false');
+console.log(SafeInteger(9007199254740990), true, 'Value returned should be true');
