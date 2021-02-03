@@ -3646,10 +3646,27 @@
 
 // 
 
-function SafeInteger(n) {
-   return Number.isSafeInteger(n);
-}
+// function SafeInteger(n) {
+//    return Number.isSafeInteger(n);
+// }
 
 
-console.log(SafeInteger(9007199254740992), false, 'Value returned should be false');
-console.log(SafeInteger(9007199254740990), true, 'Value returned should be true');
+// console.log(SafeInteger(9007199254740992), false, 'Value returned should be false');
+// console.log(SafeInteger(9007199254740990), true, 'Value returned should be true');
+
+
+
+// 
+
+
+function excludingVatPrice(price){
+   return (price == null) ? -1 : Math.round((price / 1.15) * 100) / 100
+ }
+
+console.log(excludingVatPrice(230), 200.00);
+console.log(excludingVatPrice(123), 106.96);
+
+
+
+// 
+
