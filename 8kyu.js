@@ -3659,26 +3659,57 @@
 // 
 
 
-function excludingVatPrice(price){
-   return (price == null) ? -1 : Math.round((price / 1.15) * 100) / 100
- }
+// function excludingVatPrice(price){
+//    return (price == null) ? -1 : Math.round((price / 1.15) * 100) / 100
+//  }
 
-console.log(excludingVatPrice(230), 200.00);
-console.log(excludingVatPrice(123), 106.96);
+// console.log(excludingVatPrice(230), 200.00);
+// console.log(excludingVatPrice(123), 106.96);
+
+
+
+// // 
+
+
+// function saleHotdogs(n){
+//    if(n < 5) return n*100;
+//    if(n >= 5 && n<10) return n * 95;else return n * 90;
+//  }
+
+// console.log(saleHotdogs(1),100);
+// console.log(saleHotdogs(4),400);
+// console.log(saleHotdogs(5),475);
+// console.log(saleHotdogs(9),855);
+// console.log(saleHotdogs(10),900);
+// console.log(saleHotdogs(100),9000);
+
 
 
 
 // 
 
+function animals(heads, legs){
+    const cows = legs / 2 - heads;
+    const chickens = heads - cows;
+    if (legs & 1 || chickens > heads || cows > heads)
+      return "No solutions";
+    else
+      return [chickens, cows];
+}
 
-function saleHotdogs(n){
-   if(n < 5) return n*100;
-   if(n >= 5 && n<10) return n * 95;else return n * 90;
- }
-
-console.log(saleHotdogs(1),100);
-console.log(saleHotdogs(4),400);
-console.log(saleHotdogs(5),475);
-console.log(saleHotdogs(9),855);
-console.log(saleHotdogs(10),900);
-console.log(saleHotdogs(100),9000);
+console.log(animals(72, 200), [44, 28])
+console.log(animals(116, 282), [91, 25])
+console.log(animals(12, 24), [12, 0])
+console.log(animals(6, 24), [0, 6])
+console.log(animals(344, 872), [252, 92])
+console.log(animals(158, 616), [8, 150])
+console.log(animals(25, 555), "No solutions")
+console.log(animals(12, 25), "No solutions")
+console.log(animals(54, 956), "No solutions")
+console.log(animals(5455, 54956), "No solutions")
+console.log(animals(0, 0), [0, 0])
+console.log(animals(-1, -1), "No solutions")
+console.log(animals(-45, 5), "No solutions")
+console.log(animals(500, 0), "No solutions")
+console.log(animals(0, 500), "No solutions")
+console.log(animals(5, -55), "No solutions")
