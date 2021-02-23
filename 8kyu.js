@@ -3688,28 +3688,46 @@
 
 // 
 
-function animals(heads, legs){
-    const cows = legs / 2 - heads;
-    const chickens = heads - cows;
-    if (legs & 1 || chickens > heads || cows > heads)
-      return "No solutions";
-    else
-      return [chickens, cows];
+// function animals(heads, legs){
+//     const cows = legs / 2 - heads;
+//     const chickens = heads - cows;
+//     if (legs & 1 || chickens > heads || cows > heads)
+//       return "No solutions";
+//     else
+//       return [chickens, cows];
+// }
+
+// console.log(animals(72, 200), [44, 28])
+// console.log(animals(116, 282), [91, 25])
+// console.log(animals(12, 24), [12, 0])
+// console.log(animals(6, 24), [0, 6])
+// console.log(animals(344, 872), [252, 92])
+// console.log(animals(158, 616), [8, 150])
+// console.log(animals(25, 555), "No solutions")
+// console.log(animals(12, 25), "No solutions")
+// console.log(animals(54, 956), "No solutions")
+// console.log(animals(5455, 54956), "No solutions")
+// console.log(animals(0, 0), [0, 0])
+// console.log(animals(-1, -1), "No solutions")
+// console.log(animals(-45, 5), "No solutions")
+// console.log(animals(500, 0), "No solutions")
+// console.log(animals(0, 500), "No solutions")
+// console.log(animals(5, -55), "No solutions")
+
+
+
+// 
+
+function preFizz(n) {
+  const arr = [];
+  for (let i = 1; i <= n; i++) {
+      arr.push(i);
+  }
+  return arr;
 }
 
-console.log(animals(72, 200), [44, 28])
-console.log(animals(116, 282), [91, 25])
-console.log(animals(12, 24), [12, 0])
-console.log(animals(6, 24), [0, 6])
-console.log(animals(344, 872), [252, 92])
-console.log(animals(158, 616), [8, 150])
-console.log(animals(25, 555), "No solutions")
-console.log(animals(12, 25), "No solutions")
-console.log(animals(54, 956), "No solutions")
-console.log(animals(5455, 54956), "No solutions")
-console.log(animals(0, 0), [0, 0])
-console.log(animals(-1, -1), "No solutions")
-console.log(animals(-45, 5), "No solutions")
-console.log(animals(500, 0), "No solutions")
-console.log(animals(0, 500), "No solutions")
-console.log(animals(5, -55), "No solutions")
+console.log(preFizz(1), [1], `Array should be from 1 to 1`);
+console.log(preFizz(2), [1,2], `Array should be from 1 to 2`);
+console.log(preFizz(3), [1,2,3], `Array should be from 1 to 3`);
+console.log(preFizz(4), [1,2,3,4], `Array should be from 1 to 4`);
+console.log(preFizz(5), [1,2,3,4,5], `Array should be from 1 to 5`);
