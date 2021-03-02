@@ -3718,16 +3718,38 @@
 
 // 
 
-function preFizz(n) {
-  const arr = [];
-  for (let i = 1; i <= n; i++) {
-      arr.push(i);
-  }
-  return arr;
-}
+// function preFizz(n) {
+//   const arr = [];
+//   for (let i = 1; i <= n; i++) {
+//       arr.push(i);
+//   }
+//   return arr;
+// }
 
-console.log(preFizz(1), [1], `Array should be from 1 to 1`);
-console.log(preFizz(2), [1,2], `Array should be from 1 to 2`);
-console.log(preFizz(3), [1,2,3], `Array should be from 1 to 3`);
-console.log(preFizz(4), [1,2,3,4], `Array should be from 1 to 4`);
-console.log(preFizz(5), [1,2,3,4,5], `Array should be from 1 to 5`);
+// console.log(preFizz(1), [1], `Array should be from 1 to 1`);
+// console.log(preFizz(2), [1,2], `Array should be from 1 to 2`);
+// console.log(preFizz(3), [1,2,3], `Array should be from 1 to 3`);
+// console.log(preFizz(4), [1,2,3,4], `Array should be from 1 to 4`);
+// console.log(preFizz(5), [1,2,3,4,5], `Array should be from 1 to 5`);
+
+
+// 
+
+
+function uefaEuro2016(teams, scores){
+   const a = scores[0];
+   const b = scores[1];
+   const team1 = teams[0];
+   const team2 = teams[1];
+   if(a>b) {
+     return `At match ${team1} - ${team2}, ${team1} won!`
+   }else if(a<b) {
+      return `At match ${team1} - ${team2}, ${team2} won!`
+   }else {
+     return `At match ${team1} - ${team2}, teams played draw.`
+   }
+  }
+
+console.log(uefaEuro2016(['Germany', 'Ukraine'], [2, 0]), "At match Germany - Ukraine, Germany won!");
+console.log(uefaEuro2016(['Belgium', 'Italy'], [0, 2]), "At match Belgium - Italy, Italy won!");
+console.log(uefaEuro2016(['Portugal', 'Iceland'], [1, 1]), "At match Portugal - Iceland, teams played draw.");
