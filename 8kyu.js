@@ -3736,20 +3736,39 @@
 // 
 
 
-function uefaEuro2016(teams, scores){
-   const a = scores[0];
-   const b = scores[1];
-   const team1 = teams[0];
-   const team2 = teams[1];
-   if(a>b) {
-     return `At match ${team1} - ${team2}, ${team1} won!`
-   }else if(a<b) {
-      return `At match ${team1} - ${team2}, ${team2} won!`
-   }else {
-     return `At match ${team1} - ${team2}, teams played draw.`
-   }
-  }
+// function uefaEuro2016(teams, scores){
+//    const a = scores[0];
+//    const b = scores[1];
+//    const team1 = teams[0];
+//    const team2 = teams[1];
+//    if(a>b) {
+//      return `At match ${team1} - ${team2}, ${team1} won!`
+//    }else if(a<b) {
+//       return `At match ${team1} - ${team2}, ${team2} won!`
+//    }else {
+//      return `At match ${team1} - ${team2}, teams played draw.`
+//    }
+// }
 
-console.log(uefaEuro2016(['Germany', 'Ukraine'], [2, 0]), "At match Germany - Ukraine, Germany won!");
-console.log(uefaEuro2016(['Belgium', 'Italy'], [0, 2]), "At match Belgium - Italy, Italy won!");
-console.log(uefaEuro2016(['Portugal', 'Iceland'], [1, 1]), "At match Portugal - Iceland, teams played draw.");
+// console.log(uefaEuro2016(['Germany', 'Ukraine'], [2, 0]), "At match Germany - Ukraine, Germany won!");
+// console.log(uefaEuro2016(['Belgium', 'Italy'], [0, 2]), "At match Belgium - Italy, Italy won!");
+// console.log(uefaEuro2016(['Portugal', 'Iceland'], [1, 1]), "At match Portugal - Iceland, teams played draw.");
+
+
+
+// 
+var min = function(list){
+    
+  return Math.min(...list);
+}
+
+var max = function(list){
+  
+  return Math.max(...list);
+}
+
+
+console.log(min([-52, 56, 30, 29, -54, 0, -110]), -110);
+console.log(min([42, 54, 65, 87, 0]), 0);
+console.log(max([4,6,2,1,9,63,-134,566]), 566);
+console.log(max([5]), 5);
