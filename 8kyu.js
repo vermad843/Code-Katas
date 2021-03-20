@@ -3757,18 +3757,32 @@
 
 
 // 
-var min = function(list){
+// var min = function(list){
     
-  return Math.min(...list);
-}
+//   return Math.min(...list);
+// }
 
-var max = function(list){
+// var max = function(list){
   
-  return Math.max(...list);
+//   return Math.max(...list);
+// }
+
+
+// console.log(min([-52, 56, 30, 29, -54, 0, -110]), -110);
+// console.log(min([42, 54, 65, 87, 0]), 0);
+// console.log(max([4,6,2,1,9,63,-134,566]), 566);
+// console.log(max([5]), 5);
+
+
+// return sqaureroot sum(Math.hypot);
+
+function distanceBetweenPoints(a, b) {
+  return Math.hypot(a.x - b.x,a.y - b.y);
 }
 
 
-console.log(min([-52, 56, 30, 29, -54, 0, -110]), -110);
-console.log(min([42, 54, 65, 87, 0]), 0);
-console.log(max([4,6,2,1,9,63,-134,566]), 566);
-console.log(max([5]), 5);
+console.log(distanceBetweenPoints(new Point(3, 3), new Point(3, 3)), 0);
+console.log(distanceBetweenPoints(new Point(1, 6), new Point(4, 2)), 5);
+console.log(distanceBetweenPoints(new Point(-10.2, 12.5), new Point(0.3, 14.7)).toFixed(6), 10.728001);
+
+
