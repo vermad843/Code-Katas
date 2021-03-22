@@ -3776,13 +3776,21 @@
 
 // return sqaureroot sum(Math.hypot);
 
-function distanceBetweenPoints(a, b) {
-  return Math.hypot(a.x - b.x,a.y - b.y);
-}
+// function distanceBetweenPoints(a, b) {
+//   return Math.hypot(a.x - b.x,a.y - b.y);
+// }
 
 
-console.log(distanceBetweenPoints(new Point(3, 3), new Point(3, 3)), 0);
-console.log(distanceBetweenPoints(new Point(1, 6), new Point(4, 2)), 5);
-console.log(distanceBetweenPoints(new Point(-10.2, 12.5), new Point(0.3, 14.7)).toFixed(6), 10.728001);
+// console.log(distanceBetweenPoints(new Point(3, 3), new Point(3, 3)), 0);
+// console.log(distanceBetweenPoints(new Point(1, 6), new Point(4, 2)), 5);
+// console.log(distanceBetweenPoints(new Point(-10.2, 12.5), new Point(0.3, 14.7)).toFixed(6), 10.728001);
 
 
+
+// 
+var Ball = function(ballType) {
+   this.ballType = ballType || 'regular';
+};
+
+console.log(new Ball().ballType, "regular");
+console.log(new Ball("super").ballType, "super");
