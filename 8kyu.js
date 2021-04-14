@@ -3788,9 +3788,21 @@
 
 
 // 
-var Ball = function(ballType) {
-   this.ballType = ballType || 'regular';
-};
+// var Ball = function(ballType) {
+//    this.ballType = ballType || 'regular';
+// };
 
-console.log(new Ball().ballType, "regular");
-console.log(new Ball("super").ballType, "super");
+// console.log(new Ball().ballType, "regular");
+// console.log(new Ball("super").ballType, "super");
+
+
+// 
+
+
+function first(arr, n=1) {
+   return arr.slice(0,n);
+}
+
+var arr = ['a', 'b', 'c', 'd', 'e'];
+console.log(first(arr), ['a']);
+console.log(first(arr, 2), ['a', 'b']);
