@@ -3799,10 +3799,25 @@
 // 
 
 
-function first(arr, n=1) {
-   return arr.slice(0,n);
-}
+// function first(arr, n=1) {
+//    return arr.slice(0,n);
+// }
 
-var arr = ['a', 'b', 'c', 'd', 'e'];
-console.log(first(arr), ['a']);
-console.log(first(arr, 2), ['a', 'b']);
+// var arr = ['a', 'b', 'c', 'd', 'e'];
+// console.log(first(arr), ['a']);
+// console.log(first(arr, 2), ['a', 'b']);
+
+
+// 
+
+function powersOfTwo(n){
+    const result = [];
+    for (let i = 0; i <=n; i++) {
+      result.push(Math.pow(2, i));       
+    }
+    return result;
+ }
+
+ console.log(powersOfTwo(0), [1])
+ console.log(powersOfTwo(1), [1, 2])
+ console.log(powersOfTwo(4), [1, 2, 4, 8, 16])
