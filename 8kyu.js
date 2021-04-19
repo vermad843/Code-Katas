@@ -3826,14 +3826,28 @@
 
 //  
 
-function mango(quantity, price){
-  const freeMangoes = Math.floor(quantity/3);
-  return (quantity - freeMangoes) * price;
+// function mango(quantity, price){
+//   const freeMangoes = Math.floor(quantity/3);
+//   return (quantity - freeMangoes) * price;
+// }
+
+
+// console.log(mango(3, 3), 6)
+// console.log(mango(9, 5), 30)
+
+
+
+// 
+
+var TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`;
 }
 
 
-console.log(mango(3, 3), 6)
-console.log(mango(9, 5), 30)
+console.log(TempleStrings("Animals","Good"), 'Animals are Good')
+
+
+
 
 
 
