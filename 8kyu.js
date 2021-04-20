@@ -3875,5 +3875,24 @@ console.log('Santa Claus', 'Ho Ho!', false);
 console.log('jhoffner', 'CodeWars', false);
 
 
+// 
+
+const cannonsReady = (gunners) => {
+   for(var i in gunners) {
+     if(gunners[i] == 'nay') {
+       return 'Shiver me timbers!'
+     }
+   }
+   return 'Fire!'
+}
+
+var a = {'Mike':'aye','Joe':'aye','Johnson':'aye','Peter':'aye'},
+    b = {'Mike':'aye','Joe':'nay','Johnson':'aye','Peter':'aye'};
+
+console.log(cannonsReady(a), 'Fire!');
+console.log(cannonsReady(b), 'Shiver me timbers!');
+
+
+
 
 
