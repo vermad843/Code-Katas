@@ -3839,25 +3839,40 @@
 
 // 
 
-var TempleStrings = function(obj, feature) {
-  return `${obj} are ${feature}`;
-}
+// var TempleStrings = function(obj, feature) {
+//   return `${obj} are ${feature}`;
+// }
 
 
-console.log(TempleStrings("Animals","Good"), 'Animals are Good')
+// console.log(TempleStrings("Animals","Good"), 'Animals are Good')
 
+
+
+// // 
+
+
+// var a = "dev"
+// var b = "Lab"
+
+// var name = a + b;
+
+// console.log((name, 'devLab'));
 
 
 // 
 
 
-var a = "dev"
-var b = "Lab"
+function Sleigh() {}
 
-var name = a + b;
+Sleigh.prototype.authenticate = function(name, password) {
+    return name == 'Santa Claus' && password == 'Ho Ho Ho!';
+};
 
-console.log((name, 'devLab'))
 
+console.log('Santa Claus', 'Ho Ho Ho!', true);
+console.log('Santa', 'Ho Ho Ho!', false);
+console.log('Santa Claus', 'Ho Ho!', false);
+console.log('jhoffner', 'CodeWars', false);
 
 
 
