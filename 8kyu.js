@@ -1,3 +1,4 @@
+import Test from 'Test';
 
 // 	//    circumference  of  a circle = 2 PI r 
 // 	//    A = 2 PI r/4 (because we are talking about 1/4 part of a circle)
@@ -3896,19 +3897,40 @@
 
 // 
 
-function remainder(a, b){
-  if(a > b) {
-    return a % b
-  }else {
-    return b % a
-  }
+// function remainder(a, b){
+//   if(a > b) {
+//     return a % b
+//   }else {
+//     return b % a
+//   }
+// }
+
+
+// console.log(remainder(17,5), 2, 'Returned value should be the value left over after dividing as much as possible.');
+// console.log(remainder(13, 72), remainder(72, 13), 'The order the arguments are passed should not matter.');
+// console.log(isNaN(remainder(1, 0)), 'Divide by zero should return NaN');
+// console.log(isNaN(remainder(0, 0)), 'Divide by zero should return NaN');
+
+
+
+// 
+
+function converter(mpg) {
+  return Math.round(mpg * 35.400604353821375031) / 100;
 }
 
 
-console.log(remainder(17,5), 2, 'Returned value should be the value left over after dividing as much as possible.');
-console.log(remainder(13, 72), remainder(72, 13), 'The order the arguments are passed should not matter.');
-console.log(isNaN(remainder(1, 0)), 'Divide by zero should return NaN');
-console.log(isNaN(remainder(0, 0)), 'Divide by zero should return NaN');
+// console.log(converter(10), 3.54)
+// console.log(converter(20), 7.08)
+// console.log(converter(30), 10.62)
+
+
+
+
+
+
+
+
 
 
 
