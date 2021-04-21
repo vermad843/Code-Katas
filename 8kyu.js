@@ -3862,37 +3862,53 @@
 // 
 
 
-function Sleigh() {}
+// function Sleigh() {}
 
-Sleigh.prototype.authenticate = function(name, password) {
-    return name == 'Santa Claus' && password == 'Ho Ho Ho!';
-};
+// Sleigh.prototype.authenticate = function(name, password) {
+//     return name == 'Santa Claus' && password == 'Ho Ho Ho!';
+// };
 
 
-console.log('Santa Claus', 'Ho Ho Ho!', true);
-console.log('Santa', 'Ho Ho Ho!', false);
-console.log('Santa Claus', 'Ho Ho!', false);
-console.log('jhoffner', 'CodeWars', false);
+// console.log('Santa Claus', 'Ho Ho Ho!', true);
+// console.log('Santa', 'Ho Ho Ho!', false);
+// console.log('Santa Claus', 'Ho Ho!', false);
+// console.log('jhoffner', 'CodeWars', false);
 
 
 // 
 
-const cannonsReady = (gunners) => {
-   for(var i in gunners) {
-     if(gunners[i] == 'nay') {
-       return 'Shiver me timbers!'
-     }
-   }
-   return 'Fire!'
+// const cannonsReady = (gunners) => {
+//    for(var i in gunners) {
+//      if(gunners[i] == 'nay') {
+//        return 'Shiver me timbers!'
+//      }
+//    }
+//    return 'Fire!'
+// }
+
+// var a = {'Mike':'aye','Joe':'aye','Johnson':'aye','Peter':'aye'},
+//     b = {'Mike':'aye','Joe':'nay','Johnson':'aye','Peter':'aye'};
+
+// console.log(cannonsReady(a), 'Fire!');
+// console.log(cannonsReady(b), 'Shiver me timbers!');
+
+
+
+// 
+
+function remainder(a, b){
+  if(a > b) {
+    return a % b
+  }else {
+    return b % a
+  }
 }
 
-var a = {'Mike':'aye','Joe':'aye','Johnson':'aye','Peter':'aye'},
-    b = {'Mike':'aye','Joe':'nay','Johnson':'aye','Peter':'aye'};
 
-console.log(cannonsReady(a), 'Fire!');
-console.log(cannonsReady(b), 'Shiver me timbers!');
-
-
+console.log(remainder(17,5), 2, 'Returned value should be the value left over after dividing as much as possible.');
+console.log(remainder(13, 72), remainder(72, 13), 'The order the arguments are passed should not matter.');
+console.log(isNaN(remainder(1, 0)), 'Divide by zero should return NaN');
+console.log(isNaN(remainder(0, 0)), 'Divide by zero should return NaN');
 
 
 
