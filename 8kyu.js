@@ -3788,9 +3788,36 @@
 
 
 // 
-var Ball = function(ballType) {
-   this.ballType = ballType || 'regular';
-};
+// var Ball = function(ballType) {
+//    this.ballType = ballType || 'regular';
+// };
 
-console.log(new Ball().ballType, "regular");
-console.log(new Ball("super").ballType, "super");
+// console.log(new Ball().ballType, "regular");
+// console.log(new Ball("super").ballType, "super");
+
+
+
+// 
+
+function calculator(a,b,sign){
+  if((typeof a === 'number') && (typeof b === 'number')) {
+     switch(sign) {
+        case '+' :
+           return a + b;
+        case '-' :
+           return a - b;
+        case '*' :
+           return a * b;
+        case '/' :
+           return a / b
+     }
+  }
+   return 'unknown value';
+}
+
+console.log(calculator(1,2,"+"), 3, "calculate");
+console.log(calculator(1,2,"-"), -1, "calculate");
+console.log(calculator(3,5,"*"), 15, "calculate");
+console.log(calculator(6,2,"/"), 3, "calculate");
+console.log(calculator(6,2,"$"), "unknown value", "calculate"); 
+console.log(calculator(6,"h","*"), "unknown value", "calculate"); 
