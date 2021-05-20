@@ -3797,27 +3797,172 @@
 
 
 
+
+// 
+
+
+
+// 
+
+
+// function first(arr, n=1) {
+//    return arr.slice(0,n);
+// }
+
+// var arr = ['a', 'b', 'c', 'd', 'e'];
+// console.log(first(arr), ['a']);
+// console.log(first(arr, 2), ['a', 'b']);
+
+
+// 
+
+// function powersOfTwo(n){
+//     const result = [];
+//     for (let i = 0; i <=n; i++) {
+//       result.push(Math.pow(2, i));       
+//     }
+//     return result;
+//  }
+
+//  console.log(powersOfTwo(0), [1])
+//  console.log(powersOfTwo(1), [1, 2])
+//  console.log(powersOfTwo(4), [1, 2, 4, 8, 16])
+
+
+
+//  
+
+// function mango(quantity, price){
+//   const freeMangoes = Math.floor(quantity/3);
+//   return (quantity - freeMangoes) * price;
+// }
+
+
+// console.log(mango(3, 3), 6)
+// console.log(mango(9, 5), 30)
+
+
+
+// 
+
+// var TempleStrings = function(obj, feature) {
+//   return `${obj} are ${feature}`;
+// }
+
+
+// console.log(TempleStrings("Animals","Good"), 'Animals are Good')
+
+
+
+// // 
+
+
+// var a = "dev"
+// var b = "Lab"
+
+// var name = a + b;
+
+// console.log((name, 'devLab'));
+
+
+// 
+
+
+// function Sleigh() {}
+
+// Sleigh.prototype.authenticate = function(name, password) {
+//     return name == 'Santa Claus' && password == 'Ho Ho Ho!';
+// };
+
+
+// console.log('Santa Claus', 'Ho Ho Ho!', true);
+// console.log('Santa', 'Ho Ho Ho!', false);
+// console.log('Santa Claus', 'Ho Ho!', false);
+// console.log('jhoffner', 'CodeWars', false);
+
+
+// 
+
+// const cannonsReady = (gunners) => {
+//    for(var i in gunners) {
+//      if(gunners[i] == 'nay') {
+//        return 'Shiver me timbers!'
+//      }
+//    }
+//    return 'Fire!'
+// }
+
+// var a = {'Mike':'aye','Joe':'aye','Johnson':'aye','Peter':'aye'},
+//     b = {'Mike':'aye','Joe':'nay','Johnson':'aye','Peter':'aye'};
+
+// console.log(cannonsReady(a), 'Fire!');
+// console.log(cannonsReady(b), 'Shiver me timbers!');
+
+
+
+// 
+
+// function remainder(a, b){
+//   if(a > b) {
+//     return a % b
+//   }else {
+//     return b % a
+//   }
+// }
+
+
+// console.log(remainder(17,5), 2, 'Returned value should be the value left over after dividing as much as possible.');
+// console.log(remainder(13, 72), remainder(72, 13), 'The order the arguments are passed should not matter.');
+// console.log(isNaN(remainder(1, 0)), 'Divide by zero should return NaN');
+// console.log(isNaN(remainder(0, 0)), 'Divide by zero should return NaN');
+
+
+
+// 
+
+// function converter(mpg) {
+//   return Math.round(mpg * 35.400604353821375031) / 100;
+// }
+
+
+// console.log(converter(10), 3.54)
+// console.log(converter(20), 7.08)
+// console.log(converter(30), 10.62)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 
 
 function calculator(a,b,sign){
-  if((typeof a === 'number') && (typeof b === 'number')) {
-     switch(sign) {
-        case '+' :
-           return a + b;
-        case '-' :
-           return a - b;
-        case '*' :
-           return a * b;
-        case '/' :
-           return a / b
-     }
-  }
-   return 'unknown value';
-}
-
-console.log(calculator(1,2,"+"), 3, "calculate");
-console.log(calculator(1,2,"-"), -1, "calculate");
-console.log(calculator(3,5,"*"), 15, "calculate");
-console.log(calculator(6,2,"/"), 3, "calculate");
-console.log(calculator(6,2,"$"), "unknown value", "calculate"); 
-console.log(calculator(6,"h","*"), "unknown value", "calculate"); 
+   if((typeof a === 'number') && (typeof b === 'number')) {
+      switch(sign) {
+         case '+' :
+            return a + b;
+         case '-' :
+            return a - b;
+         case '*' :
+            return a * b;
+         case '/' :
+            return a / b
+      }
+   }
+    return 'unknown value';
+ }
+ 
+ console.log(calculator(1,2,"+"), 3, "calculate");
+ console.log(calculator(1,2,"-"), -1, "calculate");
+ console.log(calculator(3,5,"*"), 15, "calculate");
+ console.log(calculator(6,2,"/"), 3, "calculate");
+ console.log(calculator(6,2,"$"), "unknown value", "calculate"); 
+ console.log(calculator(6,"h","*"), "unknown value", "calculate"); 

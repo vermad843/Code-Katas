@@ -830,3 +830,37 @@ go to 8 kyu.js file all the solutions for these katas are there:
 <!--  -->
 
 [x] https://www.codewars.com/kata/5810085c533d69f4980001cf/train/javascript
+[x] https://www.codewars.com/kata/572b77262bedd351e9000076/train/javascript
+
+
+<!--  -->
+
+[x] https://www.codewars.com/kata/57a083a57cb1f31db7000028/train/javascript
+
+
+[x] https://www.codewars.com/kata/57a77726bb9944d000000b06/train/javascript
+
+
+
+<!--  -->
+
+[x] https://www.codewars.com/kata/55a14f75ceda999ced000048/train/javascript
+
+
+[x] https://www.codewars.com/kata/5612e743cab69fec6d000077/train/javascript
+
+
+<!--  -->
+
+[x] https://www.codewars.com/kata/52adc142b2651f25a8000643/train/javascript
+
+
+[x] https://www.codewars.com/kata/5748a883eb737cab000022a6/train/javascript
+
+
+<!--  -->
+
+[x] https://www.codewars.com/kata/524f5125ad9c12894e00003f/train/javascript
+
+
+[x] https://www.codewars.com/kata/557b5e0bddf29d861400005d/train/javascript
